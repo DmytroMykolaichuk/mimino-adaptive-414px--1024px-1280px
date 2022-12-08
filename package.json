@@ -1,5 +1,5 @@
 {
-  "name": "parcel-project-template",
+  "name": "mimino-adaptive-414px--1024px-1280px",
   "version": "2.0.0",
   "description": "",
   "homepage": "https://DmytroMykolaichuk.github.io/mimino-adaptive-414px--1024px-1280px",
@@ -9,13 +9,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/goitacademy/parcel-project-template.git"
+    "url": "git+https://github.com/DmytroMykolaichuk/mimino-adaptive-414px--1024px-1280px.git"
   },
   "keywords": [],
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/goitacademy/parcel-project-template/issues"
+    "url": "https://github.com/DmytroMykolaichuk/mimino-adaptive-414px--1024px-1280px/issues"
   },
   "dependencies": {
     "modern-normalize": "^1.1.0"
