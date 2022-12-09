@@ -1,26 +1,40 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+p,
 h1,
 h2,
 h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
 ul,
-p {
-  margin: 0px;
-  padding: 0px;
-}
-
-ul {
+ol {
+  margin: 0;
+  padding: 0;
   list-style: none;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
 }
 
 button {
   padding: 0;
   cursor: pointer;
+}
+
+address {
+  font-style: normal;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 a {
@@ -36,12 +50,90 @@ a {
   --home-restaurant-text-color:#5F5F5F;
   --home-restaurant-accent-text-color:#C79002;
   --home-restaurant-light-text-color:#BABABA;
-  --hotel-room-text-colo:#7A7A7A;
+  --hotel-room-text-color:#7A7A7A;
   --accent-color:#F3C653;
   --slogan-color:#B4B4B4;
   --mimino-section-color:#494848;
-  --white-color:#FFFFFF;
-  --black-color:#000000;
   --modal-placeholder-color:#808080;
   --modal-text-color:#C79002;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: var(--home-restaurant-text-color);
+  background: var(--primary-background-color);
+}
+
+@font-face {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-style: normal;
+  src: local("Montserrat"), url("/src/fonts/Montserrat-Bold.woff2") format("woff2"), url("/src/fonts/Montserrat-Bold.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: Montserrat;
+  font-weight: 600;
+  font-style: normal;
+  src: local("Montserrat"), url("/src/fonts/Montserrat-SemiBold.woff2") format("woff2"), url("/src/fonts/Montserrat-SemiBold.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-style: normal;
+  src: local("Montserrat"), url("/src/fonts/Montserrat-Medium.woff2") format("woff2"), url("/src/fonts/Montserrat-Medium.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-style: normal;
+  src: local("Montserrat"), url("/src/fonts/Montserrat-Regular.woff2") format("woff2"), url("/src/fonts/Montserrat-Regular.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: Montserrat;
+  font-weight: 300;
+  font-style: normal;
+  src: local("Montserrat"), url("/src/fonts/Montserrat-Light.woff2") format("woff2"), url("/src/fonts/Montserrat-Light.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Film P3";
+  font-weight: 700;
+  font-style: normal;
+  src: local("Film P3"), local("Film-P3"), url("/src/fonts/FilmP3Bold.woff2") format("woff2"), url("/src/fonts/FilmP3Bold.woff") format("woff");
+  font-display: swap;
+}
+.container {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  /* outline: 2px solid red; */
+}
+@media screen and (min-width: 414px) {
+  .container {
+    width: 414px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .container {
+    width: 1024px;
+    padding-left: 47px;
+    padding-right: 47px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container {
+    width: 1280px;
+    padding-left: 85px;
+    padding-right: 85px;
+  }
 }

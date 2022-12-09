@@ -3,6 +3,7 @@
 *::after {
   box-sizing: border-box;
 }
+
 p,
 h1,
 h2,
@@ -12,19 +13,23 @@ h5,
 h6 {
   margin: 0;
 }
+
 ul,
 ol {
   margin: 0;
   padding: 0;
   list-style: none;
 }
+
 button {
   padding: 0;
   cursor: pointer;
 }
+
 address {
   font-style: normal;
 }
+
 img {
   display: block;
   max-width: 100%;
