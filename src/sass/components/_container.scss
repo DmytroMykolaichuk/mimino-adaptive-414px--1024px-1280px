@@ -1,0 +1,24 @@
+
+@mixin media($size) {
+@media screen and (min-width: $size) {
+    @content;
+  }
+}
+
+.container {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  /* outline: 2px solid red; */
+    @include media(414px){
+  width: 414px;}
+    @include media(1024px) {
+    width: 1024px;
+  }
+  @include media(1280px) {
+  width: 1280px;
+  }
+  
+
+}
