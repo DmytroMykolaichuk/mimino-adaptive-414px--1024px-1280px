@@ -41,34 +41,6 @@ a {
   text-decoration: none;
 }
 
-:root {
-  --primary-background-color:#FFFDEE;
-  --secondary-background-color:#F0ECD6;
-  --footer-background-color:#0E0C07;
-  --hero-text-color:#FFFFFF;
-  --section-title-text-color:#000000;
-  --home-restaurant-text-color:#5F5F5F;
-  --home-restaurant-accent-text-color:#C79002;
-  --home-restaurant-light-text-color:#BABABA;
-  --hotel-room-text-color:#7A7A7A;
-  --accent-color:#F3C653;
-  --slogan-color:#B4B4B4;
-  --mimino-section-color:#494848;
-  --modal-placeholder-color:#808080;
-  --modal-text-color:#C79002;
-}
-
-body {
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.02em;
-  color: var(--home-restaurant-text-color);
-  background: var(--primary-background-color);
-}
-
 @font-face {
   font-family: Montserrat;
   font-weight: 700;
@@ -111,6 +83,34 @@ body {
   src: local("Film P3"), local("Film-P3"), url("/src/fonts/FilmP3Bold.woff2") format("woff2"), url("/src/fonts/FilmP3Bold.woff") format("woff");
   font-display: swap;
 }
+:root {
+  --primary-background-color:#FFFDEE;
+  --secondary-background-color:#F0ECD6;
+  --footer-background-color:#0E0C07;
+  --hero-text-color:#FFFFFF;
+  --section-title-text-color:#000000;
+  --home-restaurant-text-color:#5F5F5F;
+  --home-restaurant-accent-text-color:#C79002;
+  --home-restaurant-light-text-color:#BABABA;
+  --hotel-room-text-color:#7A7A7A;
+  --accent-color:#F3C653;
+  --slogan-color:#B4B4B4;
+  --mimino-section-color:#494848;
+  --modal-placeholder-color:#808080;
+  --modal-text-color:#C79002;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: var(--home-restaurant-text-color);
+  background: var(--primary-background-color);
+}
+
 .container {
   width: 100%;
   padding-left: 15px;
