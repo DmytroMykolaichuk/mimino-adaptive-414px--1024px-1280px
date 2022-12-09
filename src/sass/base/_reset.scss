@@ -16,6 +16,7 @@ ul,
 ol {
   margin: 0;
   padding-left: 0;
+  list-style: none;
 }
 button {
   padding: 0;
@@ -29,9 +30,7 @@ img {
   max-width: 100%;
   height: auto;
 }
-.list {
-list-style: none;
-}
-.link {
+
+a{
 text-decoration: none;
 }
