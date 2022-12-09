@@ -27,6 +27,135 @@ a {
   text-decoration: none;
 }
 
+.backdrop {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 0%;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  width: 414px;
+  min-height: 668px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background: #fffdee;
+  border-radius: 4px;
+}
+@media screen and (max-width: 1199px) {
+  .modal {
+    height: 100%;
+    width: 100%;
+    max-height: 668px;
+    max-width: 414px;
+    overflow: auto;
+  }
+}
+
+.modal-close {
+  width: 24px;
+  height: 24px;
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.1666666667;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #000000;
+  margin-top: 60px;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+
+.modal-field {
+  margin-bottom: 20px;
+}
+.modal-field:nth-child(4) {
+  margin-bottom: 40px;
+}
+
+.modal-input {
+  width: 100%;
+  height: 54px;
+  border: 1px solid #c79002;
+  border-radius: 2px;
+  background: #fffdee;
+  padding-left: 12px;
+  outline: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-input::-moz-placeholder {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.05em;
+  color: #808080;
+}
+.modal-input:-ms-input-placeholder {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.05em;
+  color: #808080;
+}
+.modal-input::placeholder {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.05em;
+  color: #808080;
+}
+
+.input-label {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2142857143;
+  letter-spacing: 0.02em;
+  color: #c79002;
+}
+.input-label span {
+  display: block;
+  margin-top: 8px;
+  padding-left: 12px;
+}
+
+.user-rules-btn {
+  border-radius: 4px;
+  border-color: transparent;
+  padding: 10px 52px;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  text-align: center;
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  color: var(--button-color-white);
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .example {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   line-height: 1.5;
@@ -51,4 +180,4 @@ a {
   background-image: url("../images/logo.png");
   background-size: cover;
   background-position: center;
-}
+}/*# sourceMappingURL=index.css.map */
