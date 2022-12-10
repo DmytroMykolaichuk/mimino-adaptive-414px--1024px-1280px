@@ -14,3 +14,15 @@
     --modal-placeholder-color:#808080;
     --modal-text-color:#C79002;
 }
+
+body {
+font-family: "Montserrat", sans-serif;
+font-style:normal;
+font-weight:600;
+font-size:16px;
+line-height: calc(20 / 16);
+letter-spacing: 0.02em;
+color:var(--home-restaurant-text-color);
+background:var(--primary-background-color);
+}
+
