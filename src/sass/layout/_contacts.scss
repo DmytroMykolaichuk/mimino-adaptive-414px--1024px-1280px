@@ -1,0 +1,129 @@
+
+//   @include media(414px) {}
+//   @include media(1024px) {}
+//   @include media(1280px) {}
+.mimino__contacts {
+}
+
+.mimino__address {
+}
+
+.mimino__address-title {
+margin-bottom: 12px;
+font-family:'Film P3';
+font-weight: 700;
+font-size: 40px;
+line-height: calc(43 / 40);
+letter-spacing: 0.3em;
+  @include media(414px) {}
+  @include media(1024px) {}
+  @include media(1280px) {}
+}
+.mimino__address-text {
+  margin-bottom: 16px;
+  
+}
+
+.mimino__address-list {
+display: grid;
+grid-column-gap: 22px;
+grid-row-gap: 16px;
+align-items:center;
+  @include media(1024px) {
+  display: flex;
+  flex-direction: column;
+  align-items:flex-start;
+  }
+//   @include media(1280px) {}
+}
+
+
+.mimino__address-item {
+display: flex;
+  flex-direction: column;
+
+  @include media(414px) {
+    display: inline-block;
+  }
+  @include media(1024px) {}
+  @include media(1280px) {}
+text-align: center;
+&:nth-child(2){
+  width: 144px;
+}
+&:nth-child(even), &:nth-child(5){
+  // padding: 9px 0;
+  border: 1px solid var(--accent-color);
+  background-color: var(--hero-text-color);
+}
+&:last-child{
+  text-align: left;
+  padding-right: 33px;
+}
+}
+
+
+.title__name{
+font-weight: 500;
+font-size: 20px;
+line-height: calc(24 / 20);
+color:var(--home-restaurant-accent-text-color);
+}
+
+
+.mimino__address-link {
+  display: inline-block;
+  padding: 6px 0;
+    @include media(414px) {
+        padding: 12px 8px 11px 4;
+    }
+  font-weight: 400;
+font-size: 14px;
+line-height: calc(17 / 14);
+transition-property: color ;
+transition-duration: 250ms ;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  color: var(--mimino-section-color);
+  &:hover, &:focus{
+  color: var(--accent-color);
+}
+}
+
+
+
+
+
+.item-position-one{
+grid-area: 1 / 1 / 2 / 2; 
+  @include media(1024px) {
+    grid-area:auto;
+  }
+}
+.item-position-two{
+grid-area: 1 / 2 / 2 / 3;
+  @include media(1024px) {
+    grid-area:auto;
+  }
+}
+.item-position-tree{
+  grid-area: 2 / 1 / 3 / 2;
+    @include media(1024px) {
+      grid-area:auto;
+    }
+}
+.item-position-four{
+  grid-area: 2 / 2 / 3 / 3; 
+    @include media(1024px) {
+      grid-area:auto;
+    }
+}
+.item-position-five{
+  grid-area: 3 / 2 / 4 / 3;
+    @include media(1024px) {
+      grid-area:auto;
+    }
+}
+// .map{
+//   max-width: 384px;
+//   max-height: 220px;
+// }
