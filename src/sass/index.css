@@ -140,3 +140,94 @@ body {
     padding-right: 85px;
   }
 }
+
+.btn-transparent {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: #f3c653;
+  min-width: 236px;
+  height: 48px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 2px solid #ffffff;
+  border-radius: 25px;
+  color: var(--accent-color);
+  transition: var(--transition-bg);
+}
+.btn-transparent:hover, .btn-transparent:focus {
+  background-color: #ffffff;
+}
+
+.btn-black {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: #f3c653;
+  min-width: 236px;
+  height: 48px;
+  background-color: #000000;
+  border: 2px solid #ffffff;
+  border-radius: 25px;
+  transition: var(--transition-bg);
+}
+.btn-black:hover, .btn-black:focus {
+  background-color: #ffffff;
+}
+
+.btn-booking-modal {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #ffffff;
+  width: 384px;
+  min-height: 64px;
+  background-color: #000000;
+  border: 1px solid var(--accent-color);
+  border-radius: 2px;
+  transition: var(--transition-bg), var(--transition-color);
+}
+@media screen and (min-width: 1024px) {
+  .btn-booking-modal {
+    width: 592px;
+    min-height: 64px;
+    font-size: 24px;
+  }
+}
+.btn-booking-modal:hover, .btn-booking-modal:focus {
+  color: #000000;
+  background-color: var(--accent-color);
+}
+
+.btn-booking-room {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #ffffff;
+  width: 384px;
+  height: 64px;
+  background: #000000;
+  border: 1px solid var(--accent-color);
+  border-radius: 25px;
+  transition: var(--transition-bg), var(--transition-color);
+}
+@media screen and (min-width: 1024px) {
+  .btn-booking-room {
+    width: 434px;
+    height: 64px;
+    font-size: 24px;
+  }
+}
+.btn-booking-room:hover, .btn-booking-room:focus {
+  color: #000000;
+  background-color: var(--accent-color);
+}
