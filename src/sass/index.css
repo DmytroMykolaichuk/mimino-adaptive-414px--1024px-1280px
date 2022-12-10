@@ -98,6 +98,9 @@ a {
   --mimino-section-color:#494848;
   --modal-placeholder-color:#808080;
   --modal-text-color:#C79002;
+  --transition-color: color 250ms linear;
+  --transition-bg: background-color 250ms linear;
+  --transition-fill: fill 250ms linear;
 }
 
 body {
