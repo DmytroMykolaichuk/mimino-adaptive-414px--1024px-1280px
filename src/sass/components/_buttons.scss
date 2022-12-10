@@ -12,9 +12,7 @@
   border: 2px solid #ffffff;
   border-radius: 25px;
   color: var(--accent-color);
-  transition-property: background-color;
-  transition-duration: var(--transition-duration);
-  transition-timing-function: var(--transition-timing-function);
+  transition: var(--transition-bg);
   &:hover,
   &:focus {
     background-color: #ffffff;
@@ -34,9 +32,7 @@
   background-color: #000000;
   border: 2px solid #ffffff;
   border-radius: 25px;
-  transition-property: background-color;
-  transition-duration: var(--transition-duration);
-  transition-timing-function: var(--transition-timing-function);
+  transition: var(--transition-bg);
   &:hover,
   &:focus {
     background-color: #ffffff;
@@ -55,9 +51,8 @@
   background-color: #000000;
   border: 1px solid var(--accent-color);
   border-radius: 2px;
-  transition-property: color, background-color;
-  transition-duration: var(--transition-duration);
-  transition-timing-function: var(--transition-timing-function);
+  transition: var(--transition-bg);
+  transition: var(--transition-color);
 
   @include media(1024px) {
     width: 592px;
@@ -83,9 +78,8 @@
   background: #000000;
   border: 1px solid var(--accent-color);
   border-radius: 25px;
-  transition-property: color, background-color;
-  transition-duration: var(--transition-duration);
-  transition-timing-function: var(--transition-timing-function);
+  transition: var(--transition-bg);
+  transition: var(--transition-color);
 
   @include media(1024px) {
     width: 434px;
