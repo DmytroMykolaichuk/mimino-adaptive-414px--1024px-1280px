@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="128" height="128"><svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_3310_2)">
+<rect width="128" height="128" rx="28" fill="#0E0C07"></rect>
+<path d="M75.9961 18.9609C80.6185 18.9609 84.5573 20.6211 87.8125 23.9414C91.1328 27.2617 92.793 31.2005 92.793 35.7578V159H83.2227V34.9766C83.2227 32.9583 82.5065 31.2656 81.0742 29.8984C79.707 28.5312 78.0143 27.8477 75.9961 27.8477C73.9779 27.8477 72.2526 28.5312 70.8203 29.8984C69.4531 31.2656 68.7695 32.9583 68.7695 34.9766V159H59.1992V34.9766C59.1992 32.9583 58.4831 31.2656 57.0508 29.8984C55.6836 28.5312 53.9909 27.8477 51.9727 27.8477C49.9544 27.8477 48.2617 28.5312 46.8945 29.8984C45.5273 31.2656 44.8438 32.9583 44.8438 34.9766V159H35.1758V35.7578C35.1758 31.2005 36.8034 27.2617 40.0586 23.9414C43.3789 20.6211 47.3503 18.9609 51.9727 18.9609C56.7904 18.9609 60.7943 20.6536 63.9844 24.0391C67.1745 20.6536 71.1784 18.9609 75.9961 18.9609Z" fill="#F3C653"></path>
+<rect x="30" y="110" width="68" height="18" fill="#0E0C07"></rect>
+</g>
+<rect x="0.5" y="0.5" width="127" height="127" rx="27.5" stroke="black" stroke-linejoin="round"></rect>
+<defs>
+<clipPath id="SvgjsClipPath1000">
+<rect width="128" height="128" rx="28" fill="white"></rect>
+</clipPath>
+</defs>
+</svg><style>@media (prefers-color-scheme: light) { :root { filter: none; } }
+</style></svg>
