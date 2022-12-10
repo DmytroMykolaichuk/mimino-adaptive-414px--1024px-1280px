@@ -1,99 +1,103 @@
 .btn-transparent {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: 0.02em;
-    color: #F3C653;
-    min-width: 236px;
-    height: 48px;
-    background: rgba(0, 0, 0, 0.4);
-    border: 2px solid #FFFFFF;
-    border-radius: 25px;
-    color: var(--accent-color);
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: #f3c653;
+  min-width: 236px;
+  height: 48px;
+  background: rgba(0, 0, 0, 0.4);
+  border: 2px solid #ffffff;
+  border-radius: 25px;
+  color: var(--accent-color);
 }
 
 .btn-transparent:hover,
 .btn-transparent:focus {
-    background: var(--white-color);
-    border: 2px solid #FFFFFF;
-    border-radius: 25px;
+  background: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 25px;
 }
 
 .btn-black {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: 0.02em;
-    color: #F3C653;
-    min-width: 236px;
-    height: 48px;
-    background: #000000;
-    border: 2px solid #FFFFFF;
-    border-radius: 25px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: #f3c653;
+  min-width: 236px;
+  height: 48px;
+  background: #000000;
+  border: 2px solid #ffffff;
+  border-radius: 25px;
+    &:hover,
+    &:focus {
+    background: #ffffff;
+    border: 2px solid var(--accent-color);
+  }
 }
 
 .btn-black:hover,
 .btn-black:focus {
-    background: #FFFFFF;
-    border: 2px solid var(--accent-color);
-    border-radius: 25px;
+  background: #ffffff;
+  border: 2px solid var(--accent-color);
+  border-radius: 25px;
 }
 
 .btn-booking-modal {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    color: #FFFFFF;
-    width: 384px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #ffffff;
+  width: 384px;
+  min-height: 64px;
+  background: #000000;
+  border: 1px solid #f3c653;
+  border-radius: 2px;
+
+  @include media(1024px) {
+    width: 592px;
     min-height: 64px;
-    background: #000000;
-    border: 1px solid #F3C653;
-    border-radius: 2px;
-
-    @include media(1024px) {
-        width: 592px;
-        min-height: 64px;
-        font-size: 24px;
-    }
-}
-
-.btn-booking-modal:hover,
-.btn-booking-modal:focus {
+    font-size: 24px;
+  }
+    &:hover,
+    &:focus {
     color: #000000;
     background: var(--accent-color);
     border: 1px solid var(--accent-color);
-    border-radius: 2px;
+  }
 }
 
 .btn-booking-room {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    color: #FFFFFF;
-    width: 384px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #ffffff;
+  width: 384px;
+  height: 64px;
+  background: #000000;
+  border: 1px solid var(--accent-color);
+  border-radius: 25px;
+  transition-property: color,background-color;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-timing-function);
+
+  @include media(1024px) {
+    width: 434px;
     height: 64px;
-    background: #000000;
-    border: 1px solid var(--accent-color);
-    border-radius: 25px;
-
-    @include media(1024px) {
-        width: 434px;
-        height: 64px;
-        font-size: 24px;
-    }
-}
-
-.btn-booking-room:hover, .btn-booking-room:focus{
+    font-size: 24px;
+  }
+  &:hover,
+  &:focus {
     color: #000000;
-    background:var(--accent-color);
-border: 1px solid var(--accent-color);
-border-radius: 25px;
+    background-color: var(--accent-color);
+    }
 }
