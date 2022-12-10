@@ -3,22 +3,22 @@
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.25;
+  line-height:calc(20/16);
   letter-spacing: 0.02em;
   color: #f3c653;
   min-width: 236px;
   height: 48px;
-  background: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.4);
   border: 2px solid #ffffff;
   border-radius: 25px;
   color: var(--accent-color);
-}
-
-.btn-transparent:hover,
-.btn-transparent:focus {
-  background: #ffffff;
-  border: 2px solid #ffffff;
-  border-radius: 25px;
+  transition-property: background-color;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-timing-function);
+  &:hover,
+  &:focus {
+    background-color: #ffffff;
+  }
 }
 
 .btn-black {
@@ -26,26 +26,21 @@
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.25;
+  line-height: calc(20/16);
   letter-spacing: 0.02em;
   color: #f3c653;
   min-width: 236px;
   height: 48px;
-  background: #000000;
+  background-color: #000000;
   border: 2px solid #ffffff;
   border-radius: 25px;
-    &:hover,
-    &:focus {
-    background: #ffffff;
-    border: 2px solid var(--accent-color);
+  transition-property: background-color;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-timing-function);
+  &:hover,
+  &:focus {
+    background-color: #ffffff;
   }
-}
-
-.btn-black:hover,
-.btn-black:focus {
-  background: #ffffff;
-  border: 2px solid var(--accent-color);
-  border-radius: 25px;
 }
 
 .btn-booking-modal {
@@ -53,24 +48,26 @@
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
-  line-height: 1.2;
+  line-height:calc(24/20);
   color: #ffffff;
   width: 384px;
   min-height: 64px;
-  background: #000000;
-  border: 1px solid #f3c653;
+  background-color: #000000;
+  border: 1px solid var(--accent-color);
   border-radius: 2px;
+  transition-property: color, background-color;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-timing-function);
 
   @include media(1024px) {
     width: 592px;
     min-height: 64px;
     font-size: 24px;
   }
-    &:hover,
-    &:focus {
+  &:hover,
+  &:focus {
     color: #000000;
-    background: var(--accent-color);
-    border: 1px solid var(--accent-color);
+    background-color: var(--accent-color);
   }
 }
 
@@ -79,14 +76,14 @@
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
-  line-height: 1.2;
+  line-height:calc(24/20);
   color: #ffffff;
   width: 384px;
   height: 64px;
   background: #000000;
   border: 1px solid var(--accent-color);
   border-radius: 25px;
-  transition-property: color,background-color;
+  transition-property: color, background-color;
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--transition-timing-function);
 
@@ -99,5 +96,5 @@
   &:focus {
     color: #000000;
     background-color: var(--accent-color);
-    }
+  }
 }
