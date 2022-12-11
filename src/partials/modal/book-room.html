@@ -1,0 +1,112 @@
+<div>
+  <div class="modal">
+    <button type="button" class="modal-close" data-modal-close>
+      <svg class="modal-close-icon" width="24" height="24">
+        <use href="./images/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+
+    <p class="modal-title">забронювати номер</p>
+    <form action="">
+
+      <div class="modal-fields">
+        <div class="modal-fields-contact">
+          <div class="modal-field">
+            <input
+              type="text"
+              name="user-name"
+              id="user-name"
+              class="modal-input"
+              placeholder="Ваше ім’я"
+              required
+            />
+    
+            <label for="user-name" class="input-label"
+              ><span class="modal-text">На кого забронювати столик?</span></label
+            >
+          </div>
+    
+          <div class="modal-field">
+            <input
+              type="tel"
+              name="user-tel"
+              id="user-tel"
+              class="modal-input"
+              placeholder="+38 (___) ___-__-__"
+              required
+            />
+    
+            <label for="user-tel" class="input-label"
+              ><span class="modal-text">Номер телефону</span></label
+            >
+          </div>
+        </div>
+  
+        <div class="modal-fields-cathegory modal-field">
+          <input
+            list="table"
+            name="amount"
+            id="amount"
+            placeholder="Двомістний номер"
+            class="modal-input"
+          />
+  
+          <datalist id="table">
+            <option>Двомістний номер</option>
+            <option>Двомістний люкс</option>
+            <option>Трьохмістний номер</option>
+          </datalist>
+          <label for="amount" class="input-label"
+            ><span class="modal-text">Категорія номеру</span></label
+          >
+        </div>
+  
+        <div class="modal-fields-date">
+          <div class="modal-field">
+            <input
+              list="date"
+              name="date-book"
+              id="date-book"
+              placeholder="Сьогодні"
+              class="modal-input"
+            />
+    
+            <datalist id="date" type="date">
+              <option>Сьогодні</option>
+              <option>Завтра</option>
+              <option>Післязавтра</option>
+            </datalist>
+            <label for="date-book" class="input-label"
+              ><span class="modal-text">Дата заїзду</span></label
+            >
+          </div>
+    
+          <div class="modal-field">
+            <input
+              list="date"
+              name="date-book"
+              id="date-book"
+              placeholder="Сьогодні"
+              class="modal-input"
+            />
+    
+            <datalist id="date" type="date">
+              <option>Сьогодні</option>
+              <option>Завтра</option>
+              <option>Післязавтра</option>
+            </datalist>
+            <label for="date-book" class="input-label"
+              ><span class="modal-text">Дата виїзду</span></label
+            >
+          </div>
+        </div>
+        </div>
+
+      <div class="rules-btn">
+        <button type="submit" class="btn-booking-modal">
+          Оформити бронювання
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
