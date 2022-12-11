@@ -1,34 +1,59 @@
 .about-restaurant {
-  @include media(414px) {
+  @media screen and (max-width: 1023px) {
     padding: 15px 0 28px 0;
   }
+
+  // @include media(414px) {
+  //   padding: 15px 0 28px 0;
+  // }
 
   @include media(1024px) {
     padding: 120px 0 40px 0;
   }
+
+  @include media(1280px) {
+    padding: 120px 0 58px 0;
+  }
 }
 
 .restaurant__block {
-  @include media(414px) {
+  @media screen and (max-width: 1023px) {
     margin-bottom: 32px;
   }
+
+  // @include media(414px) {
+  //   margin-bottom: 32px;
+  // }
 
   @include media(1024px) {
     display: flex;
     gap: 26px;
   }
+
+  @include media(1280px) {
+    gap: 37px;
+  }
 }
 
 .restaurant__text {
-  @include media(414px) {
+  @media screen and (max-width: 1023px) {
     margin-bottom: 12px;
 
     font-size: 20px;
     line-height: 1.15;
   }
 
+  // @include media(414px) {
+  //   margin-bottom: 12px;
+
+  //   font-size: 20px;
+  //   line-height: 1.15;
+  // }
+
   @include media(1024px) {
     font-size: 32px;
+
+    margin-bottom: 4px;
   }
 
   font-family: 'Times New Roman';
@@ -38,13 +63,21 @@
 }
 
 .restaurant__subtitle {
-  @include media(414px) {
+  @media screen and (max-width: 1023px) {
     margin-bottom: 12px;
 
     font-size: 40px;
   }
 
+  // @include media(414px) {
+  //   margin-bottom: 12px;
+
+  //   font-size: 40px;
+  // }
+
   @include media(1024px) {
+    margin-bottom: 24px;
+
     font-size: 64px;
   }
 
@@ -57,7 +90,7 @@
 }
 
 .restaurant__subtext {
-  @include media(414px) {
+  @media screen and (max-width: 1023px) {
     max-width: 258px;
 
     font-size: 12px;
@@ -65,10 +98,24 @@
     margin-bottom: 28px;
   }
 
+  // @include media(414px) {
+  //   max-width: 258px;
+
+  //   font-size: 12px;
+
+  //   margin-bottom: 28px;
+  // }
+
   @include media(1024px) {
+    margin-bottom: 0;
+
     max-width: 439px;
 
     font-size: 16px;
+  }
+
+  @include media(1280px) {
+    max-width: 518px;
   }
 
   font-weight: 600;
@@ -79,29 +126,99 @@
 }
 
 .restaurant__picture {
-  @include media(414px) {
+  @media screen and (max-width: 1023px) {
     margin-left: 155px;
+
+    transform: translateY(0%);
+
+    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
   }
+
+  // @include media(414px) {
+  //   margin-left: 155px;
+
+  //   transform: translateY(0%);
+
+  //   box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+  // }
 
   @include media(1024px) {
     margin-left: 0;
-    transform: translateY(-28%);
+    transform: translateY(-30%);
+
+    box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
   }
+
+  border-radius: 2px;
 }
 
 .restaurant__second-block {
-  @include media(414px) {
+  @media screen and (max-width: 1023px) {
     display: flex;
     align-items: center;
     gap: 20px;
   }
+
+  // @include media(414px) {
+  //   display: flex;
+  //   align-items: center;
+  //   gap: 20px;
+  // }
+
+  @include media(1024px) {
+    display: flex;
+    align-items: flex-start;
+    gap: 48px;
+  }
+
+  @include media(1280px) {
+    gap: 32px;
+  }
+}
+
+.restaurant__second-picture {
+  @media screen and (max-width: 1023px) {
+    transform: translateY(0%);
+
+    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+  }
+
+  // @include media(414px) {
+  //   transform: translateY(0%);
+
+  //   box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+  // }
+
+  @include media(1024px) {
+    transform: translateY(-33%);
+
+    box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+  }
+
+  @include media(1280px) {
+    transform: translateY(-46%);
+
+    box-shadow: none;
+  }
+
+  border-radius: 2px;
 }
 
 .restaurant__subtext--brown {
-  @include media(414px) {
+  @media screen and (max-width: 1023px) {
     max-width: 163px;
 
     margin-bottom: 0;
+  }
+
+  // @include media(414px) {
+  //   max-width: 163px;
+
+  //   margin-bottom: 0;
+  // }
+
+  @include media(1024px) {
+    max-width: 312px;
   }
 
   color: var(--home-restaurant-accent-text-color);
