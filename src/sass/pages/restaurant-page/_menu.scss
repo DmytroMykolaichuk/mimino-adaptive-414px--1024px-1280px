@@ -1,6 +1,8 @@
 .menu {
   padding-top: 32px;
   padding-bottom: 32px;
+
+  color: var(--section-title-text-color);
 }
 
 .menu__title {
@@ -9,48 +11,71 @@
   font-family: "Film P3", serif;
   font-size: 32px;
   line-height: calc(37 / 32);
-  color: var(--section-title-text-color);
+  text-transform: uppercase;
 }
 
 .main-courses {
   width: 100%;
-  border-collapse: collapse;
-
-  & tr:nth-child(2n) {
-    font-weight: 400;
-    font-size: 10px;
-    line-height: calc(12 / 10);
-    color: var(--section-title-text-color);
-  }
-}
-
-td {
-  outline: 1px solid tomato;
 }
 
 .main-courses__caption {
-  margin-bottom: 16px;
+  margin-bottom: 8px;
 
   font-family: "Film P3", serif;
   font-weight: 700;
   font-size: 20px;
   line-height: calc(23 / 20);
-  color: var(--section-title-text-color);
   text-align: left;
 }
 
-.main-courses .main-courses__name {
-  width: 70%;
+.main-courses__name {
+  width: 65%;
+}
+
+// .main-courses__size {
+//   width: 19%;
+// }
+
+.main-courses__cost {
+  width: 60px;
+}
+
+.main-courses tr:nth-child(2n + 1) {
+  font-size: 14px;
+  line-height: calc(17 / 14);
+}
+
+.main-courses tr:nth-child(2n + 1) td:first-child {
+  padding-top: 8px;
+  padding-bottom: 4px;
 
   font-weight: 500;
-  font-size: 14px;
-  line-height: calc(17 / 14);
-  color: var(--section-title-text-color);
 }
 
-.main-courses .main-courses__size {
-  font-weight: 300;
-  font-size: 14px;
-  line-height: calc(17 / 14);
-  color: var(--section-title-text-color);
+.main-courses tr:nth-child(2n) {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: calc(12 / 10);
 }
+
+.main-courses td:nth-child(2) {
+  font-weight: 300;
+  vertical-align: top;
+  padding-top: 25px;
+}
+
+.main-courses td:nth-child(3) {
+  font-weight: 700;
+  vertical-align: top;
+  padding-top: 25px;
+}
+
+.main-courses__composition {
+  width: 195px;
+  display: block;
+}
+
+// td {
+//   outline: 1px solid red;
+// }
+
