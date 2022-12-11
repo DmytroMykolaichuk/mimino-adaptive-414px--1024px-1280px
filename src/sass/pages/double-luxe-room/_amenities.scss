@@ -35,7 +35,13 @@
   color: var(--section-title-text-color);
   margin-bottom: 16px;
 }
-.amenities-item {
+.amenities-list{margin-bottom: 32px;
+    @include media(1024px) {
+       margin-bottom: 40px;
+      }
+    }
+
+.amenities-item:not(:last-child) {
   margin-bottom: 32px;
 }
 
