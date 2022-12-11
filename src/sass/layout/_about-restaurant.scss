@@ -11,6 +11,7 @@
     color: #ffffff;
   }
   &--grey {
+    color: var(--slogan-color);
     font-size: 32px;
     line-height: 37px;
   }
@@ -19,7 +20,7 @@
 .section__about-restaurant {
   padding: 24px 0px 40px 40px;
   @include tablet {
-    padding: 47px 0px 96px 47px;
+    padding: 47px 0px 96px 0px;
   }
   @include desktop {
     padding: 48px 0px 96px 85px;
@@ -47,12 +48,40 @@
   }
 }
 
-.container-wrap--dark {
+.container-wrap__about-restaurant {
   background-color: rgba(0, 0, 0, 0.65);
+
+  $bg-gradient: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65));
+  background-image: $bg-gradient,
+    url(../images/mobile/home-mobile-restaurant-1x.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  @include retina {
+    background-image: $bg-gradient,
+      url(../images/mobile/home-mobile-restaurant-2x.jpg);
+  }
+
+  @include tablet {
+    background-image: $bg-gradient,
+      url(../images/tablet/home-tablet-restaurant-1x.jpg);
+    @include retina {
+      background-image: $bg-gradient,
+        url(../images/tablet/home-tablet-restaurant-2x.jpg);
+    }
+  }
+
+  @include desktop {
+    background-image: $bg-gradient,
+      url(../images/desktop/home-desktop-restoran-1x.jpg);
+    @include retina {
+      background-image: $bg-gradient,
+        url(../images/desktop/home-desktop-restoran-2x.jpg);
+    }
+  }
 }
 
 .about-restaurant-slider {
-  margin-bottom: 32px;
+  margin-bottom: 80px;
   @include tablet {
     margin-bottom: unset;
   }
@@ -78,6 +107,10 @@
 
 .about-restaraunt-button-wrapper {
   width: 236px;
+  margin: 0 auto;
+  @include tablet {
+    margin: unset;
+  }
 }
 
 .section-order-wrapper {
@@ -86,7 +119,6 @@
     flex-direction: row-reverse;
     align-items: flex-end;
     justify-content: flex-end;
-
     gap: 29px;
   }
 }
