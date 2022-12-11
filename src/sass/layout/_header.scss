@@ -1,11 +1,6 @@
 .header {
-    position: relative;
-}
-
-.header__container>.header {
     position: absolute;
-    top: 0;
-    left: 0;
+    width: 100%;
 }
 
 .navigation {
