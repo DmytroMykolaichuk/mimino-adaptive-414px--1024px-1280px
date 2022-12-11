@@ -118,18 +118,18 @@ a {
   --transition-fill: fill 250ms linear;
 }
 
-body {
+​body {
   font-family: "Montserrat", sans-serif;
-  font-style: normal;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 12px;
   line-height: 1.25;
   letter-spacing: 0.02em;
   color: var(--home-restaurant-text-color);
   background: var(--primary-background-color);
 }
 @media screen and (min-width: 1024px) {
-  body {
+  ​body {
+    font-size: 16px;
     line-height: 1.25;
   }
 }
@@ -150,7 +150,7 @@ body {
 ​.mimiho-title--grey {
   color: var(--mimino-section-color);
 }
-​.mimiho-title--white {
+​ ​.mimiho-title--white {
   color: #ffffff;
 }
 
