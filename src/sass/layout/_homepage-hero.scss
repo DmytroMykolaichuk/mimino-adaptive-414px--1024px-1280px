@@ -80,6 +80,90 @@
     }
 }
 
+.hero-inf__title {
+    font-family: 'Film P3';
+    font-weight: 700;
+    font-size: 96px;
+    line-height: calc(103 / 96);
+    letter-spacing: 0.3em;
+    color: var(--hero-text-color);
+    margin: 0 auto;
+    // text-shadow: inset 0px 4px 4px 0px #00000040;
+    margin-bottom: 24px;
+    text-transform: uppercase;
+    max-width: 303px;
+
+    @include tablet {
+        font-size: 128px;
+        line-height: calc(138 / 128);
+        letter-spacing: 0.3em;
+
+        margin-bottom: 16px;
+        max-width: 404px;
+    }
+
+    @include desktop {
+        font-size: 128px;
+        line-height: calc(138 / 128);
+        letter-spacing: 0.3em;
+
+        margin-bottom: 32px;
+        max-width: 404px;
+    }
+
+}
+
+.hero-inf__subtitle {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: calc(20 / 16);
+    letter-spacing: 0.02em;
+    color: var(--hero-text-color);
+
+    margin-bottom: 40px;
+
+    @include tablet {
+        font-size: 20px;
+        line-height: calc(24/ 20);
+        letter-spacing: 0.02em;
+
+        margin-bottom: 56px;
+    }
+
+    @include desktop {
+        font-size: 20px;
+        line-height: calc(24/ 20);
+        letter-spacing: 0.02em;
+
+        margin-bottom: 64px;
+    }
+}
+
+.hero-inf__text {
+    font-family: 'Times New Roman';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: calc(37 / 32);
+    letter-spacing: 0.05em;
+    color: var(--hero-text-color);
+
+    @include tablet {
+        font-size: 36px;
+        line-height: calc(41 / 36);
+        letter-spacing: 0.05em;
+    }
+
+    @include desktop {
+        font-size: 36px;
+        line-height: calc(41 / 36);
+        letter-spacing: 0.05em;
+    }
+    
+}
+
 .hero__adress {
     display: flex;
     max-width: 210px;
@@ -87,7 +171,7 @@
     border: 1px solid;
     border-color: rgba(243, 198, 83, 0.7);
     border-radius: 2px;
-    padding: 8px 8px;
+    padding: 8px 0 8px 6px;
 
     position: absolute;
     top: 64px;
@@ -95,8 +179,8 @@
 
     @include tablet {
         position: absolute;
-        left: 47px;
         top: 600px;
+        left: 47px;
         max-width: 285px;
         padding: 8px 8px 8px 10px;
     }
@@ -162,7 +246,7 @@
 
 .adress__textpart {
     display: block;
-    padding-right: 5px;
+    padding-right: 4px;
 
     @include tablet {
         padding-right: 5px;
@@ -171,43 +255,6 @@
     @include desktop {
         padding-right: 0;
     }
-}
-
-.hero-inf__title {
-    font-family: 'Film P3';
-    font-weight: 700;
-    font-size: 96px;
-    line-height: calc(103 / 96);
-    letter-spacing: 0.3em;
-    color: var(--hero-text-color);
-    margin: 0 auto;
-    // text-shadow: inset 0px 4px 4px 0px #00000040;
-    margin-bottom: 24px;
-    text-transform: uppercase;
-    max-width: 303px;
-
-}
-
-.hero-inf__subtitle {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: calc(20 / 16);
-    letter-spacing: 0.02em;
-    color: var(--hero-text-color);
-
-    margin-bottom: 40px;
-}
-
-.hero-inf__text {
-    font-family: 'Times New Roman';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 32px;
-    line-height: calc(37 / 32);
-    letter-spacing: 0.05em;
-    color: var(--hero-text-color);
 }
 
 .hero-btn__list {
@@ -225,6 +272,16 @@
 
 .hero-btn__item:first-child {
     margin-bottom: 24px;
+
+    @include tablet {
+        margin-right: 40px;
+        margin-bottom: 0;
+    }
+
+    @include desktop {
+        margin-right: 60px;
+        margin-bottom: 0;
+    }
 }
 
 .hero__sosials {
