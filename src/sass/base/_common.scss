@@ -1,5 +1,3 @@
-@import '~node_modules/modern-normalize/modern-normalize.css';
-
 :root{
     --primary-background-color:#FFFDEE;
     --secondary-background-color:#F0ECD6;
@@ -20,7 +18,7 @@
     --transition-fill: fill 250ms linear;
 }
 
-​body {
+body{
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     font-size: 12px;

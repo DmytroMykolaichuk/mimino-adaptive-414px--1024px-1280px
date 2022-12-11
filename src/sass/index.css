@@ -118,7 +118,7 @@ a {
   --transition-fill: fill 250ms linear;
 }
 
-​body {
+body {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 12px;
@@ -128,7 +128,7 @@ a {
   background: var(--primary-background-color);
 }
 @media screen and (min-width: 1024px) {
-  ​body {
+  body {
     font-size: 16px;
     line-height: 1.25;
   }
@@ -237,12 +237,17 @@ a {
   font-size: 20px;
   line-height: 1.2;
   color: #ffffff;
-  width: 384px;
+  width: 100%;
   min-height: 64px;
   background-color: #000000;
   border: 1px solid var(--accent-color);
   border-radius: 2px;
   transition: var(--transition-bg), var(--transition-color);
+}
+@media screen and (min-width: 414px) {
+  .btn-booking-modal {
+    width: 384px;
+  }
 }
 @media screen and (min-width: 1024px) {
   .btn-booking-modal {
@@ -263,12 +268,17 @@ a {
   font-size: 20px;
   line-height: 1.2;
   color: #ffffff;
-  width: 384px;
+  width: 100%;
   height: 64px;
   background: #000000;
   border: 1px solid var(--accent-color);
   border-radius: 25px;
   transition: var(--transition-bg), var(--transition-color);
+}
+@media screen and (min-width: 414px) {
+  .btn-booking-room {
+    width: 384px;
+  }
 }
 @media screen and (min-width: 1024px) {
   .btn-booking-room {
@@ -283,13 +293,8 @@ a {
 }
 
 .header {
-  position: relative;
-}
-
-.header__container > .header {
   position: absolute;
-  top: 0;
-  left: 0;
+  width: 100%;
 }
 
 .navigation {
