@@ -25,30 +25,7 @@
   @include desktop {
     padding: 48px 0px 96px 85px;
   }
-}
 
-.about-restaurant__mimiho-title {
-  margin-bottom: 12px;
-  @include tablet {
-    margin-bottom: 16px;
-  }
-}
-
-.about-restaurant__section-title {
-  margin-bottom: 20px;
-  @include tablet {
-    margin-bottom: 8px;
-  }
-}
-
-.about-restaurant__section-text {
-  margin-bottom: 48px;
-  @include tablet {
-    margin-bottom: 40px;
-  }
-}
-
-.container-wrap__about-restaurant {
   background-color: rgba(0, 0, 0, 0.65);
 
   $bg-gradient: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65));
@@ -77,6 +54,27 @@
       background-image: $bg-gradient,
         url(../images/desktop/home-desktop-restoran-2x.jpg);
     }
+  }
+}
+
+.about-restaurant__mimiho-title {
+  margin-bottom: 12px;
+  @include tablet {
+    margin-bottom: 16px;
+  }
+}
+
+.about-restaurant__section-title {
+  margin-bottom: 20px;
+  @include tablet {
+    margin-bottom: 8px;
+  }
+}
+
+.about-restaurant__section-text {
+  margin-bottom: 48px;
+  @include tablet {
+    margin-bottom: 40px;
   }
 }
 
