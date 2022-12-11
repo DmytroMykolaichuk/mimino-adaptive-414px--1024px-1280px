@@ -22,8 +22,8 @@ $('.one-time').slick({
   adaptiveHeight: true,
 });
 
-$('.one-time').slick({
-  dots: true,
+$('.two-time').slick({
+  dots: false,
   infinite: true,
   speed: 300,
   slidesToShow: 2,
