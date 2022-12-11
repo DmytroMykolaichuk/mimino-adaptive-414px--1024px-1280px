@@ -118,7 +118,7 @@ a {
   --transition-fill: fill 250ms linear;
 }
 
-​body {
+body {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 12px;
@@ -128,7 +128,7 @@ a {
   background: var(--primary-background-color);
 }
 @media screen and (min-width: 1024px) {
-  ​body {
+  body {
     font-size: 16px;
     line-height: 1.25;
   }
@@ -237,12 +237,17 @@ a {
   font-size: 20px;
   line-height: 1.2;
   color: #ffffff;
-  width: 384px;
+  width: 100%;
   min-height: 64px;
   background-color: #000000;
   border: 1px solid var(--accent-color);
   border-radius: 2px;
   transition: var(--transition-bg), var(--transition-color);
+}
+@media screen and (min-width: 414px) {
+  .btn-booking-modal {
+    width: 384px;
+  }
 }
 @media screen and (min-width: 1024px) {
   .btn-booking-modal {
@@ -263,12 +268,17 @@ a {
   font-size: 20px;
   line-height: 1.2;
   color: #ffffff;
-  width: 384px;
+  width: 100%;
   height: 64px;
   background: #000000;
   border: 1px solid var(--accent-color);
   border-radius: 25px;
   transition: var(--transition-bg), var(--transition-color);
+}
+@media screen and (min-width: 414px) {
+  .btn-booking-room {
+    width: 384px;
+  }
 }
 @media screen and (min-width: 1024px) {
   .btn-booking-room {
@@ -280,6 +290,139 @@ a {
 .btn-booking-room:hover, .btn-booking-room:focus {
   color: #000000;
   background-color: var(--accent-color);
+}
+
+.header {
+  position: absolute;
+  width: 100%;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.logo {
+  font-family: "Film P3";
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.0833333333;
+  letter-spacing: 0.3em;
+  color: var(--hero-text-color);
+  background-color: transparent;
+  text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+@media screen and (min-width: 414px) {
+  .logo {
+    padding-top: 21px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .logo {
+    padding-top: 24px;
+    font-size: 40px;
+    line-height: 1.075;
+  }
+}
+
+.menu {
+  display: flex;
+}
+@media screen and (min-width: 414px) {
+  .menu {
+    padding-top: 28px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .menu {
+    padding-top: 30px;
+  }
+}
+
+.menu__item {
+  display: flex;
+  align-items: center;
+}
+
+.menu__item:first-child {
+  margin-right: 20px;
+}
+@media screen and (min-width: 1024px) {
+  .menu__item:first-child {
+    margin-right: 72px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .menu__item:first-child {
+    margin-right: 69px;
+  }
+}
+
+.menu__link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+@media screen and (min-width: 414px) {
+  .menu__link {
+    margin-right: 6px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .menu__link {
+    margin-right: 32px;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+
+.menu__icon {
+  fill: var(--accent-color);
+  display: flex;
+}
+
+.tel__link {
+  display: none;
+}
+@media screen and (min-width: 1024px) {
+  .tel__link {
+    display: flex;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.02em;
+    color: var(--hero-text-color);
+  }
+}
+
+.tel__link:nth-child(2n+1) {
+  margin-left: 8px;
+}
+
+@media screen and (min-width: 1024px) {
+  .menu__tel {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    gap: 8px;
+    border: 1px solid rgba(243, 198, 83, 0.7);
+    border-radius: 2px;
+  }
+}
+
+.header__soc {
+  display: none;
+}
+@media screen and (min-width: 1280px) {
+  .header__soc {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-left: 59px;
+  }
 }
 
 .backdrop {
