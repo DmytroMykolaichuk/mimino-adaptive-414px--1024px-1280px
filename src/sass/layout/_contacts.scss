@@ -7,7 +7,7 @@
   }
   @include media(1024px) {
     display: flex;
-    gap: 101px;
+    justify-content: space-between;
     padding-top: 56px;
     padding-bottom: 40px;
   }
@@ -25,9 +25,22 @@
   font-size: 40px;
   line-height: calc(43 / 40);
   letter-spacing: 0.3em;
+  @include media(1024px){
+  font-size: 64px;
+  line-height: calc(69 / 64);  
+  }
+  color: #828282;;
+
 }
 .mimino__address-text {
+  font-family: 'Montserrat';
+  font-weight: 600;
   margin-bottom: 16px;
+  color: var(--home-restaurant-text-color);
+  @include media(1280px){
+font-size: 20px;
+line-height: calc(24 / 20);
+  }
 }
 
 .mimino__address-list {
@@ -61,7 +74,6 @@
     }
   }
   &:last-child {
-    margin-top: 48px;
     @include media(1024px) {
       margin-top: 48px;
       width: 285px;
