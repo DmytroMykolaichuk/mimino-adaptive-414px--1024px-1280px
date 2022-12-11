@@ -1,5 +1,6 @@
-.about-the-kitchen {
+.about-kitchen {
   background-color: var(--primary-background-color);
+  padding-top: 16px;
 }
 .kitchen_title {
   color: var(--slogan-color);
@@ -15,15 +16,16 @@
   }
 }
 .kitchen_title_mimino {
-  @font-face {
-    font-family: 'Film P3';
-    font-weight: 700;
-    font-style: normal;
-    src: local('Film P3'), local('Film-P3'),
-      url('/src/fonts/FilmP3Bold.woff2') format('woff2'),
-      url('/src/fonts/FilmP3Bold.woff') format('woff');
-    font-display: swap;
-  }
+  font-family: 'Film P3';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1;
+  letter-spacing: 0.3em;
+  margin-top: 12px;
+  margin-bottom: 12;
+  color: var(--mimino-section-color);
+  text-transform: uppercase;
 }
 .kitchen_txt_upper {
   @font-face {
@@ -37,15 +39,40 @@
   }
   color: var(--home-restaurant-text-color);
 }
+
 .kitchen_txt_bottom {
-  @font-face {
-    font-family: Montserrat;
-    font-weight: 300;
-    font-style: normal;
-    src: local('Montserrat'),
-      url('/src/fonts/Montserrat-Light.woff2') format('woff2'),
-      url('/src/fonts/Montserrat-Light.woff') format('woff');
-    font-display: swap;
-  }
-  color: var();
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: var(--modal-text-color);
+  box-sizing: border-box;
+  width: 163px;
+}
+.kitchen_up_container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.kitchen_chef {
+  justify-content: flex-end;
+  display: flex;
+  margin-top: 28px;
+  margin-left: 140px;
+}
+.kitchen_beaf {
+  margin-top: 32px;
+  margin-bottom: 32px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.kitchen_beaf_pic {
+  margin-right: 20px;
+  display: flex;
+  height: 278px;
+  width: 200px;
 }
