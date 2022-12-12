@@ -14,11 +14,13 @@
   text-transform: uppercase;
 }
 
-.main-courses {
+.main-courses,
+.garnish-snack {
   width: 100%;
 }
 
-.main-courses__caption {
+.main-courses__caption,
+.garnish-snack__caption {
   margin-bottom: 8px;
 
   font-family: "Film P3", serif;
@@ -28,50 +30,64 @@
   text-align: left;
 }
 
-.main-courses__name {
+.main-courses__name,
+.garnish-snack__name {
   width: 65%;
 }
 
-// .main-courses__size {
+// .main-courses__size,
+// .garnish-snack__size {
 //   width: 19%;
 // }
 
-.main-courses__cost {
+.main-courses__cost,
+.garnish-snack__cost {
   width: 60px;
 }
 
-.main-courses tr:nth-child(2n + 1) {
+.main-courses tr:nth-child(2n + 1),
+.garnish-snack tr:nth-child(2n + 1) {
   font-size: 14px;
   line-height: calc(17 / 14);
 }
 
-.main-courses tr:nth-child(2n + 1) td:first-child {
+.main-courses tr:nth-child(2n + 1) td:first-child,
+.garnish-snack tr:nth-child(2n + 1) td:first-child {
   padding-top: 8px;
   padding-bottom: 4px;
 
   font-weight: 500;
 }
 
-.main-courses tr:nth-child(2n) {
+.main-courses tr:nth-child(2n),
+.garnish-snack tr:nth-child(2n) {
   font-weight: 400;
   font-size: 10px;
   line-height: calc(12 / 10);
 }
 
-.main-courses td:nth-child(2) {
+.main-courses td:nth-child(2),
+.garnish-snack td:nth-child(2) {
   font-weight: 300;
   vertical-align: top;
-  padding-top: 25px;
+  padding-top: 21px;
 }
 
-.main-courses td:nth-child(3) {
+.main-courses td:nth-child(3),
+.garnish-snack td:nth-child(3) {
   font-weight: 700;
   vertical-align: top;
-  padding-top: 25px;
+  padding-top: 21px;
 }
 
-.main-courses__composition {
-  width: 195px;
+.garnish-snack tr:nth-child(9) td:nth-child(2),
+.garnish-snack tr:nth-child(9) td:nth-child(3) {
+  padding-top: 32px;
+}
+
+.main-courses__composition,
+.garnish-snack__composition {
+  width: 185px;
   display: block;
 }
 
