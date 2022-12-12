@@ -1,19 +1,7 @@
-.vissually-hidden {
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    margin: -1px;
-}
-
 .hero {
     position: relative;
     background-color: rgba(0, 0, 0, 0.65);
+    max-width: 1280px;
 }
 
 .main__hero {
@@ -288,6 +276,8 @@
     position: absolute;
     bottom: 20px;
     left: 15px;
+    display: flex;
+    gap: 20px; 
 
     @include tablet {
         position: absolute;
@@ -299,11 +289,6 @@
         display: none;
     }
 }
-
-.header__soc { 
-    display: flex;
-    gap: 20px; 
-  }
 
   .menu__icon { 
     fill: var(--accent-color); 
