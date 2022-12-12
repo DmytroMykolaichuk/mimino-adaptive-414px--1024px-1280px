@@ -18,12 +18,16 @@
 .menu__wrapper {
   display: flex;
   flex-direction: column;
-  gap: 88px;
+  gap: 16px;
 
   margin-bottom: 32px;
 
   @media screen and (min-width: 1024px) {
     flex-direction: row;
+    gap: 88px;
+  }
+  @media screen and (min-width: 1280px) {
+    gap: 140px;
   }
 }
 
@@ -35,6 +39,9 @@
 
   @media screen and (min-width: 1024px) {
     width: calc((100% - 88px) / 2);
+  }
+  @media screen and (min-width: 1280px) {
+    width: calc((100% - 140px) / 2);
   }
 }
 
@@ -64,6 +71,11 @@
   font-size: 20px;
   line-height: calc(23 / 20);
   text-align: left;
+
+  @media screen and (min-width: 1280px) {
+    font-size: 24px;
+    line-height: calc(28 / 24);
+  }
 }
 
 .main-courses__name,
@@ -91,6 +103,9 @@
 .dessert__cost,
 .drink__cost {
   width: 58px;
+  @media screen and (min-width: 1280px) {
+    width: 75px;
+  }
 }
 
 .main-courses tr:nth-child(2n + 1),
@@ -107,6 +122,11 @@
   padding-bottom: 4px;
 
   font-weight: 500;
+
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: calc(20 / 16);
+  }
 }
 
 .main-courses tr:nth-child(2n),
@@ -131,6 +151,11 @@
   font-weight: 700;
   vertical-align: top;
   padding-top: 21px;
+
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: calc(20 / 16);
+  }
 }
 
 .garnish-snack tr:nth-child(9) td:nth-child(2),
@@ -159,6 +184,11 @@
 .dessert td:nth-child(1),
 .drink td:nth-child(1) {
   font-weight: 500;
+
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: calc(20 / 16);
+  }
 }
 
 .dessert td:nth-child(2),
@@ -169,6 +199,11 @@
 .dessert td:nth-child(3),
 .drink td:nth-child(3) {
   font-weight: 700;
+
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: calc(20 / 16);
+  }
 }
 
 .menu__ntn-wrapper {
