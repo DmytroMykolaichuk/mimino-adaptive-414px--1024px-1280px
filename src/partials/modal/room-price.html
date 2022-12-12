@@ -1,67 +1,50 @@
 <div class="backdrop is-hidden" data-modal>
-    <div class="modal">
-      <button type="button" class="modal-close" data-modal-close>
-        <svg class="modal-close-icon" width="24" height="24">
-          <use href="./images/icons.svg#icon-close"></use>
-        </svg>
-      </button>
-  
-      <p class="modal-title">ціни на номер</p>
-      <form>
-        
-        <p class="cathegory">Двомісний люкс</p>
-        <p class="cathegory-text">Категорія номеру</p>
-        <div class="modal-fields">
-          
-          <div class="modal-field room s-select">
-            <svg class="modal-input-icon" width="24" height="24">
-              <use href="./images/icons.svg#icon-down-bold"></use>
-            </svg>
-            <select name="amount" class="modal-input">
-              <!--Supplement an id here instead of using 'name'-->
-              <option value="value1" selected>1</option>
-              <option value="value2">2</option>
-              <option value="value3">3</option>
-            </select>
-  
-            <span class="modal-text">Кількість ночей</span>
-          </div>
-          <!-- <div class="modal-field room-price">
-            <input
-              type="text"
-              name="user-name"
-              id="user-name"
-              class="modal-input"
-              placeholder="1"
-              required
-            />
-    
-            <label for="user-name" class="input-label"
-              ><span>Кількість ночей</span></label
-            >
-          </div> -->
-    
-          <div class="modal-field room-price">
-              <input
-                type="text"
-                name="user-name"
-                id="user-name"
-                class="modal-input"
-                placeholder="1000"
-                required
-              />
-      
-              <label for="user-name" class="input-label"
-                ><span class="modal-text">грн</span></label
-              >
-            </div>
+  <div class="modal">
+    <button type="button" class="modal-close" data-modal-close>
+      <svg class="modal-close-icon" width="24" height="24">
+        <use href="./images/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+
+    <p class="modal-title">ціни на номер</p>
+    <form>
+      <p class="cathegory">Двомісний люкс</p>
+      <p class="cathegory-text">Категорія номеру</p>
+      <div class="modal-fields">
+        <div class="modal-field room s-select">
+          <svg class="modal-input-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-down-bold"></use>
+          </svg>
+          <select name="amount" class="modal-input">
+            <option value="value1" selected>1</option>
+            <option value="value2">2</option>
+            <option value="value3">3</option>
+          </select>
+
+          <span class="modal-text">Кількість ночей</span>
         </div>
 
-        <div class="rules-btn">
-          <button type="submit" class="btn-booking-modal">
-            Оформити бронювання
-          </button>
+        <div class="modal-field room-price">
+          <input
+            type="text"
+            name="user-name"
+            id="user-name"
+            class="modal-input"
+            placeholder="1000"
+            required
+          />
+
+          <label for="user-name" class="input-label"
+            ><span class="modal-text">грн</span></label
+          >
         </div>
-      </form>
-    </div>
+      </div>
+
+      <div class="rules-btn">
+        <button type="submit" class="btn-booking-modal">
+          Оформити бронювання
+        </button>
+      </div>
+    </form>
   </div>
+</div>
