@@ -20,7 +20,6 @@
   background: var(--primary-background-color);
 
   @media screen and (max-width: 1023px) {
-    
     width: 100%;
     max-width: 414px;
     overflow: auto;
@@ -201,10 +200,17 @@
   // color: var(--fc-dark);
 }
 
-.s-select > select {
+.s-select select {
+  position: relative;
+  z-index: 2;
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
+
+  background-color: transparent;
+  // border-color: none;
+  
+  // display: block;
 }
 
 // .s-select::after {
@@ -227,4 +233,6 @@
   &:focus {
     fill: var(--accent-color);
   }
+
+  display: block;
 }

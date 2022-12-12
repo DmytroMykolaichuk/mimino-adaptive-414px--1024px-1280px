@@ -298,22 +298,19 @@ body {
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   width: 712px;
-  min-height: 489px;
-  padding: 0 15px;
+  padding: 60px 15px;
   background: var(--primary-background-color);
 }
 @media screen and (max-width: 1023px) {
   .modal {
-    height: 100%;
     width: 100%;
-    max-height: 780px;
     max-width: 414px;
     overflow: auto;
   }
 }
 @media screen and (min-width: 1024px) {
   .modal {
-    padding: 0 60px;
+    padding: 60px;
   }
 }
 
@@ -340,7 +337,6 @@ body {
   text-align: center;
   letter-spacing: 0.05em;
   color: var(--section-title-text-color);
-  margin-top: 60px;
   margin-bottom: 40px;
   text-transform: uppercase;
 }
@@ -464,7 +460,6 @@ body {
   display: flex;
   justify-content: center;
   margin-top: 40px;
-  margin-bottom: 60px;
 }
 
 .cathegory {
@@ -487,21 +482,28 @@ body {
   color: var(--home-restaurant-accent-text-color);
 }
 
-.s-select > select {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+.s-select {
   position: relative;
-  width: 100%;
-  height: 100%;
-  padding: 0.6em 0.7em;
-  padding-right: var(--su32);
-  border: 1px solid var(--bc-darker);
-  border-radius: var(--br-sm);
-  background-color: var(--white);
-  outline: 0;
-  font-size: var(--fs-body1);
-  font-family: inherit;
-  color: var(--black);
-  line-height: var(--lh-sm);
+}
+
+.s-select select {
+  position: relative;
+  z-index: 2;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: transparent;
+}
+
+.modal-input-icon {
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  fill: var(--modal-text-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 1;
+  display: block;
+}
+.modal-input-icon:hover, .modal-input-icon:focus {
+  fill: var(--accent-color);
 }/*# sourceMappingURL=index.css.map */
