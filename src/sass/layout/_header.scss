@@ -7,13 +7,15 @@
   display: flex;
   justify-content: space-between;
    align-items: baseline;
-  @include mobile {
-    padding-top: 21px;
-  }
+   padding-top: 28px;
+   padding-bottom: 12px;
+//   @include mobile {
+//     padding-top: 21px;
+//   }
 
   @include tablet {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 24px;
+    padding-bottom: 33px;
     align-items: center;
   }
 }
