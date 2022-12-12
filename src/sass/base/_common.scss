@@ -18,7 +18,7 @@
     --transition-fill: fill 250ms linear;
 }
 
-body{
+​body {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     font-size: 12px;
@@ -27,43 +27,43 @@ body{
     color: var(--home-restaurant-text-color);
     background: var(--primary-background-color);
 
-    @media screen and (min-width: 1024px) {
-        font-size: 16px;
-        line-height: calc(20 / 16);
-    }
+  @media screen and (min-width: 1024px) {
+    font-size: 16px;
+    line-height: calc(20 / 16);
+  }
 }
 
-​.mimiho-title {
-    font-family: 'Film P3';
-    font-weight: 700;
-    font-size: 40px;
-    line-height: calc(43 / 40);
-    letter-spacing: 0.3em;
+.mimiho-title {
+  font-family: 'Film P3';
+  font-weight: 700;
+  font-size: 40px;
+  line-height: calc(43 / 40);
+  letter-spacing: 0.3em;
 
-    @media screen and (min-width: 1024px) {
-        font-size: 64px;
-        line-height: calc(69 / 64);
-    }
+  @media screen and (min-width: 1024px) {
+    font-size: 64px;
+    line-height: calc(69 / 64);
+  }
 
-    &--grey {
-        color: var(--mimino-section-color);
-    }
+  &--grey {
+    color: var(--mimino-section-color);
+  }
 
-    ​ &--white {
-        color: #ffffff;
-    }
+  &--white {
+    color: #ffffff;
+  }
 }
 
-​.section-text {
-    &--dark {
-        color: var(--home-restaurant-text-color);
-    }
+.section-text {
+  &--dark {
+    color: var(--home-restaurant-text-color);
+  }
 
-    &--light {
-        color: var(--home-restaurant-light-text-color);
-    }
+  &--light {
+    color: var(--home-restaurant-light-text-color);
+  }
 
-    &--gold {
-        color: var(--home-restaurant-accent-text-color);
-    }
+  &--gold {
+    color: var(--home-restaurant-accent-text-color);
+  }
 }
