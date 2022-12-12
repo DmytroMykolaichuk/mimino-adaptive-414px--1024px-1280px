@@ -45,25 +45,25 @@ body {
     line-height: calc(69 / 64);
   }
 
-  &--white {
-    color: #ffffff;
-  }
-
   &--grey {
     color: var(--mimino-section-color);
   }
+
+  &--white {
+    color: #ffffff;
+  }
 }
 
-​.section-text {
+.section-text {
   &--dark {
     color: var(--home-restaurant-text-color);
+  }
+
+  &--light {
+    color: var(--home-restaurant-light-text-color);
   }
 
   &--gold {
     color: var(--home-restaurant-accent-text-color);
   }
-}
-
-.section-text--light {
-  color: var(--home-restaurant-light-text-color);
 }
