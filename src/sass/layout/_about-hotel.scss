@@ -4,6 +4,10 @@
 
   background-color: var(--primary-background-color);
 
+  @media screen and (min-width: 1024px) {
+    padding-top: 0;
+    padding-bottom: 32px;
+  }
 }
 
 .about-hotel__item {
@@ -11,6 +15,14 @@
     display: flex;
     flex-direction: column;
     gap: 28px;
+
+    @media screen and (min-width: 1024px) {
+      padding-top: 120px;
+      padding-bottom: 120px;
+
+      flex-direction: row-reverse;
+      gap: 46px;
+    }
   }
 
   &:nth-child(2n) {
@@ -21,6 +33,11 @@
       padding-top: 32px;
       padding-bottom: 32px;
     }
+
+    @media screen and (min-width: 1024px) {
+      gap: 48px;
+      justify-content: flex-end;
+    }
   }
 }
 
@@ -29,6 +46,10 @@
 
   @media screen and (max-width: 1023px) {
     align-self: flex-end;
+  }
+
+  @media screen and (min-width: 1024px) {
+    width: 420px;
   }
 }
 
@@ -39,15 +60,37 @@
   line-height: calc(23 / 20);
   color: var(--slogan-color);
   text-align: right;
+
+  @media screen and (min-width: 1024px) {
+    font-size: 32px;
+    line-height: calc(37 / 32);
+  }
 }
 
 .about-hotel__title {
+  margin-top: 6px;
+  margin-bottom: 16px;
+
   font-family: "Film P3", serif;
   font-size: 40px;
   line-height: calc(43 / 40);
   letter-spacing: 0.3em;
   color: var(--mimino-section-color);
   text-align: right;
+
+  @media screen and (min-width: 1024px) {
+    font-size: 64px;
+    line-height: calc(69 / 64);
+
+    margin-bottom: 47px;
+  }
+}
+
+.about-hotel__description {
+  @media screen and (min-width: 1024px) {
+    font-size: 16px;
+    line-height: calc(20 / 16);
+  }
 }
 
 .about-hotel__image-thumb {
@@ -55,6 +98,13 @@
 
   @media screen and (min-width: 1024px) {
     width: 400px;
+
+    position: relative;
+
+    & .about-hotel__image {
+      position: absolute;
+      top: -144px;
+    }
   }
 
   @media screen and (min-width: 1280px) {
@@ -73,5 +123,13 @@
 
   @media screen and (min-width: 414px) {
     padding-top: 70px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    padding-top: 190px;
+    width: 312px;
+    
+    font-size: 16px;
+    line-height: calc(20 / 16);
   }
 }
