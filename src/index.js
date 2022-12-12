@@ -21,3 +21,13 @@ $('.one-time').slick({
   slidesToShow: 3,
   adaptiveHeight: true
 });
+
+$('.details-restaurant-slider').slick({
+  dots: false,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 2,
+  slidesToScroll: 1,
+  variableWidth: true,
+  autoplay: true,
+});

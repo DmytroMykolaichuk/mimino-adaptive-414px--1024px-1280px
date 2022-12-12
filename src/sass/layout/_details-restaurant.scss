@@ -1,21 +1,21 @@
-.section__about-restaurant {
+.section__details-restaurant {
   padding: 24px 0px 40px 0px;
+
   @include tablet {
     padding: 48px 0px 96px 0px;
   }
-  @include desktop {
-    padding: 48px 0px 96px 0px;
-  }
-  // background-color: rgba(0, 0, 0, 0.65);
+
   $bg-gradient: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65));
   background-image: $bg-gradient,
     url(../images/mobile/home-mobile-restaurant-1x.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
   @include mobile {
     background-size: 414px auto;
   }
+
   @include retina {
     background-image: $bg-gradient,
       url(../images/mobile/home-mobile-restaurant-2x.jpg);
@@ -42,13 +42,13 @@
   }
 }
 
-.container__about-restaurant {
+.container__details-restaurant {
   @media screen and(max-width: 414px) {
     padding-left: calc((100% - 384px) / 2);
   }
 }
 
-.about-restaurant__mimiho-title {
+.details-restaurant__mimiho-title {
   margin-bottom: 12px;
   @include tablet {
     margin-bottom: 16px;
@@ -64,9 +64,11 @@
     font-size: 24px;
     line-height: calc(29 / 24);
   }
+
   &--white {
     color: #ffffff;
   }
+
   &--grey {
     color: var(--slogan-color);
     font-size: 32px;
@@ -74,8 +76,9 @@
   }
 }
 
-.about-restaurant__section-title {
+.details-restaurant__section-title {
   margin-bottom: 20px;
+
   @include tablet {
     margin-bottom: 9px;
   }
@@ -95,21 +98,90 @@
     margin-bottom: 43px;
     width: 610px;
   }
+
   @include desktop {
     margin-left: 253px;
   }
 }
 
-.about-restaurant-slider {
-  margin-bottom: 80px;
-  margin-left: 25px;
+.details-restaurant-slider {
+  width: 374px;
+  height: 270px;
+
   @include tablet {
-    margin-bottom: unset;
+    width: 662px;
+  }
+
+  @include desktop {
+    width: 875px;
+  }
+
+  .slick-arrow {
+    top: unset;
+    width: 32px;
+    height: 32px;
+    bottom: -56px;
+    transform: unset;
+    z-index: 2;
+    &::before {
+      color: transparent;
+    }
+  }
+  .slick-prev {
+    left: 0;
+  }
+  .slick-next {
+    right: unset;
+    left: 64px;
+  }
+}
+
+.details-restaurant-slider__wrapper {
+  margin-left: 25px;
+  position: relative;
+
+  @include tablet {
     margin-left: unset;
   }
+}
+
+.details-restaurant-slider__icon {
+  fill: #ffffff;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  bottom: -48px;
+  z-index: 1;
+
+  @include tablet {
+    bottom: -56px;
+  }
+
+  &--previous {
+    left: 0;
+  }
+  &--next {
+    left: 64px;
+  }
+}
+
+.details-restaurant-slider__thumb {
+  margin-right: 20px;
+
+  @include tablet {
+    margin-right: 34px;
+  }
+
   @include desktop {
-    margin-bottom: unset;
-    margin-left: unset;
+    margin-right: 86px;
+  }
+}
+
+.details-restaraunt-button-wrapper {
+  width: 236px;
+  margin: 80 auto 0;
+  @include tablet {
+    margin: unset;
   }
 }
 
@@ -119,20 +191,16 @@
   }
 }
 
-.about-restaraunt-button-wrapper {
-  width: 236px;
-  margin: 0 auto;
-  @include tablet {
-    margin: unset;
-  }
-}
-
 .section-order-wrapper {
   @include tablet {
     display: flex;
     flex-direction: row-reverse;
     align-items: flex-end;
     justify-content: flex-end;
+    gap: 29px;
+  }
+
+  @include desktop {
     gap: 32px;
   }
 }
