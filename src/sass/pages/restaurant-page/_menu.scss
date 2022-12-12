@@ -4,6 +4,16 @@
 
   color: var(--section-title-text-color);
   background: var(--primary-background-color);
+
+  @media screen and (min-width: 1024px) {
+    background: var(--secondary-background-color);
+    padding-top: 58px;
+    padding-bottom: 40px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-bottom: 60px;
+  }
 }
 
 .menu__title {
@@ -13,6 +23,10 @@
   font-size: 32px;
   line-height: calc(37 / 32);
   text-transform: uppercase;
+
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 40px;
+  }
 }
 
 .menu__wrapper {
@@ -25,9 +39,11 @@
   @media screen and (min-width: 1024px) {
     flex-direction: row;
     gap: 88px;
+    margin-bottom: 60px;
   }
   @media screen and (min-width: 1280px) {
     gap: 140px;
+    margin-bottom: 40px;
   }
 }
 
