@@ -1594,6 +1594,259 @@ body {
   display: flex;
 }
 
+.menu {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  color: var(--section-title-text-color);
+  background: var(--primary-background-color);
+}
+@media screen and (min-width: 1024px) {
+  .menu {
+    background: var(--secondary-background-color);
+    padding-top: 58px;
+    padding-bottom: 40px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .menu {
+    padding-bottom: 60px;
+  }
+}
+
+.menu__title {
+  margin-bottom: 32px;
+  font-family: "Film P3", serif;
+  font-size: 32px;
+  line-height: 1.15625;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 1024px) {
+  .menu__title {
+    margin-bottom: 40px;
+  }
+}
+
+.menu__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+@media screen and (min-width: 1024px) {
+  .menu__wrapper {
+    flex-direction: row;
+    gap: 88px;
+    margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .menu__wrapper {
+    gap: 140px;
+    margin-bottom: 40px;
+  }
+}
+
+.menu__left-wrapper,
+.menu__right-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+@media screen and (min-width: 1024px) {
+  .menu__left-wrapper,
+.menu__right-wrapper {
+    width: calc((100% - 88px) / 2);
+  }
+}
+@media screen and (min-width: 1280px) {
+  .menu__left-wrapper,
+.menu__right-wrapper {
+    width: calc((100% - 140px) / 2);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .menu__right-wrapper {
+    gap: 22px;
+  }
+}
+
+.main-courses,
+.garnish-snack,
+.salad,
+.dessert,
+.drink {
+  width: 100%;
+}
+
+.main-courses__caption,
+.garnish-snack__caption,
+.salad__caption,
+.dessert__caption,
+.drink__caption {
+  margin-bottom: 8px;
+  font-family: "Film P3", serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: left;
+}
+@media screen and (min-width: 1280px) {
+  .main-courses__caption,
+.garnish-snack__caption,
+.salad__caption,
+.dessert__caption,
+.drink__caption {
+    font-size: 24px;
+    line-height: 1.1666666667;
+  }
+}
+
+.main-courses__name,
+.garnish-snack__name,
+.salad__name,
+.dessert__name {
+  width: 65%;
+}
+
+.drink__name {
+  width: 62%;
+}
+
+.main-courses__cost,
+.garnish-snack__cost,
+.salad__cost,
+.dessert__cost,
+.drink__cost {
+  width: 58px;
+}
+@media screen and (min-width: 1280px) {
+  .main-courses__cost,
+.garnish-snack__cost,
+.salad__cost,
+.dessert__cost,
+.drink__cost {
+    width: 75px;
+  }
+}
+
+.main-courses tr:nth-child(2n+1),
+.garnish-snack tr:nth-child(2n+1),
+.salad tr:nth-child(2n+1) {
+  font-size: 14px;
+  line-height: 1.2142857143;
+}
+
+.main-courses tr:nth-child(2n+1) td:first-child,
+.garnish-snack tr:nth-child(2n+1) td:first-child,
+.salad tr:nth-child(2n+1) td:first-child {
+  padding-top: 8px;
+  padding-bottom: 4px;
+  font-weight: 500;
+}
+@media screen and (min-width: 1280px) {
+  .main-courses tr:nth-child(2n+1) td:first-child,
+.garnish-snack tr:nth-child(2n+1) td:first-child,
+.salad tr:nth-child(2n+1) td:first-child {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
+
+.main-courses tr:nth-child(2n),
+.garnish-snack tr:nth-child(2n),
+.salad tr:nth-child(2n) {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1.2;
+}
+
+.main-courses td:nth-child(2),
+.garnish-snack td:nth-child(2),
+.salad td:nth-child(2) {
+  font-weight: 300;
+  vertical-align: top;
+  padding-top: 21px;
+}
+
+.main-courses td:nth-child(3),
+.garnish-snack td:nth-child(3),
+.salad td:nth-child(3) {
+  font-weight: 700;
+  vertical-align: top;
+  padding-top: 21px;
+}
+@media screen and (min-width: 1280px) {
+  .main-courses td:nth-child(3),
+.garnish-snack td:nth-child(3),
+.salad td:nth-child(3) {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
+
+.garnish-snack tr:nth-child(9) td:nth-child(2),
+.garnish-snack tr:nth-child(9) td:nth-child(3) {
+  padding-top: 32px;
+}
+
+.main-courses__composition,
+.garnish-snack__composition,
+.salad__composition {
+  width: 185px;
+  display: block;
+}
+
+.salad__composition--longer {
+  width: 195px;
+}
+
+.dessert td,
+.drink td {
+  padding-top: 12px;
+  font-size: 14px;
+  line-height: 1.2142857143;
+}
+
+.dessert td:nth-child(1),
+.drink td:nth-child(1) {
+  font-weight: 500;
+}
+@media screen and (min-width: 1280px) {
+  .dessert td:nth-child(1),
+.drink td:nth-child(1) {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
+
+.dessert td:nth-child(2),
+.drink td:nth-child(2) {
+  font-weight: 300;
+}
+
+.dessert td:nth-child(3),
+.drink td:nth-child(3) {
+  font-weight: 700;
+}
+@media screen and (min-width: 1280px) {
+  .dessert td:nth-child(3),
+.drink td:nth-child(3) {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
+
+.menu__ntn-wrapper {
+  width: 100%;
+  text-align: center;
+}
+@media screen and (min-width: 1024px) {
+  .menu__ntn-wrapper {
+    text-align: right;
+  }
+}
+
 .hero {
   position: relative;
   background-color: rgba(0, 0, 0, 0.65);
