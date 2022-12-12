@@ -20,7 +20,8 @@
   gap: 16px;
 }
 
-.menu__left-wrapper {
+.menu__left-wrapper,
+.menu__right-wrapper {
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -29,14 +30,16 @@
 .main-courses,
 .garnish-snack,
 .salad,
-.dessert {
+.dessert,
+.drink {
   width: 100%;
 }
 
 .main-courses__caption,
 .garnish-snack__caption,
 .salad__caption,
-.dessert__caption {
+.dessert__caption,
+.drink__caption {
   margin-bottom: 8px;
 
   font-family: "Film P3", serif;
@@ -53,17 +56,23 @@
   width: 65%;
 }
 
+.drink__name {
+  width: 62%;
+}
+
 // .main-courses__size,
 // .garnish-snack__size,
-// .salad__size, {
-// .dessert__size
+// .salad__size,
+// .dessert__size.
+// .drink__size {
 //   width: 19%;
 // }
 
 .main-courses__cost,
 .garnish-snack__cost,
 .salad__cost,
-.dessert__cost {
+.dessert__cost,
+.drink__cost {
   width: 58px;
 }
 
@@ -123,25 +132,24 @@
   width: 195px;
 }
 
-.dessert td {
+.dessert td,
+.drink td {
   padding-top: 8px;
   font-size: 14px;
   line-height: calc(17 / 14);
 }
 
-.dessert td:nth-child(1) {
+.dessert td:nth-child(1),
+.drink td:nth-child(1) {
   font-weight: 500;
 }
 
-.dessert td:nth-child(2) {
+.dessert td:nth-child(2),
+.drink td:nth-child(2) {
   font-weight: 300;
 }
 
-.dessert td:nth-child(3) {
+.dessert td:nth-child(3),
+.drink td:nth-child(3) {
   font-weight: 700;
 }
-
-// td {
-//   outline: 1px solid red;
-// }
-
