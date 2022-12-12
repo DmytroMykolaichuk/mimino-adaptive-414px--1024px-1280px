@@ -105,10 +105,11 @@
 }
 
 .details-restaurant-slider {
-  width: 374px;
+  max-width: 374px;
   height: 270px;
 
   @include tablet {
+    max-width: unset;
     width: 662px;
   }
 
