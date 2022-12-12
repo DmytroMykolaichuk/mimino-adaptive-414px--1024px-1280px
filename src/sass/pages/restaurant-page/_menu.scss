@@ -28,13 +28,15 @@
 
 .main-courses,
 .garnish-snack,
-.salad {
+.salad,
+.dessert {
   width: 100%;
 }
 
 .main-courses__caption,
 .garnish-snack__caption,
-.salad__caption {
+.salad__caption,
+.dessert__caption {
   margin-bottom: 8px;
 
   font-family: "Film P3", serif;
@@ -46,20 +48,23 @@
 
 .main-courses__name,
 .garnish-snack__name,
-.salad__name {
+.salad__name,
+.dessert__name {
   width: 65%;
 }
 
 // .main-courses__size,
 // .garnish-snack__size,
-// .salad__size {
+// .salad__size, {
+// .dessert__size
 //   width: 19%;
 // }
 
 .main-courses__cost,
 .garnish-snack__cost,
-.salad__cost {
-  width: 60px;
+.salad__cost,
+.dessert__cost {
+  width: 58px;
 }
 
 .main-courses tr:nth-child(2n + 1),
@@ -116,6 +121,24 @@
 
 .salad__composition--longer {
   width: 195px;
+}
+
+.dessert td {
+  padding-top: 8px;
+  font-size: 14px;
+  line-height: calc(17 / 14);
+}
+
+.dessert td:nth-child(1) {
+  font-weight: 500;
+}
+
+.dessert td:nth-child(2) {
+  font-weight: 300;
+}
+
+.dessert td:nth-child(3) {
+  font-weight: 700;
 }
 
 // td {
