@@ -1,31 +1,31 @@
-:root{
-    --primary-background-color:#FFFDEE;
-    --secondary-background-color:#F0ECD6;
-    --footer-background-color:#0E0C07;
-    --hero-text-color:#FFFFFF;
-    --section-title-text-color:#000000;
-    --home-restaurant-text-color:#5F5F5F;
-    --home-restaurant-accent-text-color:#C79002;
-    --home-restaurant-light-text-color:#BABABA;
-    --hotel-room-text-color:#7A7A7A;
-    --accent-color:#F3C653;
-    --slogan-color:#B4B4B4;
-    --mimino-section-color:#494848;
-    --modal-placeholder-color:#808080;
-    --modal-text-color:#C79002;
-    --transition-color: color 250ms linear;
-    --transition-bg: background-color 250ms linear;
-    --transition-fill: fill 250ms linear;
+:root {
+  --primary-background-color: #fffdee;
+  --secondary-background-color: #f0ecd6;
+  --footer-background-color: #0e0c07;
+  --hero-text-color: #ffffff;
+  --section-title-text-color: #000000;
+  --home-restaurant-text-color: #5f5f5f;
+  --home-restaurant-accent-text-color: #c79002;
+  --home-restaurant-light-text-color: #bababa;
+  --hotel-room-text-color: #7a7a7a;
+  --accent-color: #f3c653;
+  --slogan-color: #b4b4b4;
+  --mimino-section-color: #494848;
+  --modal-placeholder-color: #808080;
+  --modal-text-color: #c79002;
+  --transition-color: color 250ms linear;
+  --transition-bg: background-color 250ms linear;
+  --transition-fill: fill 250ms linear;
 }
 
-body{
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: calc(15 / 12);
-    letter-spacing: 0.02em;
-    color: var(--home-restaurant-text-color);
-    background: var(--primary-background-color);
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: calc(15 / 12);
+  letter-spacing: 0.02em;
+  color: var(--home-restaurant-text-color);
+  background: var(--primary-background-color);
 
   @media screen and (min-width: 1024px) {
     font-size: 16px;
