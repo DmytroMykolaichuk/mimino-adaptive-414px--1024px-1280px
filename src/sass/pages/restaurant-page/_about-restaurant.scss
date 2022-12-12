@@ -14,16 +14,20 @@
 
 .restaurant__block {
   @media screen and (max-width: 1023px) {
-    margin-bottom: 32px;
+    margin-bottom: 102px;
   }
 
   @include media(1024px) {
     display: flex;
     gap: 26px;
+
+    margin-bottom: 30px;
   }
 
   @include media(1280px) {
     gap: 37px;
+
+    margin-bottom: -25px;
   }
 }
 
@@ -108,18 +112,12 @@
       margin-bottom: 0;
     }
 
-    @include media(414px) {
-      margin-top: 70px;
-    }
-
     @include media(1024px) {
       max-width: 312px;
-
-      margin-top: 30px;
     }
 
     @include media(1280px) {
-      margin-top: -25px;
+      // margin-top: -25px;
     }
 
     color: var(--home-restaurant-accent-text-color);
@@ -153,8 +151,6 @@
   @media screen and (max-width: 1023px) {
     display: flex;
     gap: 20px;
-
-    margin-bottom: 32px;
   }
 
   @include media(1024px) {
@@ -165,23 +161,25 @@
   @include media(1280px) {
     gap: 32px;
   }
+
+  position: relative;
 }
 
 .restaurant__second-picture {
   @media screen and (max-width: 1023px) {
-    transform: translateY(0%);
+    transform: translateY(-25%);
 
     box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
   }
 
   @include media(1024px) {
-    transform: translateY(-33%);
+    transform: translateY(-39%);
 
     box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
   }
 
   @include media(1280px) {
-    transform: translateY(-37%);
+    transform: translateY(-33%);
 
     box-shadow: none;
   }
@@ -190,9 +188,8 @@
 }
 
 .two-time {
-  margin-left: 85px;
 }
 
 .slider-item {
-  margin-right: 24px;
+  // margin-right: 24px;
 }

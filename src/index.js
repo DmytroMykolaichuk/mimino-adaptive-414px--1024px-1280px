@@ -28,6 +28,7 @@ $('.two-time').slick({
   speed: 300,
   slidesToShow: 2,
   adaptiveHeight: true,
+  // appendArrows: $('.content'),
 });
 
 $('.one-time').slick({
