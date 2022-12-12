@@ -753,13 +753,13 @@ body {
 }
 @media screen and (min-width: 1024px) {
   .mimino__contacts {
-    padding-top: 56px;
+    padding-top: 69px;
     padding-bottom: 40px;
   }
 }
 @media screen and (min-width: 1280px) {
   .mimino__contacts {
-    padding-top: 56px;
+    padding-top: 64px;
     padding-bottom: 74px;
   }
 }

@@ -1,14 +1,13 @@
 .mimino__contacts {
   padding-top: 36px;
   padding-bottom: 32px;
-  @include media(414px) {
-  }
+  
   @include media(1024px) {
-    padding-top: 56px;
+    padding-top: 69px;
     padding-bottom: 40px;
   }
   @include media(1280px) {
-    padding-top: 56px;
+    padding-top: 64px;
     padding-bottom: 74px;
   }
 }
@@ -47,8 +46,7 @@
     line-height: calc(24 / 20);
   }
 }
-.mimino__wrap {
-}
+
 .mimino__contacts-list {
   display: flex;
   flex-direction: column;
