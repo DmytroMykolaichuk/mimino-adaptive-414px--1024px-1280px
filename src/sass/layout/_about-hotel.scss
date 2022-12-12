@@ -52,10 +52,26 @@
 
 .about-hotel__image-thumb {
   width: 244px;
+
+  @media screen and (min-width: 1024px) {
+    width: 400px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 460px;
+  }
+}
+
+.about-hotel__image {
+  background: #DADADA;
+  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
 }
 
 .about-hotel__text {
-  padding-top: 70px;
-
   color: var(--modal-text-color);
+
+  @media screen and (min-width: 414px) {
+    padding-top: 70px;
+  }
 }
