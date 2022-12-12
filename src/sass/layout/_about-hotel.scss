@@ -1,0 +1,62 @@
+.about-hotel {
+  padding-top: 18px;
+  padding-bottom: 20px;
+
+  background-color: var(--primary-background-color);
+
+}
+
+// .about-hotel__list {}
+
+.about-hotel__item {
+  &:nth-child(2n + 1) {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+  }
+}
+
+.about-hotel__text-wrapper {
+  width: 242px;
+
+  @media screen and (max-width: 1023px) {
+    align-self: flex-end;
+  }
+}
+
+.about-hotel__pre-title {
+  font-family: "Film P3", serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: calc(23 / 20);
+  color: var(--slogan-color);
+  text-align: right;
+}
+
+.about-hotel__title {
+  font-family: "Film P3", serif;
+  font-size: 40px;
+  line-height: calc(43 / 40);
+  letter-spacing: 0.3em;
+  color: var(--mimino-section-color);
+  text-align: right;
+}
+
+.about-hotel__image-thumb {
+  width: 244px;
+}
+
+// .about-hotel__description {
+//   font-family: 'Montserrat';
+//     font-style: normal;
+//     font-weight: 600;
+//     font-size: 12px;
+//     line-height: 15px;
+//     letter-spacing: 0.02em;
+  
+//     color: #5F5F5F;
+// }
+
+
+
+
