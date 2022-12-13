@@ -76,3 +76,28 @@
   height: 278px;
   width: 200px;
 }
+.slider_tumb {
+  display: flex;
+  margin-left: 84px;
+  width: 350px;
+}
+/*
+.two-time {
+  width: 500px;
+}*/
+.kitchen_slider_picture.slick-slide {
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+.slick-prev:before {
+  content: '←';
+}
+.slick-prev:before,
+.slick-next:before {
+  font-family: 'slick';
+  font-size: 20px;
+  line-height: 1;
+  opacity: 0.75;
+  color: black;
+}
