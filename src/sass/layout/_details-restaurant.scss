@@ -1,5 +1,8 @@
 .section__details-restaurant {
   padding: 24px 0px 40px 0px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1920px;
 
   @include tablet {
     padding: 48px 0px 96px 0px;
