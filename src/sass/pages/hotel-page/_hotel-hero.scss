@@ -1,9 +1,14 @@
-.hero {
-    position: relative;
+.hotel-hero {
     background-color: rgba(0, 0, 0, 0.65);
+    max-width: 2196px;
+    margin: 0 auto;
 }
 
-.main__hero {
+.container__hero {
+    position: relative;
+}
+
+.hotel__hero {
     background-image: linear-gradient( to right, 
     rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)    
         ), url(../images/mobile/hotel-mobile-hero-1x.jpg);
@@ -39,7 +44,7 @@
 }
 }
 
-.hero__inf {
+.hotel-hero__inf {
     padding-top: 181px;
     padding-bottom: 102px;
 
@@ -54,7 +59,7 @@
     }
 }
 
-.hero-inf__items {
+.hotel-hero__items {
     text-align: center;
     margin-bottom: 178px;
 
@@ -67,7 +72,7 @@
     }
 }
 
-.hero-inf__title {
+.hotel-hero__title {
     font-family: 'Film P3';
     font-weight: 700;
     font-size: 96px;
@@ -98,7 +103,7 @@
 
 }
 
-.hero-inf__subtitle {
+.hotel-hero__subtitle {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
@@ -245,6 +250,8 @@
     position: absolute;
     bottom: 20px;
     left: 15px;
+    display: flex;
+    gap: 20px; 
 
     @include tablet {
         position: absolute;
@@ -256,11 +263,6 @@
         display: none;
     }
 }
-
-.header__soc { 
-    display: flex;
-    gap: 20px; 
-  }
 
   .menu__icon { 
     fill: var(--accent-color); 

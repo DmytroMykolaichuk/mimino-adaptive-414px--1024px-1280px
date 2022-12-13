@@ -1,0 +1,166 @@
+.section__details-restaurant {
+  padding: 24px 0px 40px 0px;
+
+  @include tablet {
+    padding: 48px 0px 96px 0px;
+  }
+
+  $bg-gradient: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65));
+  background-image: $bg-gradient,
+    url(../images/mobile/home-mobile-restaurant-1x.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @include mobile {
+    background-size: 414px auto;
+  }
+
+  @include retina {
+    background-image: $bg-gradient,
+      url(../images/mobile/home-mobile-restaurant-2x.jpg);
+  }
+
+  @include tablet {
+    background-size: 1024px auto;
+    background-image: $bg-gradient,
+      url(../images/tablet/home-tablet-restaurant-1x.jpg);
+    @include retina {
+      background-image: $bg-gradient,
+        url(../images/tablet/home-tablet-restaurant-2x.jpg);
+    }
+  }
+
+  @include desktop {
+    background-size: 1280px auto;
+    background-image: $bg-gradient,
+      url(../images/desktop/home-desktop-restoran-1x.jpg);
+    @include retina {
+      background-image: $bg-gradient,
+        url(../images/desktop/home-desktop-restoran-2x.jpg);
+    }
+  }
+}
+
+.container__details-restaurant {
+  @media screen and(max-width: 414px) {
+    padding-left: calc((100% - 384px) / 2);
+  }
+}
+
+.details-restaurant__mimiho-title {
+  margin-bottom: 12px;
+  @include tablet {
+    margin-bottom: 16px;
+  }
+}
+
+.section-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: calc(24 / 20);
+  @include tablet {
+    margin-bottom: 8px;
+    font-size: 24px;
+    line-height: calc(29 / 24);
+  }
+
+  &--white {
+    color: #ffffff;
+  }
+
+  &--grey {
+    color: var(--slogan-color);
+    font-size: 32px;
+    line-height: 37px;
+  }
+}
+
+.details-restaurant__section-title {
+  margin-bottom: 20px;
+
+  @include tablet {
+    margin-bottom: 9px;
+  }
+}
+
+.section-description-wrap {
+  margin-left: auto;
+  margin-bottom: 50px;
+  width: 259px;
+
+  @include mobile {
+    margin-left: 125px;
+  }
+
+  @include tablet {
+    margin-left: 231px;
+    margin-bottom: 43px;
+    width: 610px;
+  }
+
+  @include desktop {
+    margin-left: 253px;
+  }
+}
+
+// ПОЧАТОК СЛАЙДЕРУ
+
+.details-restaurant-slider__wrapper {
+  margin-left: 25px;
+  @include tablet {
+    margin-left: unset;
+  }
+}
+
+.details-restaurant-slider__thumb {
+  margin-right: 20px;
+  @include tablet {
+    margin-right: 34px;
+  }
+  @include desktop {
+    margin-right: 86px;
+  }
+}
+
+.details-restaurant-slider {
+  max-width: 374px;
+  height: 270px;
+  @include tablet {
+    max-width: unset;
+    width: 662px;
+  }
+  @include desktop {
+    width: 875px;
+  }
+}
+
+// КІНЕЦЬ СЛАЙДЕРУ
+
+.details-restaurant-button-wrapper {
+  width: 236px;
+  margin: 80 auto 0;
+
+  @include tablet {
+    margin: unset;
+  }
+}
+
+.section-button {
+  &:not(:last-child) {
+    margin-bottom: 16px;
+  }
+}
+
+.section-order-wrapper {
+  @include tablet {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    justify-content: flex-end;
+    gap: 29px;
+  }
+  @include desktop {
+    gap: 32px;
+  }
+}

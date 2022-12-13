@@ -6,12 +6,14 @@ $('.one-time').slick({
   adaptiveHeight: true
 });
 
-$('.one-time').slick({
-  dots: true,
+$('.two-time').slick({
+  dots: false,
   infinite: true,
   speed: 300,
   slidesToShow: 2,
-  adaptiveHeight: true
+  slidesToScroll: 1,
+  variableWidth: true,
+  autoplay: true,
 });
 
 $('.one-time').slick({
@@ -20,4 +22,14 @@ $('.one-time').slick({
   speed: 300,
   slidesToShow: 3,
   adaptiveHeight: true
+});
+
+$('.details-restaurant-slider').slick({
+  dots: false,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 2,
+  slidesToScroll: 1,
+  variableWidth: true,
+  autoplay: true,
 });

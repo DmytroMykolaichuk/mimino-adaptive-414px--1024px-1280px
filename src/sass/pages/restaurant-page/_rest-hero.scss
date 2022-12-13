@@ -1,9 +1,14 @@
-.hero {
-    position: relative;
+.rest-hero {
     background-color: rgba(0, 0, 0, 0.65);
+    max-width: 2196px;
+    margin: 0 auto;
 }
 
-.main__hero {
+.container__hero {
+    position: relative;
+}
+
+.rest__hero {
     background-image: linear-gradient( to right, 
     rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)    
         ), url(../images/mobile/restaurant-mobile-hero-1x.jpg);
@@ -39,7 +44,7 @@
 }
 }
 
-.hero__inf {
+.rest-hero__inf {
     padding-top: 181px;
     padding-bottom: 102px;
 
@@ -54,7 +59,7 @@
     }
 }
 
-.hero-inf__items {
+.rest-hero__items {
     text-align: center;
     margin-bottom: 113px;
 
@@ -67,7 +72,7 @@
     }
 }
 
-.hero-inf__title {
+.rest-hero__title {
     font-family: 'Film P3';
     font-weight: 700;
     font-size: 96px;
@@ -100,7 +105,7 @@
 
 }
 
-.hero-inf__subtitle {
+.rest-hero__subtitle {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
@@ -128,7 +133,7 @@
     }
 }
 
-.hero-inf__text {
+.rest-hero__text {
     font-family: 'Times New Roman';
     font-style: normal;
     font-weight: 700;
@@ -275,6 +280,8 @@
     position: absolute;
     bottom: 20px;
     left: 15px;
+    display: flex;
+    gap: 20px;
 
     @include tablet {
         position: absolute;
@@ -286,11 +293,6 @@
         display: none;
     }
 }
-
-.header__soc { 
-    display: flex;
-    gap: 20px; 
-  }
 
   .menu__icon { 
     fill: var(--accent-color); 

@@ -1,0 +1,298 @@
+// --------------------------------------------------------------------
+// HTML дерево слайдеру. Все, що виділено КАПСОМ треба замінити на своє
+// --------------------------------------------------------------------
+//
+// <div class="section-slider__wrapper DETAILS-RESTAURANT-slider__wrapper">
+//   <div
+//     class="section-slider section-slider--white-arrow section-slider--DETAILS-RESTAURANT DETAILS-RESTAURANT-slider"
+//   >
+//     <div class="details-restaurant-slider__thumb">
+//       <picture> </picture>
+//     </div>
+//     <div class="details-restaurant-slider__thumb">
+//       <picture> </picture>
+//     </div>
+//     <div class="details-restaurant-slider__thumb">
+//       <picture> </picture>
+//     </div>
+//   </div>
+
+//   <svg
+//     class="section-slider__icon section-slider__icon--WHITE DETAILS-RESTAURANT-slider__icon--previous"
+//     width="32"
+//     height="32"
+//   >
+//     <use href="./images/icons.svg#icon-left"></use>
+//   </svg>
+
+//   <svg
+//     class="section-slider__icon section-slider__icon--white DETAILS-RESTAURANT-slider__icon--next"
+//     width="32"
+//     height="32"
+//   >
+//     <use href="./images/icons.svg#icon-right"></use>
+//   </svg>
+// </div>
+//
+//--------------------------------------------------------------------
+// Класи, якими я позиціонував свій слайдер і які не увійшли до збірки
+//--------------------------------------------------------------------
+//
+// .details-restaurant-slider__wrapper {
+//   margin-left: 25px;
+//   @include tablet {
+//     margin-left: unset;
+//   }
+// }
+// .details-restaurant-slider__thumb {
+//   margin-right: 20px;
+//   @include tablet {
+//     margin-right: 34px;
+//   }
+//   @include desktop {
+//     margin-right: 86px;
+//   }
+// }
+// .details-restaurant-slider {
+//   max-width: 374px;
+//   height: 270px;
+//   @include tablet {
+//     max-width: unset;
+//     width: 662px;
+//   }
+//   @include desktop {
+//     width: 875px;
+//   }
+// }
+//
+//
+
+.section-slider__wrapper {
+  position: relative;
+}
+
+.section-slider__wrapper--absolute {
+  position: absolute;
+}
+
+// скидання і задання спільних стилів
+// (Підвищую специфічність, щоб перебити стилі, задані в slic плагіні)
+.section-slider {
+  .slick-arrow {
+    top: unset;
+    left: unset;
+    right: unset;
+    bottom: unset;
+    transform: unset;
+    width: 32px;
+    height: 32px;
+    z-index: 2;
+    &::before {
+      color: transparent;
+    }
+  }
+}
+
+.section-slider__icon {
+  width: 32px;
+  height: 32px;
+  z-index: 1;
+  position: absolute;
+}
+
+//
+// Якщо секція темна, а стрілки білі
+//
+
+.section-slider--white-arrow {
+  .slick-arrow {
+    bottom: -52px;
+
+    @include tablet {
+      bottom: -64px;
+    }
+  }
+}
+.section-slider__icon--white {
+  fill: #ffffff;
+  bottom: -48px;
+
+  @include tablet {
+    bottom: -56px;
+  }
+}
+
+//
+// Якщо секція світла, а стрілки чорні або cірі
+//
+
+.section-slider--black-arrow {
+  .slick-arrow {
+    bottom: -48px;
+    @include tablet {
+      bottom: -56px;
+    }
+  }
+}
+.section-slider__icon--black {
+  fill: #000000;
+  bottom: -52px;
+  @include tablet {
+    bottom: -64px;
+  }
+  @include desktop {
+    bottom: -72px;
+  }
+}
+
+// ---------------------------Cекція "Details of our restaurant"---------------------------
+.section-slider--details-restaurant {
+  .slick-prev {
+    left: 0;
+  }
+  .slick-next {
+    left: 64px;
+  }
+}
+.details-restaurant-slider__icon--previous {
+  left: 0;
+}
+.details-restaurant-slider__icon--next {
+  left: 64px;
+}
+
+// --------------------------------Cекція "About our hotel"--------------------------------
+.section-slider--about-hotel {
+  .slick-prev {
+    left: 15px;
+    @include tablet {
+      left: 0;
+    }
+  }
+  .slick-next {
+    left: 79px;
+    @include tablet {
+      left: 64px;
+    }
+  }
+}
+.about-hotel-slider__icon--previous {
+  left: 15px;
+  @include tablet {
+    left: 0;
+  }
+}
+.about-hotel-slider__icon--next {
+  left: 79px;
+  @include tablet {
+    left: 64px;
+  }
+}
+
+// ------------------------------Cекція "Details of our hotel"------------------------------
+.section-slider--details-hotel {
+  .slick-prev {
+    right: 64px;
+  }
+  .slick-next {
+    right: 0;
+  }
+}
+.details-hotel-slider__icon--previous {
+  right: 64px;
+}
+.details-hotel-slider__icon--next {
+  right: 0;
+}
+
+// -------------------Cекція "About our restaurant" і "About our kitchen"-------------------
+.section-slider--about-kitchen-restaurant {
+  .slick-prev {
+    right: 15px;
+    @include tablet {
+      right: 64px;
+    }
+  }
+  .slick-next {
+    right: 79px;
+    @include tablet {
+      right: 0;
+    }
+  }
+}
+.about-kitchen-restaurant-slider__icon--previous {
+  right: 15px;
+  @include tablet {
+    right: 64px;
+  }
+}
+.about-kitchen-restaurant-slider__icon--next {
+  right: 79px;
+  @include tablet {
+    right: 0;
+  }
+}
+
+// -----------------------Двокімнатний номер і двокімнатний люкс----------------------------
+.section-slider--double-room {
+  .slick-prev {
+    left: 15px;
+    @include tablet {
+      left: unset;
+      right: 0;
+    }
+  }
+  .slick-next {
+    left: 79px;
+    @include tablet {
+      left: unset;
+      right: 64px;
+    }
+  }
+}
+.double-room-slider__icon--previous {
+  left: 15px;
+  @include tablet {
+    left: unset;
+    right: 64px;
+  }
+}
+.double-room-slider__icon--next {
+  left: 79px;
+  @include tablet {
+    left: unset;
+    right: 0;
+  }
+}
+
+// ------------------------------Трьохкімнатний номер----------------------------------------
+.section-slider--tripple-room {
+  .slick-prev {
+    right: 15px;
+    @include tablet {
+      right: unset;
+      left: 0;
+    }
+  }
+  .slick-next {
+    right: 79px;
+    @include tablet {
+      right: unset;
+      left: 64px;
+    }
+  }
+}
+.tripple-room-slider__icon--previous {
+  right: 15px;
+  @include tablet {
+    right: unset;
+    left: 64px;
+  }
+}
+.tripple-room-slider__icon--next {
+  right: 79px;
+  @include tablet {
+    right: unset;
+    left: 0;
+  }
+}
