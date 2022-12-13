@@ -8,7 +8,7 @@
   display: flex;
   justify-content: space-between;
    align-items: baseline;
-   padding-top: 28px;
+   padding-top: 16px;
    padding-bottom: 12px;
 //   @include mobile {
 //     padding-top: 21px;
@@ -25,13 +25,18 @@
 .logo {
   font-family: 'Film P3';
   font-weight: 700;
-  font-size: 36px;
-  line-height: calc(39 / 36);
+  font-size: 25px;
+  line-height: calc(35 / 25);
   letter-spacing: 0.3em;
   color: var(--hero-text-color);
   display: block;
 
   text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+  @include mobile {
+    font-size: 36px;
+    line-height: calc(39 / 36);
+  }
 
   @include tablet {
     font-size: 40px;
@@ -42,7 +47,7 @@
   }
 }
 
-.menu {
+.menu-nav {
   display: flex;
 }
 

@@ -15,7 +15,7 @@ $('.slider-nav').slick({
 });
 
 $('.one-time').slick({
-  dots: true,
+  dots: false,
   infinite: true,
   speed: 300,
   slidesToShow: 1,
@@ -29,6 +29,9 @@ $('.two-time').slick({
   slidesToShow: 2,
   adaptiveHeight: true,
   // appendArrows: $('.content'),
+  slidesToScroll: 1,
+  variableWidth: true,
+  autoplay: true,
 });
 
 $('.one-time').slick({
@@ -37,4 +40,15 @@ $('.one-time').slick({
   speed: 300,
   slidesToShow: 3,
   adaptiveHeight: true,
+  adaptiveHeight: true,
+});
+
+$('.details-restaurant-slider').slick({
+  dots: false,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 2,
+  slidesToScroll: 1,
+  variableWidth: true,
+  autoplay: true,
 });
