@@ -1,0 +1,191 @@
+.triple {
+  width: 100%;
+  background-color: var(--secondary-background-color);
+
+  @media screen and (max-width: 1023px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    height: 1050px;
+  }
+  @media screen and (min-width: 1024px) {
+    padding-top: 66px;
+    padding-bottom: 40px;
+    height: 838px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-top: 72px;
+    padding-bottom: 40px;
+    height: 956px;
+  }
+}
+.triple__slogan {
+  color: var(--slogan-color);
+  text-align: right;
+  font-family: 'Times New Roman';
+  font-style: normal;
+  font-weight: 400;
+  @media screen and (max-width: 1023px) {
+    font-size: 20px;
+    line-height: calc(23 / 20);
+  }
+  @media screen and (min-width: 1024px) {
+    margin-right: 17px;
+    font-size: 32px;
+    line-height: calc(37 / 32);
+  }
+  @media screen and (min-width: 1280px) {
+    margin-right: 127px;
+    font-size: 32px;
+    line-height: calc(37 / 32);
+  }
+}
+.triple__logo {
+  color: var(--mimino-section-color);
+  font-family: 'Film P3';
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0.3em;
+  text-align: right;
+  @media screen and (max-width: 1023px) {
+    margin-top: 8px;
+    font-size: 40px;
+    line-height: calc(43 / 40);
+  }
+  @media screen and (min-width: 1024px) {
+    margin-top: 4px;
+    font-size: 64px;
+    line-height: calc(69 / 64);
+  }
+  @media screen and (min-width: 1280px) {
+    margin-top: 4px;
+    margin-right: 110px;
+    font-size: 64px;
+    line-height: calc(69 / 64);
+  }
+}
+.triple__char {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+
+  @media screen and (max-width: 1023px) {
+    max-width: 100%;
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+  @media screen and (min-width: 1024px) {
+    max-width: 100%;
+    margin-top: 62px;
+    margin-bottom: 169px;
+  }
+  @media screen and (min-width: 1280px) {
+    max-width: 100%;
+    margin-top: 72px;
+    margin-bottom: 188px;
+  }
+}
+.triple__char-size {
+  color: var(--section-title-text-color);
+  font-family: 'Times New Roman';
+  font-style: normal;
+  font-weight: 700;
+  text-align: right;
+  width: 100%;
+  @media screen and (max-width: 1023px) {
+    font-size: 24px;
+    line-height: calc(28 / 24);
+    letter-spacing: 0.05em;
+  }
+  @media screen and (min-width: 1024px) {
+    font-size: 30px;
+    line-height: calc(34 / 30);
+    letter-spacing: 0.05em;
+    margin-right: 43px;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 36px;
+    line-height: calc(41 / 36);
+    letter-spacing: 0.05em;
+    margin-right: 127px;
+  }
+}
+.triple__char-description {
+  color: var(--home-restaurant-text-color);
+  @media screen and (max-width: 1023px) {
+    width: 242px;
+    margin-top: 12px;
+    margin-right: 59px;
+    font-size: 12px;
+    line-height: calc(15 / 12);
+  }
+  @media screen and (min-width: 1024px) {
+    margin-top: 16px;
+    margin-right: 20px;
+    margin-left: 510px;
+    width: 400px;
+    color: var(--hotel-room-text-color);
+  }
+  @media screen and (min-width: 1280px) {
+    margin-top: 16px;
+    margin-right: 180px;
+    margin-left: 685px;
+    min-width: 400px;
+    color: var(--hotel-room-text-color);
+  }
+}
+.thumb-triple {
+  display: flex;
+  @media screen and (min-width: 1024px) {
+    position: absolute;
+    top: -32px;
+    left: 112px;
+    background: #dadada;
+    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 2px;
+  }
+  @media screen and (min-width: 1280px) {
+    position: absolute;
+    top: -32px;
+    left: 180px;
+  }
+}
+
+.thumb-triple__picture {
+  @media screen and (max-width: 1023px) {
+    background: #dadada;
+    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 2px;
+  }
+  @media screen and (min-width: 1024px) {
+    background: #dadada;
+    box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+  }
+  @media screen and (min-width: 1280px) {
+    background: #dadada;
+    box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+    border-radius: 2px;
+  }
+}
+.triple-btn {
+  display: flex;
+  margin: 0 auto;
+  gap: 16px;
+  max-width: 236px;
+  flex-direction: column;
+  @media screen and (max-width: 1023px) {
+  }
+  @media screen and (min-width: 1024px) {
+    position: absolute;
+    top: 581px;
+    left: 47px;
+  }
+}
+.triple-btn__details {
+  position: relative;
+}
+.btn-name {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

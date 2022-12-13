@@ -1,0 +1,51 @@
+<section class="triple container">
+  <p class="triple__slogan">Amet minim mollit non</p>
+  <h3 class="triple__logo">MIMIHO</h3>
+  <div class="triple__char">
+    <h4 class="triple__char-size">ТРЬОХМІСНИЙ НОМЕР</h4>
+    <p class="triple__char-description">
+      Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+      Velit officia consequat duis enim velit mollit. Exercitation veniam
+      consequat sunt nostrud amet.
+    </p>
+  </div>
+  <div class="thumb-triple">
+    <picture class="thumb-triple__picture">
+      <source
+        srcset="
+          ./images/mobile/hotel-mobile-1x.jpg,
+          ./images/mobile/hotel-mobile-2x.jpg
+        "
+        media="(max-width: 1023px)"
+        sizes="244px"
+      />
+      <source
+        srcset="
+          ./images/tablet/hotel-tablet-1-1x.jpg,
+          ./images/tablet/hotel-tablet-1-2x.jpg
+        "
+        media="(min-width: 1024px)"
+        sizes="400px"
+      />
+
+      <source
+        srcset="
+          ./images/desktop/hotel-desktop-1-1x.jpg,
+          ./images/desktop/hotel-desktop-1-2x.jpg
+        "
+        media="(min-width: 1280px)"
+        sizes="460px"
+      />
+      <img src="./images/desktop/hotel-desktop-1-1x.jpg" alt="фото номера" />
+    </picture>
+  </div>
+
+  <div class="triple-btn">
+    <a class="triple-btn__details btn-black" href="#">
+      <span class="btn-name">Детальніше</span>
+    </a>
+    <button class="triple-btn__price btn-black" type="button">
+      Переглянути ціни
+    </button>
+  </div>
+</section>
