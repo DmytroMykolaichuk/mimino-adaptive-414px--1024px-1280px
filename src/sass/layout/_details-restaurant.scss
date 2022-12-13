@@ -104,83 +104,43 @@
   }
 }
 
-.details-restaurant-slider {
-  max-width: 374px;
-  height: 270px;
-
-  @include tablet {
-    max-width: unset;
-    width: 662px;
-  }
-
-  @include desktop {
-    width: 875px;
-  }
-
-  .slick-arrow {
-    top: unset;
-    width: 32px;
-    height: 32px;
-    bottom: -56px;
-    transform: unset;
-    z-index: 2;
-    &::before {
-      color: transparent;
-    }
-  }
-  .slick-prev {
-    left: 0;
-  }
-  .slick-next {
-    right: unset;
-    left: 64px;
-  }
-}
+// ПОЧАТОК СЛАЙДЕРУ
 
 .details-restaurant-slider__wrapper {
   margin-left: 25px;
-  position: relative;
-
   @include tablet {
     margin-left: unset;
   }
 }
 
-.details-restaurant-slider__icon {
-  fill: #ffffff;
-  width: 32px;
-  height: 32px;
-  position: absolute;
-  bottom: -48px;
-  z-index: 1;
-
-  @include tablet {
-    bottom: -56px;
-  }
-
-  &--previous {
-    left: 0;
-  }
-  &--next {
-    left: 64px;
-  }
-}
-
 .details-restaurant-slider__thumb {
   margin-right: 20px;
-
   @include tablet {
     margin-right: 34px;
   }
-
   @include desktop {
     margin-right: 86px;
   }
 }
 
-.details-restaraunt-button-wrapper {
+.details-restaurant-slider {
+  max-width: 374px;
+  height: 270px;
+  @include tablet {
+    max-width: unset;
+    width: 662px;
+  }
+  @include desktop {
+    width: 875px;
+  }
+}
+
+// КІНЕЦЬ СЛАЙДЕРУ
+
+.details-restaurant-button-wrapper {
   width: 236px;
   margin: 80 auto 0;
+
   @include tablet {
     margin: unset;
   }
@@ -200,7 +160,6 @@
     justify-content: flex-end;
     gap: 29px;
   }
-
   @include desktop {
     gap: 32px;
   }
