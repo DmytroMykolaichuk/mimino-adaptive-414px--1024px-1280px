@@ -23,6 +23,11 @@
       flex-direction: row-reverse;
       gap: 46px;
     }
+
+    @media screen and (min-width: 1280px) {
+      gap: 67px;
+      padding-bottom: 162px;
+    }
   }
 
   &:nth-child(2n) {
@@ -50,6 +55,10 @@
 
   @media screen and (min-width: 1024px) {
     width: 420px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 488px;
   }
 }
 
@@ -83,6 +92,10 @@
     line-height: calc(69 / 64);
 
     margin-bottom: 47px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 24px;
   }
 }
 
@@ -131,5 +144,9 @@
     
     font-size: 16px;
     line-height: calc(20 / 16);
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-top: 170px;
   }
 }
