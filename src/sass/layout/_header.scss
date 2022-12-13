@@ -2,21 +2,24 @@
   position: absolute;
   width: 100%;
   z-index: 1;
+  padding-top: 16px;
+  padding-bottom: 12px;
+
+  @include tablet {
+    padding-top: 24px;
+    padding-bottom: 33px;
+  }
 }
 
 .header__container {
   display: flex;
   justify-content: space-between;
-   align-items: baseline;
-   padding-top: 16px;
-   padding-bottom: 12px;
+  align-items: baseline;
 //   @include mobile {
 //     padding-top: 21px;
 //   }
 
   @include tablet {
-    padding-top: 24px;
-    padding-bottom: 33px;
     align-items: center;
   }
 }
