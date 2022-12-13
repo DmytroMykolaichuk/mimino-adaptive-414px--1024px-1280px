@@ -15,6 +15,10 @@
   }
 }
 
+.triple-section__container{
+  position: relative;
+}
+
 .triple-section-title-wrap{
   display: inline-block;
   text-align: start;
@@ -69,6 +73,7 @@
 
 .triple-section__image-thumb {
   width: 244px;
+  margin-bottom: 298px; 
 
   @media screen and (min-width: 1024px) {
     width: 400px;
@@ -86,3 +91,45 @@
   }
 }
 
+.triple-section-slider__wrapper{
+  position: absolute;
+  right: 0;
+  bottom: 184px;
+}
+
+.triple-section-slider__thumb {
+  margin-right: 16px;
+  max-width: 194px;
+
+  // @include tablet {
+  //   margin-right: 40px;
+  //   max-width: 194px;
+  // }
+
+  // @include desktop {
+  //   max-width: 245px;
+  // }
+
+
+}
+
+.two-time {
+  max-width: 330px;
+
+  @include tablet {
+    max-width: unset;
+    width: 428px;
+  }
+
+  @include desktop {
+    width: 530px;
+  }
+}
+
+.triple-section-btn{
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  gap: 16px;
+  max-width: 236px;
+}
