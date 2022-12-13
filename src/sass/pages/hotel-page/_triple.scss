@@ -101,14 +101,13 @@
   margin-right: 16px;
   max-width: 194px;
 
-  // @include tablet {
-  //   margin-right: 40px;
-  //   max-width: 194px;
-  // }
+  @include tablet {
+    margin-right: 40px;
+  }
 
-  // @include desktop {
-  //   max-width: 245px;
-  // }
+  @include desktop {
+    max-width: 245px;
+  }
 
 
 }
