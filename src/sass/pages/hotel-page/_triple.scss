@@ -6,17 +6,30 @@
 
   @include tablet {
     padding-top: 66px;
-    padding-bottom: 104px;
+    padding-bottom: 145px;
   }
 
-  @include tablet {
+  @include desktop {
     padding-top: 72px;
-    padding-bottom: 112px;
+    padding-bottom: 182px;
   }
 }
 
 .triple-section__container{
+  // outline: 2px solid red;
   position: relative;
+}
+
+.triple-section__text-wrap{
+  margin-bottom: 32px;
+
+  @include tablet {
+      margin-bottom: 210px;
+    }
+  
+  @include desktop {
+      margin-bottom: 260px;
+  }
 }
 
 .triple-section-title-wrap{
@@ -27,6 +40,7 @@
 
 .triple-section__slogan{
     font-family: 'Times New Roman';
+    font-weight: 400;
     font-size: 20px;
     line-height: calc(23 / 20);
     color: var(--slogan-color);
@@ -35,6 +49,7 @@
     @include tablet{
       font-size: 32px;
       line-height: calc(37 / 32);
+      margin-bottom: 4px;
     }
 }
 
@@ -46,6 +61,16 @@
   letter-spacing: 0.3em;
   color: var(--mimino-section-color);
   margin-bottom: 32px;
+
+  @include tablet{
+    font-size: 64px;
+    line-height: calc(69 / 64);
+    margin-bottom: 62px;
+  }
+
+    @include desktop{
+      margin-bottom: 72px;
+    }
 }
 
 .triple-section__title{
@@ -55,6 +80,18 @@
     letter-spacing: 0.05em;
     color: #000000;
     margin-bottom: 12px;
+
+  @include tablet{
+    font-size: 30px;
+    line-height: calc(34 / 30);
+    margin-bottom: 16px;
+  }
+
+    @include desktop{
+      font-size: 36px;
+      line-height: calc(41 / 36);
+      margin-bottom: 24px;
+    }
 }
 
 .triple-section__text{
@@ -65,36 +102,50 @@
   letter-spacing: 0.02em;
   color: var(--home-restaurant-text-color);
   text-align: start;
-  // margin-left: auto;
-  // margin-right: auto;
-  margin-bottom: 32px;
   max-width: 242px;
+
+  @include tablet{
+    max-width: 400px;
+    font-size: 16px;
+    line-height: calc(20 / 16);
+  }
 }
 
 .triple-section__image-thumb {
   width: 244px;
   margin-bottom: 298px; 
 
-  @media screen and (min-width: 1024px) {
+  @include tablet {
+    margin-bottom: 0;
     width: 400px;
-
-    position: relative;
-
-    & .about-hotel__image {
-      position: absolute;
-      top: -144px;
-    }
+    height: 524px;
+    position: absolute;
+    top: -98px;
+    left: 112px;
   }
 
-  @media screen and (min-width: 1280px) {
+    @include desktop{
     width: 460px;
+    top: -104px;
+    left: 180px;
+
   }
 }
 
 .triple-section-slider__wrapper{
   position: absolute;
-  right: 0;
+  right: -15px;
   bottom: 184px;
+
+  @include tablet{
+    right: 47px;
+    bottom: -41px;
+  }
+
+    @include desktop{
+      bottom: -70px;
+      right: 85px;
+    }
 }
 
 .triple-section-slider__thumb {
@@ -106,7 +157,7 @@
   }
 
   @include desktop {
-    max-width: 245px;
+    max-width: 254px;
   }
 
 
@@ -131,4 +182,8 @@
   margin: 0 auto;
   gap: 16px;
   max-width: 236px;
+
+  @include tablet{
+    margin-left: 0;
+  }
 }
