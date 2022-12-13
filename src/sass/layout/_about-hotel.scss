@@ -152,10 +152,36 @@
 }
 // slayder
 
-.section-slider--about-hotel{
-  width: 548px;
+// .about-hotel-slider__wrapper{
+  
+// }
+
+.about-hotel-slider__thumb{
+  margin-right: 20px;
+  max-width: 245px;
+  
+  @include tablet {
+    margin-right: 40px;
+    max-width: 194px;
+  }
+
+    @include desktop{
+      max-width: 245px;
+    }
+
+  
 }
 
-.details-about-hotel__thumb{
-  margin-right: 40px;
+.two-time{
+  max-width: 330px;
+    // height: 270px;
+  
+  @include tablet {
+    max-width: unset;
+    width: 428px;
+  }
+  
+  @include desktop {
+    width: 530px;
+  }
 }
