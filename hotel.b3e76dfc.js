@@ -1,2 +1,2 @@
 $(".one-time").slick({dots:!0,infinite:!0,speed:300,slidesToShow:1,adaptiveHeight:!0}),$(".two-time").slick({dots:!1,infinite:!0,speed:300,slidesToShow:2,slidesToScroll:1,variableWidth:!0,autoplay:!0}),$(".one-time").slick({dots:!0,infinite:!0,speed:300,slidesToShow:3,adaptiveHeight:!0}),$(".details-restaurant-slider").slick({dots:!1,infinite:!0,speed:300,slidesToShow:2,slidesToScroll:1,variableWidth:!0,autoplay:!0});
-//# sourceMappingURL=index.37f6ce42.js.map
+//# sourceMappingURL=hotel.b3e76dfc.js.map
