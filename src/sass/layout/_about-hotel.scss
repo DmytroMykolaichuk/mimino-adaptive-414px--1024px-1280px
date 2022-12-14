@@ -5,7 +5,7 @@
   background-color: var(--primary-background-color);
 
   @media screen and (min-width: 1024px) {
-    padding-top: 0;
+    padding-top: 120px;
     padding-bottom: 262px;
   }
 
@@ -19,16 +19,14 @@
   gap: 28px;
 
   @media screen and (min-width: 1024px) {
-    padding-top: 120px;
-    padding-bottom: 120px;
-
+    margin-bottom: 120px;
     flex-direction: row-reverse;
     gap: 46px;
   }
 
   @media screen and (min-width: 1280px) {
     gap: 67px;
-    padding-bottom: 162px;
+    margin-bottom: 162px;
   }
 }
 
@@ -123,8 +121,8 @@
   gap: 21px;
 
   @media screen and (max-width: 1023px) {
-    padding-top: 32px;
-    padding-bottom: 32px;
+    margin-top: 32px;
+    margin-bottom: 32px;
   }
 
   @media screen and (min-width: 1024px) {
