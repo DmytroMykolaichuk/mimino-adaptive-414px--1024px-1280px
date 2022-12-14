@@ -4,47 +4,47 @@
 //
 // <div class="section-slider__wrapper DETAILS-RESTAURANT-slider__wrapper">
 //   <div
-//     class="section-slider section-slider--white-arrow section-slider--DETAILS-RESTAURANT DETAILS-RESTAURANT-slider"
+//     class="section-slider section-slider--WHITE-arrow section-slider--DETAILS-RESTAURANT DETAILS-RESTAURANT-slider"
 //   >
-//     <div class="details-restaurant-slider__thumb">
+//     <div class="DETAILS-RESTAURANT-slider__thumb">
 //       <picture> </picture>
 //     </div>
-//     <div class="details-restaurant-slider__thumb">
+//     <div class="DETAILS-RESTAURANT-slider__thumb">
 //       <picture> </picture>
 //     </div>
-//     <div class="details-restaurant-slider__thumb">
+//     <div class="DETAILS-RESTAURANT-slider__thumb">
 //       <picture> </picture>
 //     </div>
 //   </div>
 
-  // <svg
-  //   class="section-slider__icon section-slider__icon--WHITE DETAILS-RESTAURANT-slider__icon--previous"
-  //   width="32"
-  //   height="32"
-  // >
-  //   <use href="./images/icons.svg#icon-left"></use>
-  // </svg>
+//   <svg
+//     class="section-slider__icon section-slider__icon--WHITE DETAILS-RESTAURANT-slider__icon--previous"
+//     width="32"
+//     height="32"
+//   >
+//     <use href="./images/icons.svg#icon-left"></use>
+//   </svg>
 
-  // <svg
-  //   class="section-slider__icon section-slider__icon--white DETAILS-RESTAURANT-slider__icon--next"
-  //   width="32"
-  //   height="32"
-  // >
-  //   <use href="./images/icons.svg#icon-right"></use>
-  // </svg>
+//   <svg
+//     class="section-slider__icon section-slider__icon--white DETAILS-RESTAURANT-slider__icon--next"
+//     width="32"
+//     height="32"
+//   >
+//     <use href="./images/icons.svg#icon-right"></use>
+//   </svg>
 // </div>
 //
 //--------------------------------------------------------------------
 // Класи, якими я позиціонував свій слайдер і які не увійшли до збірки
 //--------------------------------------------------------------------
 //
-// .details-restaurant-slider__wrapper {
+// .DETAILS-RESTAURANT-slider__wrapper {
 //   margin-left: 25px;
 //   @include tablet {
 //     margin-left: unset;
 //   }
 // }
-// .details-restaurant-slider__thumb {
+// .DETAILS-RESTAURANT-slider__thumb {
 //   margin-right: 20px;
 //   @include tablet {
 //     margin-right: 34px;
@@ -53,7 +53,7 @@
 //     margin-right: 86px;
 //   }
 // }
-// .details-restaurant-slider {
+// .DETAILS-RESTAURANT-slider {
 //   max-width: 374px;
 //   height: 270px;
 //   @include tablet {
