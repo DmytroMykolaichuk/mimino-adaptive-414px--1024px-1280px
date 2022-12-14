@@ -241,3 +241,54 @@
     width: 530px;
   }
 }
+
+
+// 
+
+.about-restaurant__container{
+  position: relative;
+}
+
+.triple-section-slider__wrapper {
+  position: absolute;
+  right: 0;
+  bottom: 184px;
+
+  @include tablet {
+    right: 47px;
+    bottom: -41px;
+  }
+
+  @include desktop {
+    bottom: -70px;
+    right: 85px;
+  }
+}
+
+.triple-section-slider__thumb {
+  margin-right: 16px;
+  max-width: 194px;
+
+  @include tablet {
+    margin-right: 40px;
+  }
+
+  @include desktop {
+    max-width: 254px;
+  }
+
+
+}
+
+.two-time {
+  max-width: 287px;
+
+  @include tablet {
+    max-width: unset;
+    width: 428px;
+  }
+
+  @include desktop {
+    width: 548px;
+  }
+}
