@@ -28,7 +28,7 @@ $('.two-time').slick({
   speed: 300,
   slidesToShow: 2,
   adaptiveHeight: true,
-  // appendArrows: $('.content'),
+  slidesToShow: 1,
   slidesToScroll: 1,
   variableWidth: true,
   autoplay: true,
