@@ -1,0 +1,43 @@
+.animation-border {
+  position: relative;
+&:before{
+  content: '';
+  position: absolute;
+  top: 6px ;
+  left:-2px;
+  width: calc(100% + 4px);
+  height: calc(100% - 12px);
+  background-color:  #fff;
+  transition-duration: 350ms ;
+  transition-timing-function:  cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 0;
+    transform: scaleY(0);
+}
+&:hover:before {
+  opacity:1;
+  transform: scaleY(1);
+}
+&:after{
+  content: '';
+  position: absolute;
+left: 6px ;
+  top: -2px;
+  height: calc(100% + 4px);
+  width: calc(100% - 12px);
+  background-color:  #fff;
+  transition-duration: 350ms ;
+  transition-timing-function:  cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0;
+  transform: scaleX(0);
+}
+&:hover:after {
+opacity: 1;
+  transform: scaleX(1);
+}
+}
+.animation-border-wrap {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+}
