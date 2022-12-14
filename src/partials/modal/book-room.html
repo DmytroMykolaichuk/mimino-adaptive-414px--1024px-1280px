@@ -1,86 +1,86 @@
-<div class="backdrop is-hidden" data-modal>
-  <div class="modal">
-    <button type="button" class="modal-close  js-modal-close">
-      <svg class="modal-close-icon" width="24" height="24">
-        <use href="./images/icons.svg#icon-close"></use>
-      </svg>
-    </button>
+<div class="modal" data-modal="bookRoom">
+  <button type="button" class="modal-close js-modal-close">
+    <svg class="modal-close-icon" width="24" height="24">
+      <use href="./images/icons.svg#icon-close"></use>
+    </svg>
+  </button>
 
-    <p class="modal-title">забронювати номер</p>
-    <form action="">
-      <div class="modal-fields">
-        <div class="modal-field room">
-          <input
-            type="text"
-            name="user-name"
-            id="user-name"
-            class="modal-input"
-            placeholder="Ваше ім’я"
-            required
-          />
+  <p class="modal-title">забронювати номер</p>
+  <form action="">
+    <div class="modal-fields">
+      <div class="modal-field room">
+        <input
+          type="text"
+          name="user-name"
+          id="user-name"
+          class="modal-input"
+          placeholder="Ваше ім’я"
+          required
+        />
 
-          <label for="user-name" class="input-label"
-            ><span class="modal-text">На кого забронювати столик?</span></label
-          >
-        </div>
-
-        <div class="modal-field room">
-          <input
-            type="tel"
-            name="user-tel"
-            id="user-tel"
-            class="modal-input"
-            placeholder="+38 (___) ___-__-__"
-            required
-          />
-
-          <label for="user-tel" class="input-label"
-            ><span class="modal-text">Номер телефону</span></label
-          >
-        </div>
-
-        <div class="modal-field room s-select">
-          <svg class="modal-input-icon" width="24" height="24">
-            <use href="./images/icons.svg#icon-down-bold"></use>
-          </svg>
-          <select name="cathegory-room" id="cathegory-room" class="modal-input">
-            <option value="value1" selected>Двомістний номер</option>
-            <option value="value2">Двомістний люкс</option>
-            <option value="value3">Трьохмістний номер</option>
-          </select>
-          <span class="modal-text">Категорія номеру</span>
-        </div>
-
-        <div class="modal-field room s-select">
-          <svg class="modal-input-icon" width="24" height="24">
-            <use href="./images/icons.svg#icon-down-bold"></use>
-          </svg>
-          <select name="amount" class="modal-input">
-            <option value="value1" selected>Сьогодні</option>
-            <option value="value2">Завтра</option>
-            <option value="value3">Післязавтра</option>
-          </select>
-          <span class="modal-text">Дата заїзду</span>
-        </div>
-
-        <div class="modal-field room s-select">
-          <svg class="modal-input-icon" width="24" height="24">
-            <use href="./images/icons.svg#icon-down-bold"></use>
-          </svg>
-          <select name="amount" class="modal-input">
-            <option value="value1" selected>Сьогодні</option>
-            <option value="value2">Завтра</option>
-            <option value="value3">Післязавтра</option>
-          </select>
-          <span class="modal-text">Дата виїзду</span>
-        </div>
+        <label for="user-name" class="input-label"
+          ><span class="modal-text">На кого забронювати столик?</span></label
+        >
       </div>
 
-      <div class="rules-btn">
-        <button type="submit" class="btn-booking-modal">
-          Оформити бронювання
-        </button>
+      <div class="modal-field room">
+        <input
+          type="tel"
+          name="user-tel"
+          id="user-tel"
+          class="modal-input"
+          placeholder="+38 (___) ___-__-__"
+          required
+        />
+
+        <label for="user-tel" class="input-label"
+          ><span class="modal-text">Номер телефону</span></label
+        >
       </div>
-    </form>
-  </div>
+
+      <div class="modal-field room s-select">
+        <svg class="modal-input-icon" width="24" height="24">
+          <use href="./images/icons.svg#icon-down-bold"></use>
+        </svg>
+        <select name="cathegory-room" id="cathegory-room" class="modal-input">
+          <option value="value1" selected>Двомістний номер</option>
+          <option value="value2">Двомістний люкс</option>
+          <option value="value3">Трьохмістний номер</option>
+        </select>
+        <span class="modal-text">Категорія номеру</span>
+      </div>
+
+      <div class="modal-field room s-select">
+        <svg class="modal-input-icon" width="24" height="24">
+          <use href="./images/icons.svg#icon-down-bold"></use>
+        </svg>
+        <select name="amount" class="modal-input">
+          <option value="value1" selected>Сьогодні</option>
+          <option value="value2">Завтра</option>
+          <option value="value3">Післязавтра</option>
+        </select>
+        <span class="modal-text">Дата заїзду</span>
+      </div>
+
+      <div class="modal-field room s-select">
+        <svg class="modal-input-icon" width="24" height="24">
+          <use href="./images/icons.svg#icon-down-bold"></use>
+        </svg>
+        <select name="amount" class="modal-input">
+          <option value="value1" selected>Сьогодні</option>
+          <option value="value2">Завтра</option>
+          <option value="value3">Післязавтра</option>
+        </select>
+        <span class="modal-text">Дата виїзду</span>
+      </div>
+    </div>
+
+    <div class="rules-btn">
+      <button type="submit" class="btn-booking-modal">
+        Оформити бронювання
+      </button>
+    </div>
+  </form>
 </div>
+
+<div class="overlay js-overlay-modal"></div>
