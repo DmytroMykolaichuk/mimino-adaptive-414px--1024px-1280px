@@ -1,48 +1,32 @@
 .about-hotel {
   padding-top: 18px;
-  padding-bottom: 20px;
+  padding-bottom: 72px;
 
   background-color: var(--primary-background-color);
 
   @media screen and (min-width: 1024px) {
-    padding-top: 0;
-    padding-bottom: 32px;
+    padding-top: 120px;
+    padding-bottom: 262px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-bottom: 197px;
   }
 }
+.about-hotel__first-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
 
-.about-hotel__item {
-  &:nth-child(2n + 1) {
-    display: flex;
-    flex-direction: column;
-    gap: 28px;
-
-    @media screen and (min-width: 1024px) {
-      padding-top: 120px;
-      padding-bottom: 120px;
-
-      flex-direction: row-reverse;
-      gap: 46px;
-    }
-
-    @media screen and (min-width: 1280px) {
-      gap: 67px;
-      padding-bottom: 162px;
-    }
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 120px;
+    flex-direction: row-reverse;
+    gap: 46px;
   }
 
-  &:nth-child(2n) {
-    display: flex;
-    gap: 21px;
-
-    @media screen and (max-width: 1023px) {
-      padding-top: 32px;
-      padding-bottom: 32px;
-    }
-
-    @media screen and (min-width: 1024px) {
-      gap: 48px;
-      justify-content: flex-end;
-    }
+  @media screen and (min-width: 1280px) {
+    gap: 67px;
+    margin-bottom: 162px;
   }
 }
 
@@ -79,6 +63,7 @@
 .about-hotel__title {
   margin-top: 6px;
   margin-bottom: 16px;
+  margin-right: -.3em;
 
   font-family: "Film P3", serif;
   font-size: 40px;
@@ -131,6 +116,21 @@
   border-radius: 2px;
 }
 
+.about-hotel__second-wrapper {
+  display: flex;
+  gap: 21px;
+
+  @media screen and (max-width: 1023px) {
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    gap: 48px;
+    justify-content: flex-end;
+  }
+}
+
 .about-hotel__text {
   color: var(--modal-text-color);
 
@@ -151,10 +151,20 @@
   }
 }
 // slayder
+.about-hotel__third-wrapper {
+  position: relative;
+}
 
-// .about-hotel-slider__wrapper{
-  
-// }
+.about-hotel-slider__wrapper{
+  @media screen and (min-width: 1024px) {
+    position: absolute;
+    top: -28px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    top: -170px;
+  }
+}
 
 .about-hotel-slider__thumb{
   margin-right: 20px;
@@ -165,11 +175,9 @@
     max-width: 194px;
   }
 
-    @include desktop{
-      max-width: 245px;
-    }
-
-  
+  @include desktop{
+    max-width: 245px;
+  }
 }
 
 .two-time{
