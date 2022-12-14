@@ -183,7 +183,7 @@
 }
 
 .two-time {
-  max-width: 330px;
+  max-width: 287px;
 
   @include tablet {
     max-width: unset;
@@ -191,7 +191,7 @@
   }
 
   @include desktop {
-    width: 530px;
+    width: 548px;
   }
 }
 
