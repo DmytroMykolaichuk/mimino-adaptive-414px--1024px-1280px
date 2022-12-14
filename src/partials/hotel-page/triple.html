@@ -13,20 +13,36 @@
       </div>
     </div>
     <div class="triple-section__image-thumb">
-      <img
-        srcset="
-          ./images/mobile/home-mobile-3-1x.jpg   244w,
-          ./images/tablet/home-tablet-3-1x.jpg   400w,
-          ./images/desktop/home-desktop-3-1x.jpg 460w,
-          ./images/mobile/home-mobile-3-2x.jpg   488w,
-          ./images/tablet/home-tablet-3-2x.jpg   800w,
-          ./images/desktop/home-desktop-3-2x.jpg 920w
-        "
-        sizes="(min-width: 1280px) 460px, (min-width: 1024px) 400px, 244px"
-        src="./images/mobile/home-mobile-3-1x.jpg"
-        alt="Фото номера готеля MIMIHO"
-        class="about-hotel__image"
-      />
+      <picture class="about-hotel__image">
+        <source
+          srcset="
+            ./images/desktop/home-desktop-3-1x.jpg 460w,
+            ./images/desktop/home-desktop-3-2x.jpg 920w
+          "
+          media="(min-width: 1280px)"
+          sizes="460px"
+        />
+        <source
+          srcset="
+            ./images/tablet/home-tablet-3-1x.jpg 400w,
+            ./images/tablet/home-tablet-3-2x.jpg 800w
+          "
+          media="(min-width: 1024px)"
+          sizes="400px"
+        />
+        <source
+          srcset="
+            ./images/mobile/home-mobile-3-1x.jpg 244w,
+            ./images/mobile/home-mobile-3-2x.jpg 488w
+          "
+          media="(max-width: 1023px)"
+          sizes="244px"
+        />
+        <img
+          src="./images/mobile/home-mobile-3-1x.jpg"
+          alt="Фото номера готеля MIMIHO"
+        />
+      </picture>
     </div>
 
     <div class="section-slider__wrapper triple-section-slider__wrapper">
