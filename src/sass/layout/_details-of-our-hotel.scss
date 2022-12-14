@@ -9,19 +9,23 @@
 
   @media screen and (min-width: 1280px) {
     padding-top: 48px;
-    padding-bottom: 48px;
+    padding-bottom: 96px;
   }
 
   @media screen and (max-width: 1279px) {
     padding-top: 48px;
-    padding-bottom: 48px;
+    padding-bottom: 96px;
     background-size: 1024px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url(/src/images/tablet/home-tablet-room-1-1x.jpg.jpg);
   }
 
   @media screen and (max-width: 1023px) {
     padding-top: 24px;
-    padding-bottom: 24px;
+    padding-bottom: 40px;
     background-size: 414px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+      url(/src/images/mobile/home-mobile-room-1x.jpg);
   }
 }
 
@@ -30,14 +34,17 @@
   margin-left: 253px;
   margin-bottom: 40px;
   width: 610px;
+
   @media screen and (max-width: 1279px) {
     margin-right: 230px;
     margin-left: 149px;
   }
+
   @media screen and (max-width: 1023px) {
     margin-right: 125px;
     margin-left: 17px;
     margin-bottom: 48px;
+    width: auto;
   }
 }
 
@@ -132,22 +139,32 @@
     margin-right: 0px;
   }
 }
+
 .details-of-our-hotel-elements {
   display: flex;
   flex-direction: row;
-@media screen and (max-width: 1023px) {
-        flex-direction: column;
-        gap: 80px;
-    }
+  justify-content: flex-end;
+  align-items: flex-end;
+  gap: 30px;
+
+  @media screen and (max-width: 1023px) {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 80px;
+  }
 }
+
 .buttons-for-pleasure {
   display: flex;
   flex-direction: column;
-  margin-bottom: 47px;
   gap: 16px;
   justify-content: flex-end;
+
   @media screen and (max-width: 1023px) {
     flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -177,6 +194,7 @@
 .batton-color {
   color: #f3c653;
 }
+
 .details-hotel-slider__wrapper {
   margin-right: 0px;
 }
@@ -206,29 +224,30 @@
     width: 875px;
   }
 }
+
 .section-slider__wrapper {
-    position: relative;
+  position: relative;
 }
 
 .section-slider__wrapper--absolute {
-    position: absolute;
+  position: absolute;
 }
 
 // КІНЕЦЬ СЛАЙДЕРУ
-.section-slider--details-hotel {
-  .slick-prev {
-    right: 64px;
-  }
+// .section-slider--details-hotel {
+//   .slick-prev {
+//     right: 64px;
+//   }
 
-  .slick-next {
-    right: 0;
-  }
-}
+//   .slick-next {
+//     right: 0;
+//   }
+// }
 
-.details-hotel-slider__icon--previous {
-  right: 64px;
-}
+// .details-hotel-slider__icon--previous {
+//   right: 64px;
+// }
 
-.details-hotel-slider__icon--next {
-  right: 0;
-}
+// .details-hotel-slider__icon--next {
+//   right: 0;
+// }
