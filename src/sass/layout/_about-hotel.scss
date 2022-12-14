@@ -150,6 +150,13 @@
     padding-top: 170px;
   }
 }
+
+.about-hotel__second-wrapper .about-hotel__image {
+  @media screen and (max-width: 1023px) {
+    min-width: 200px;
+  }
+}
+
 // slayder
 .about-hotel__third-wrapper {
   position: relative;
