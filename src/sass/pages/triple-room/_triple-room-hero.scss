@@ -1,0 +1,224 @@
+.triple-hero {
+    min-height: 740px;
+    @include tablet {
+      min-height: 721px;
+    }
+  
+    @include desktop {
+      min-height: 720px;
+    }
+  }
+  
+  .triple__shadow {
+    background-image: linear-gradient(
+      180deg,
+      #000000 0%,
+      rgba(0, 0, 0, 0.55) 54.17%,
+      rgba(0, 0, 0, 0) 100%
+    );
+    height: 143px;
+  
+    @include tablet {
+      height: 116px;
+    }
+  
+    @include desktop {
+      height: 147px;
+    }
+  }
+  
+  .container__triple {
+    position: relative;
+  }
+  
+  .triple__title {
+    display: block;
+    padding-top: 483px;
+    text-align: left;
+  
+    @include tablet {
+      padding-top: 468px;
+    }
+  
+    @include desktop {
+      padding-top: 524px;
+      padding-bottom: 48px;
+    }
+  }
+  
+  .triple__subtitle {
+    font-family: 'Times New Roman';
+    font-weight: 700;
+    font-size: 28px;
+    line-height: calc(32 / 28);
+    letter-spacing: 0.05em;
+    color: var(--hero-text-color);
+    text-transform: uppercase;
+    max-width: 325px;
+    margin-bottom: 14px;
+  
+    @include tablet {
+      display: flex;
+      justify-content: space-between;
+      max-width: 507px;
+      font-size: 36px;
+      line-height: calc(41 / 36);
+      margin-bottom: 24px;
+    }
+  }
+  
+  .triple__text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: calc(15 / 12);
+    letter-spacing: 0.02em;
+    color: var(--hero-text-color);
+    max-width: 325px;
+  
+    @include tablet {
+      max-width: 400px;
+      font-size: 16px;
+      line-height: calc(20 / 16);
+    }
+  }
+  
+  .triple__btn {
+    text-align: end;
+    margin-top: 30px;
+    padding-bottom: 40px;
+    @include mobile {
+      padding-right: 58px;
+    }
+  
+    @include tablet {
+      margin-top: 0;
+      padding-right: 0;
+      padding-bottom: 64px;
+    }
+    @include desktop {
+      position: absolute;
+      right: 85px;
+      bottom: 66px;
+      padding-bottom: 0;
+    }
+  }
+  
+  .triple-hero__item {
+    position: absolute;
+    bottom: 14px;
+    left: 15px;
+  
+    @include tablet {
+      display: flex;
+      gap: 8px;
+      bottom: 38px;
+      left: 372px;
+    }
+  
+    @include desktop {
+      display: none;
+    }
+  }
+  
+  .triple-menu__icon {
+    fill: var(--accent-color);
+  }
+  
+  .triple-hero__list:not(:last-child) {
+    display: block;
+    margin-bottom: 8px;
+    @include tablet {
+      margin-bottom: 0;
+    }
+  }
+  
+  .triple-hero__adress {
+    display: flex;
+    max-width: 210px;
+  
+    border: 1px solid;
+    border-color: rgba(243, 198, 83, 0.7);
+    border-radius: 2px;
+    padding: 8px 0 8px 6px;
+  
+    position: absolute;
+    top: 64px;
+    right: 15px;
+  
+    @include tablet {
+      top: 640px;
+      left: 47px;
+      max-width: 285px;
+      padding: 8px 8px 8px 10px;
+    }
+  
+    @include desktop {
+      display: none;
+    }
+  }
+  
+  .triple-adress__link {
+    display: flex;
+  }
+  
+  .triple-adress__preicon {
+    margin-right: 8px;
+    display: flex;
+    align-items: center;
+  
+    @include tablet {
+      margin-right: 10px;
+    }
+  
+    @include desktop {
+      margin-right: 10px;
+    }
+  }
+  
+  .triple-adress__icon {
+    fill: var(--accent-color);
+  
+    @include tablet {
+      width: 24px;
+      height: 24px;
+    }
+  
+    @include desktop {
+      width: 24px;
+      height: 24px;
+    }
+  }
+  
+  .triple-adress__text {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: calc(15 / 12);
+    letter-spacing: 0.01em;
+    color: #e5e5e5;
+  
+    @include tablet {
+      font-size: 16px;
+      line-height: calc(20 / 16);
+    }
+  
+    @include desktop {
+      font-size: 16px;
+      line-height: calc(20 / 16);
+    }
+  }
+  
+  .triple-adress__textpart {
+    display: block;
+    padding-right: 4px;
+  
+    @include tablet {
+      padding-right: 5px;
+    }
+  
+    @include desktop {
+      padding-right: 0;
+    }
+  }
+  
