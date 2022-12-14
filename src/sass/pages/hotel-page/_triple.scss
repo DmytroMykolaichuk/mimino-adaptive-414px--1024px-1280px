@@ -32,10 +32,24 @@
   }
 }
 
+.triple-section__text-wrap{
+  @include tablet {
+      margin-right: 17px;
+  }
+
+  @include desktop{
+    margin-right: 57px;
+  }
+}
+
 .triple-section-title-wrap{
   display: inline-block;
   text-align: start;
   margin-left: auto;
+
+  // @include desktop {
+  //     margin-right: 57px;
+  // }
 }
 
 .triple-section__slogan{
@@ -51,6 +65,10 @@
       line-height: calc(37 / 32);
       margin-bottom: 4px;
     }
+
+    // @include desktop {
+    //   margin-right: 57px;
+    // }
 }
 
 .triple-section__mimiho-title{
@@ -69,6 +87,7 @@
   }
 
     @include desktop{
+      // margin-right: 57px;
       margin-bottom: 72px;
     }
 }
@@ -134,7 +153,7 @@
 
 .triple-section-slider__wrapper{
   position: absolute;
-  right: -15px;
+  right: 0;
   bottom: 184px;
 
   @include tablet{
