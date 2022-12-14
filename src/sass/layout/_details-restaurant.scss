@@ -1,5 +1,8 @@
 .section__details-restaurant {
   padding: 24px 0px 40px 0px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1920px;
 
   @include tablet {
     padding: 48px 0px 96px 0px;
@@ -31,13 +34,23 @@
     }
   }
 
-  @include desktop {
-    background-size: 1280px auto;
+  @media screen and (min-width: 1280px) and (max-width: 1920px) {
+    background-size: 100vw auto;
     background-image: $bg-gradient,
-      url(../images/desktop/home-desktop-restoran-1x.jpg);
+      url(../images/desktop/home-desktop-restoran-1920-1x.jpg);
     @include retina {
       background-image: $bg-gradient,
-        url(../images/desktop/home-desktop-restoran-2x.jpg);
+        url(../images/desktop/home-desktop-restoran-1920-2x.jpg);
+    }
+  }
+
+  @media screen and (min-width: 1920px) {
+    background-size: 1920px auto;
+    background-image: $bg-gradient,
+      url(../images/desktop/home-desktop-restoran-1920-1x.jpg);
+    @include retina {
+      background-image: $bg-gradient,
+        url(../images/desktop/home-desktop-restoran-1920-2x.jpg);
     }
   }
 }

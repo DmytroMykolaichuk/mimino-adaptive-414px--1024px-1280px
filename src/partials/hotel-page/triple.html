@@ -1,51 +1,188 @@
-<section class="triple container">
-  <p class="triple__slogan">Amet minim mollit non</p>
-  <h3 class="triple__logo">MIMIHO</h3>
-  <div class="triple__char">
-    <h4 class="triple__char-size">ТРЬОХМІСНИЙ НОМЕР</h4>
-    <p class="triple__char-description">
-      Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
-      Velit officia consequat duis enim velit mollit. Exercitation veniam
-      consequat sunt nostrud amet.
-    </p>
-  </div>
-  <div class="thumb-triple">
-    <picture class="thumb-triple__picture">
-      <source
+<section class="triple-section">
+  <div class="container triple-section__container">
+    <div class="triple-section__text-wrap">
+      <p class="triple-section__slogan">Amet minim mollit non</p>
+      <h3 class="triple-section__mimiho-title">MIMIHO</h3>
+      <div class="triple-section-title-wrap">
+        <h2 class="triple-section__title">ТРЬОХМІСНИЙ НОМЕР</h2>
+        <p class="triple-section__text">
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+          sint. Velit officia consequat duis enim velit mollit. Exercitation
+          veniam consequat sunt nostrud amet.
+        </p>
+      </div>
+    </div>
+    <div class="triple-section__image-thumb">
+      <img
         srcset="
-          ./images/mobile/hotel-mobile-1x.jpg,
-          ./images/mobile/hotel-mobile-2x.jpg
+          ./images/mobile/home-mobile-3-1x.jpg   244w,
+          ./images/tablet/home-tablet-3-1x.jpg   400w,
+          ./images/desktop/home-desktop-3-1x.jpg 460w,
+          ./images/mobile/home-mobile-3-2x.jpg   488w,
+          ./images/tablet/home-tablet-3-2x.jpg   800w,
+          ./images/desktop/home-desktop-3-2x.jpg 920w
         "
-        media="(max-width: 1023px)"
-        sizes="244px"
+        sizes="(min-width: 1280px) 460px, (min-width: 1024px) 400px, 244px"
+        src="./images/mobile/home-mobile-3-1x.jpg"
+        alt="Фото номера готеля MIMIHO"
+        class="about-hotel__image"
       />
-      <source
-        srcset="
-          ./images/tablet/hotel-tablet-1-1x.jpg,
-          ./images/tablet/hotel-tablet-1-2x.jpg
-        "
-        media="(min-width: 1024px)"
-        sizes="400px"
-      />
+    </div>
 
-      <source
-        srcset="
-          ./images/desktop/hotel-desktop-1-1x.jpg,
-          ./images/desktop/hotel-desktop-1-2x.jpg
-        "
-        media="(min-width: 1280px)"
-        sizes="460px"
-      />
-      <img src="./images/desktop/hotel-desktop-1-1x.jpg" alt="фото номера" />
-    </picture>
-  </div>
+    <div class="section-slider__wrapper triple-section-slider__wrapper">
+      <div
+        class="section-slider section-slider--black-arrow section-slider--tripple-room two-time"
+      >
+        <div class="triple-section-slider__thumb">
+          <picture>
+            <source
+              srcset="
+                ./images/desktop/hotel-desktop-slider-1-1x.jpg 1x,
+                ./images/desktop/hotel-desktop-slider-1-2x.jpg 2x
+              "
+              media="(min-width: 1280px)"
+            />
+            <source
+              srcset="
+                ./images/tablet/hotel-tablet-slider-1-1x.jpg 1x,
+                ./images/tablet/hotel-tablet-slider-1-2x.jpg 2x
+              "
+              media="(min-width: 1024px)"
+            />
+            <source
+              srcset="
+                ./images/mobile/hotel-mobile-slider-1-1x.jpg 1x,
+                ./images/mobile/hotel-mobile-slider-1-2x.jpg 2x
+              "
+              media="(max-width: 1023px)"
+            />
+            <img
+              src="./images/mobile/hotel-mobile-slider-1-1x.jpg"
+              alt="мажорний умивальник"
+            />
+          </picture>
+        </div>
+        <div class="triple-section-slider__thumb">
+          <picture>
+            <source
+              srcset="
+                ./images/desktop/hotel-desktop-slider-2-1x.jpg 1x,
+                ./images/desktop/hotel-desktop-slider-2-2x.jpg 2x
+              "
+              media="(min-width: 1280px)"
+            />
+            <source
+              srcset="
+                ./images/tablet/hotel-tablet-slider-2-1x.jpg 1x,
+                ./images/tablet/hotel-tablet-slider-2-2x.jpg 2x
+              "
+              media="(min-width: 1024px)"
+            />
+            <source
+              srcset="
+                ./images/mobile/hotel-mobile-slider-2-1x.jpg 1x,
+                ./images/mobile/hotel-mobile-slider-2-2x.jpg 2x
+              "
+              media="(max-width: 1023px)"
+            />
+            <img
+              src="./images/mobile/hotel-mobile-slider-2-1x.jpg"
+              alt="кава на фоні ялинки"
+            />
+          </picture>
+        </div>
+        <div class="triple-section-slider__thumb">
+          <picture>
+            <source
+              srcset="
+                ./images/desktop/desktop-slider-8-1x.jpg 1x,
+                ./images/desktop/desktop-slider-8-2x.jpg 2x
+              "
+              media="(min-width: 1280px)"
+            />
+            <source
+              srcset="
+                ./images/tablet/tablet-slider-8-1x.jpg 1x,
+                ./images/tablet/tablet-slider-8-2x.jpg 2x
+              "
+              media="(min-width: 1024px)"
+            />
+            <source
+              srcset="
+                ./images/mobile/mobile-slider-8-1x.jpg 1x,
+                ./images/mobile/mobile-slider-8-2x.jpg 2x
+              "
+              media="(max-width: 1023px)"
+            />
+            <img src="./images/mobile/mobile-slider-8-1x.jpg" alt="кафешка" />
+          </picture>
+        </div>
+        <div class="triple-section-slider__thumb">
+          <picture>
+            <source
+              srcset="
+                ./images/desktop/desktop-slider-9-1x.jpg 1x,
+                ./images/desktop/desktop-slider-9-2x.jpg 2x
+              "
+              media="(min-width: 1280px)"
+            />
+            <source
+              srcset="
+                ./images/tablet/tablet-slider-9-1x.jpg 1x,
+                ./images/tablet/tablet-slider-9-2x.jpg 2x
+              "
+              media="(min-width: 1024px)"
+            />
+            <source
+              srcset="
+                ./images/mobile/mobile-slider-9-1x.jpg 1x,
+                ./images/mobile/mobile-slider-9-2x.jpg 2x
+              "
+              media="(max-width: 1023px)"
+            />
+            <img src="./images/mobile/mobile-slider-9-1x.jpg" alt="сніданок" />
+          </picture>
+        </div>
 
-  <div class="triple-btn">
-    <a class="triple-btn__details btn-black" href="#">
-      <span class="btn-name">Детальніше</span>
-    </a>
-    <button class="triple-btn__price btn-black" type="button">
-      Переглянути ціни
-    </button>
+        <svg
+          class="section-slider__icon section-slider__icon--black tripple-room-slider__icon--previous"
+          width="32"
+          height="32"
+        >
+          <use href="./images/icons.svg#icon-left"></use>
+        </svg>
+
+        <svg
+          class="section-slider__icon section-slider__icon--black tripple-room-slider__icon--next"
+          width="32"
+          height="32"
+        >
+          <use href="./images/icons.svg#icon-right"></use>
+        </svg>
+      </div>
+
+      <svg
+        class="section-slider__icon section-slider__icon--black tripple-room-slider__icon--previous"
+        width="32"
+        height="32"
+      >
+        <use href="./images/icons.svg#icon-left"></use>
+      </svg>
+
+      <svg
+        class="section-slider__icon section-slider__icon--black tripple-room-slider__icon--next"
+        width="32"
+        height="32"
+      >
+        <use href="./images/icons.svg#icon-right"></use>
+      </svg>
+    </div>
+
+    <div class="triple-section-btn">
+      <a href="../src/triple-room.html" class="btn-black triple-section__link"
+        >Детальніше</a
+      >
+      <button class="btn-black">Переглянути ціни</button>
+    </div>
   </div>
 </section>
