@@ -1,97 +1,92 @@
 <section class="about-restaurant">
   <div class="container">
-    <div class="restaurant__block">
+    <div class="about-restaurant__first-wrapper">
       <div class="about-restaurant__text-wrapper">
-        <h2 class="visually-hidden">Restaurant</h2>
-        <p class="restaurant__text">Amet minim mollit non</p>
-        <h3 class="restaurant__subtitle">Mimiho</h3>
-        <p class="restaurant__subtext">
+        <h2 class="visually-hidden">Інформація про ресторан MIMIHO</h2>
+        <p class="about-restaurant__pre-title">Amet minim mollit non</p>
+        <h3 class="about-restaurant__title">MIMIHO</h3>
+        <p class="about-restaurant__description">
           Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
           sint. Velit officia consequat duis enim velit mollit. Exercitation
           veniam consequat sunt nostrud amet.
         </p>
       </div>
-      <div class="restaurant__picture">
-        <picture>
+
+      <div class="about-restaurant__image-thumb">
+        <picture class="about-restaurant__image">
           <source
             srcset="
-              ./images/desktop/home-desktop-1-1x.jpg 1x,
-              ./images/desktop/home-desktop-1-2x.jpg 2x
+              ./images/desktop/home-desktop-1-1x.jpg 460w,
+              ./images/desktop/home-desktop-1-2x.jpg 920w
             "
             media="(min-width: 1280px)"
+            sizes="460px"
           />
           <source
             srcset="
-              ./images/tablet/home-tablet-1-1x.jpg 1x,
-              ./images/tablet/home-tablet-1-2x.jpg 2x
+              ./images/tablet/home-tablet-1-1x.jpg 400w,
+              ./images/tablet/home-tablet-1-2x.jpg 800w
             "
-            width="400"
             media="(min-width: 1024px)"
+            sizes="400px"
           />
           <source
             srcset="
-              ./images/mobile/home-mobile-1-1x.jpg 1x,
-              ./images/mobile/home-mobile-1-2x.jpg 2x
+              ./images/mobile/home-mobile-1-1x.jpg 244w,
+              ./images/mobile/home-mobile-1-2x.jpg 488w
             "
-            width="244"
-            media="(min-width: 414px)"
+            media="(max-width: 1023px)"
+            sizes="244px"
           />
           <img
-            src="./images/desktop/home-desktop-1-1x.jpg"
-            alt="Вид в ресторані"
-            width="460"
-            height="574"
-            class="about-restaurant__photo"
+            src="./images/mobile/home-mobile-1-1x.jpg"
+            alt="Фото номера готеля MIMIHO"
           />
         </picture>
       </div>
     </div>
 
-    <div class="restaurant__second-block">
-      <div class="restaurant__second-picture">
-        <picture>
-          <source
-            srcset="
-              ./images/desktop/home-desktop-2-1x.jpg 1x,
-              ./images/desktop/home-desktop-2-2x.jpg 2x
-            "
-            media="(min-width: 1280px)"
-          />
-          <source
-            srcset="
-              ./images/tablet/home-tablet-2-1x.jpg 1x,
-              ./images/tablet/home-tablet-2-2x.jpg 2x
-            "
-            width="350"
-            media="(min-width: 1024px)"
-          />
-          <source
-            srcset="
-              ./images/mobile/home-mobile-2-1x.jpg 1x,
-              ./images/mobile/home-mobile-2-2x.jpg 2x
-            "
-            width="200"
-            media="(min-width: 414px)"
-          />
-          <img
-            src="./images/desktop/home-desktop-2-1x.jpg"
-            alt="Хол ресторану"
-            width="460"
-            height="574"
-            class="about-restaurant__photo"
-          />
-        </picture>
-      </div>
-      <p class="restaurant__subtext restaurant__subtext--brown">
+    <div class="about-restaurant__second-wrapper">
+      <picture class="about-restaurant__image">
+        <source
+          srcset="
+            ./images/desktop/home-desktop-2-1x.jpg 460w,
+            ./images/desktop/home-desktop-2-2x.jpg 920w
+          "
+          media="(min-width: 1280px)"
+          sizes="460px"
+        />
+        <source
+          srcset="
+            ./images/tablet/home-tablet-2-1x.jpg 350w,
+            ./images/tablet/home-tablet-2-2x.jpg 700w
+          "
+          media="(min-width: 1024px)"
+          sizes="350px"
+        />
+        <source
+          srcset="
+            ./images/mobile/home-mobile-2-1x.jpg 200w,
+            ./images/mobile/home-mobile-2-2x.jpg 400w
+          "
+          media="(max-width: 1023px)"
+          sizes="200px"
+        />
+        <img
+          src="./images/mobile/home-mobile-2-1x.jpg"
+          alt="Фото хола готеля MIMIHO"
+        />
+      </picture>
+      <p class="about-restaurant__text">
         Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
         sint. Velit officia consequat duis enim velit mollit. Exercitation
         veniam consequat sunt nostrud amet.
       </p>
     </div>
 
-    <div class="about-kitchen-restaurant-wrapper">
+    <div class="about-kitchen-restaurant__third-wrapper">
       <div
-        class="section-about-kitchen-restaurant__wrapper about-kitchen-restaurant-slider__wrapper"
+        class="section-slider__wrapper about-kitchen-restaurant-slider__wrapper"
       >
         <div
           class="section-slider section-slider--black-arrow section-slider--about-kitchen-restaurant two-time"
@@ -100,8 +95,8 @@
             <picture>
               <source
                 srcset="
-                  ./images/desktop/home-desktop-slider-1-1x.jpg 1x,
-                  ./images/desktop/home-desktop-slider-1-2x.jpg 2x
+                  ./images/mobile/home-mobile-slide1-1x.jpg 1x,
+                  ./images/mobile/home-mobile-slide1-2x.jpg 2x
                 "
                 media="(min-width: 1280px)"
               />
@@ -110,7 +105,6 @@
                   ./images/tablet/home-tablet-slider-1-1x.jpg 1x,
                   ./images/tablet/home-tablet-slider-1-2x.jpg 2x
                 "
-                width="194"
                 media="(min-width: 1024px)"
               />
               <source
@@ -118,13 +112,11 @@
                   ./images/mobile/home-mobile-slide1-1x.jpg 1x,
                   ./images/mobile/home-mobile-slide1-2x.jpg 2x
                 "
-                width="245"
-                media="(min-width: 414px)"
+                media="(max-width: 1023px)"
               />
               <img
-                src="./images/desktop/home-desktop-slider-1-1x.jpg"
-                alt="Фото слайдеру 1"
-                width="254"
+                src="./images/mobile/home-mobile-slide1-1x.jpg"
+                alt="бокал"
               />
             </picture>
           </div>
@@ -132,100 +124,101 @@
             <picture>
               <source
                 srcset="
-                  ./images/desktop/home-desktop-slider-2-1x.jpg 1x,
-                  ./images/desktop/home-desktop-slider-2-2x.jpg 2x
+                  ./images/mobile/mobile-slider-7-1x.jpg 1x,
+                  ./images/mobile/mobile-slider-7-2x.jpg 2x
                 "
                 media="(min-width: 1280px)"
               />
               <source
                 srcset="
-                  ./images/tablet/home-tablet-slider-2-1x.jpg 1x,
-                  ./images/tablet/home-tablet-slider-2-2x.jpg 2x
+                  ./images/tablet/tablet-slider-7-1x.jpg 1x,
+                  ./images/tablet/tablet-slider-7-2x.jpg 2x
                 "
-                width="194"
                 media="(min-width: 1024px)"
               />
               <source
                 srcset="
-                  ./images/mobile/home-tablet-slider-2-1x.jpg 1x,
-                  ./images/tablet/home-tablet-slider-2-2x.jpg 2x
+                  ./images/mobile/mobile-slider-7-1x.jpg 1x,
+                  ./images/mobile/mobile-slider-7-2x.jpg 2x
                 "
-                width="245"
-                media="(min-width: 414px)"
+                media="(max-width: 1023px)"
+              />
+              <img src="./images/mobile/mobile-slider-7-1x.jpg" alt="устрицы" />
+            </picture>
+          </div>
+          <div class="about-kitchen-restaurant-slider__thumb">
+            <picture>
+              <source
+                srcset="
+                  ./images/mobile/mobile-slider-16-1x.jpg 1x,
+                  ./images/mobile/mobile-slider-16-2x.jpg 2x
+                "
+                media="(min-width: 1280px)"
+              />
+              <source
+                srcset="
+                  ./images/tablet/tablet-slider-16-1x.jpg 1x,
+                  ./images/tablet/tablet-slider-16-2x.jpg 2x
+                "
+                media="(min-width: 1024px)"
+              />
+              <source
+                srcset="
+                  ./images/mobile/mobile-slider-16-1x.jpg 1x,
+                  ./images/mobile/mobile-slider-16-2x.jpg 2x
+                "
+                media="(max-width: 1023px)"
+              />
+              <img src="./images/mobile/mobile-slider-16-1x.jpg" alt="каша" />
+            </picture>
+          </div>
+          <div class="about-kitchen-restaurant-slider__thumb">
+            <picture>
+              <source
+                srcset="
+                  ./images/mobile/mobile-slider-15-1x.jpg 1x,
+                  ./images/mobile/mobile-slider-15-2x.jpg 2x
+                "
+                media="(min-width: 1280px)"
+              />
+              <source
+                srcset="
+                  ./images/tablet/tablet-slider-15-1x.jpg 1x,
+                  ./images/tablet/tablet-slider-15-2x.jpg 2x
+                "
+                media="(min-width: 1024px)"
+              />
+              <source
+                srcset="
+                  ./images/mobile/mobile-slider-15-1x.jpg 1x,
+                  ./images/mobile/mobile-slider-15-2x.jpg 2x
+                "
+                media="(max-width: 1023px)"
               />
               <img
-                src="./images/mobile/home-mobile-slide1-1x.jpg"
-                alt="Фото слайдеру 2"
-                width="254"
+                src="./images/mobile/mobile-slider-15-1x.jpg"
+                alt="сніданок"
               />
             </picture>
           </div>
 
-          <div class="about-kitchen-restaurant-slider__thumb">
-            <picture>
-              <source
-                srcset="
-                  ./images/desktop/restaurant-desktop-slider-1-1x.jpg 1x,
-                  ./images/desktop/restaurant-desktop-slider-1-2x.jpg 2x
-                "
-                media="(min-width: 1280px)"
-              />
-              <source
-                srcset="
-                  ./images/tablet/restaurant-tablet-slider-1-1x.jpg 1x,
-                  ./images/tablet/restaurant-tablet-slider-1-2x.jpg 2x
-                "
-                width="194"
-                media="(min-width: 1024px)"
-              />
-              <source
-                srcset="
-                  ./images/mobile/restaurant-mobile-slider1-1x.jpg 1x,
-                  ./images/mobile/restaurant-mobile-slider1-2x.jpg 2x
-                "
-                width="245"
-                media="(min-width: 414px)"
-              />
-              <img
-                src="./images/desktop/restaurant-desktop-slider-1-1x.jpg"
-                alt="Фото слайдеру 3"
-                width="254"
-              />
-            </picture>
-          </div>
-          <div class="about-kitchen-restaurant-slider__thumb">
-            <picture>
-              <source
-                srcset="
-                  ./images/desktop/restaurant-desktop-slider-2-1x.jpg 1x,
-                  ./images/desktop/restaurant-desktop-slider-2-2x.jpg 2x
-                "
-                media="(min-width: 1280px)"
-              />
-              <source
-                srcset="
-                  ./images/tablet/restaurant-tablet-slider-2-1x.jpg 1x,
-                  ./images/tablet/restaurant-tablet-slider-2-2x.jpg 2x
-                "
-                width="194"
-                media="(min-width: 1024px)"
-              />
-              <source
-                srcset="
-                  ./images/mobile/restaurant-mobile-slider2-1x.jpg  1x,
-                  ./images/tablet/restaurant-tablet-slider-2-2x.jpg 2x
-                "
-                width="245"
-                media="(min-width: 414px)"
-              />
-              <img
-                src="./images/desktop/restaurant-desktop-slider-1-1x.jpg"
-                alt="Фото слайдеру 4"
-                width="254"
-              />
-            </picture>
-          </div>
+          <svg
+            class="section-slider__icon section-slider__icon--black about-kitchen-restaurant-slider__icon--previous"
+            width="32"
+            height="32"
+          >
+            <use href="./images/icons.svg#icon-left"></use>
+          </svg>
+
+          <svg
+            class="section-slider__icon section-slider__icon--black about-kitchen-restaurantm-slider__icon--next"
+            width="32"
+            height="32"
+          >
+            <use href="./images/icons.svg#icon-right"></use>
+          </svg>
         </div>
+
         <svg
           class="section-slider__icon section-slider__icon--black about-kitchen-restaurant-slider__icon--previous"
           width="32"
