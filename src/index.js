@@ -34,12 +34,3 @@ $('.details-restaurant-slider').slick({
   autoplay: true,
 });
 
-$('.hero-slider').slick({
-  dots: false,
-  infinite: true,
-  // speed: 300,
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  variableWidth: false,
-  // autoplay: true,
-});
