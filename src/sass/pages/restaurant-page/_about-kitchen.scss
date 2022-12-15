@@ -1,5 +1,5 @@
-.about-hotel {
-  padding-top: 18px;
+.about-kitchen {
+  padding-top: 16px;
   padding-bottom: 72px;
 
   background-color: var(--primary-background-color);
@@ -10,31 +10,32 @@
   }
 
   @media screen and (min-width: 1280px) {
-    padding-bottom: 197px;
+    padding-bottom: 225px;
   }
 }
-.about-hotel__first-wrapper {
+
+.about-kitchen__first-wrapper {
   display: flex;
   flex-direction: column;
   gap: 28px;
 
   @media screen and (min-width: 1024px) {
-    margin-bottom: 120px;
-    flex-direction: row-reverse;
-    gap: 46px;
+    margin-bottom: 142px;
+    flex-direction: row;
+    gap: 26px;
   }
 
   @media screen and (min-width: 1280px) {
-    gap: 67px;
+    gap: 37px;
     margin-bottom: 162px;
   }
 }
 
-.about-hotel__text-wrapper {
+.about-kitchen__text-wrapper {
   width: 242px;
 
   @media screen and (max-width: 1023px) {
-    align-self: flex-end;
+    align-self: flex-start;
   }
 
   @media screen and (min-width: 1024px) {
@@ -42,17 +43,16 @@
   }
 
   @media screen and (min-width: 1280px) {
-    width: 488px;
+    width: 518px;
   }
 }
 
-.about-hotel__pre-title {
+.about-kitchen__pre-title {
   font-family: 'Times New Roman';
   font-weight: 400;
   font-size: 20px;
   line-height: calc(23 / 20);
   color: var(--slogan-color);
-  text-align: right;
 
   @media screen and (min-width: 1024px) {
     font-size: 32px;
@@ -60,9 +60,9 @@
   }
 }
 
-.about-hotel__title {
-  margin-top: 6px;
-  margin-bottom: 16px;
+.about-kitchen__title {
+  margin-top: 12px;
+  margin-bottom: 12px;
   margin-right: -0.3em;
 
   font-family: 'Film P3', serif;
@@ -70,38 +70,37 @@
   line-height: calc(43 / 40);
   letter-spacing: 0.3em;
   color: var(--mimino-section-color);
-  text-align: right;
 
   @media screen and (min-width: 1024px) {
     font-size: 64px;
     line-height: calc(69 / 64);
-
-    margin-bottom: 47px;
+    margin-top: 4px;
+    margin-bottom: 24px;
   }
 
   @media screen and (min-width: 1280px) {
     margin-bottom: 24px;
-
-    color: #828282;
   }
 }
 
-.about-hotel__description {
+.about-kitchen__description {
   @media screen and (min-width: 1024px) {
     font-size: 16px;
     line-height: calc(20 / 16);
   }
 }
 
-.about-hotel__image-thumb {
+.about-kitchen__image-thumb {
   width: 244px;
+  margin-left: auto;
 
   @media screen and (min-width: 1024px) {
     width: 400px;
+    margin-left: unset;
 
     position: relative;
 
-    & .about-hotel__image {
+    & .about-kitchen__image {
       position: absolute;
       top: -144px;
     }
@@ -112,15 +111,15 @@
   }
 }
 
-.about-hotel__image {
+.about-kitchen__image {
   background: #dadada;
   box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
   border-radius: 2px;
 }
 
-.about-hotel__second-wrapper {
+.about-kitchen__second-wrapper {
   display: flex;
-  gap: 21px;
+  gap: 20px;
 
   @media screen and (max-width: 1023px) {
     margin-top: 32px;
@@ -129,11 +128,11 @@
 
   @media screen and (min-width: 1024px) {
     gap: 48px;
-    justify-content: flex-end;
+    justify-content: flex-start;
   }
 }
 
-.about-hotel__text {
+.about-kitchen__text {
   color: var(--modal-text-color);
 
   @media screen and (min-width: 414px) {
@@ -153,30 +152,34 @@
   }
 }
 
-.about-hotel__second-wrapper .about-hotel__image {
+.about-kitchen__second-wrapper .about-kitchen__image {
   @media screen and (max-width: 1023px) {
     min-width: 200px;
   }
 }
 
 // slayder
-.about-hotel__third-wrapper {
+.about-kitchen-restaurant__third-wrapper {
   position: relative;
 }
 
-.about-hotel-slider__wrapper {
+.about-kitchen-restaurant-slider__wrapper {
+  max-width: 330px;
+  margin-left: 74px;
   @media screen and (min-width: 1024px) {
     position: absolute;
     top: -28px;
+    right: 111px;
   }
 
   @media screen and (min-width: 1280px) {
-    top: -170px;
+    top: -137px;
+    right: 205px;
   }
 }
 
-.about-hotel-slider__thumb {
-  margin-right: 20px;
+.about-kitchen-restaurant-slider__thumb {
+  margin-right: 25px;
   max-width: 245px;
 
   @include tablet {
