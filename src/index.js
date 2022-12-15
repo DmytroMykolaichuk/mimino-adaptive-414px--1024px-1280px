@@ -54,3 +54,4 @@ $('.hero-slider').slick({
   variableWidth: false, 
   // autoplay: true, 
 });
+
