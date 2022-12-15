@@ -192,6 +192,127 @@
 }
 
 // CLASSES TO ADD RESPONSIVE
+.hero-slider__first-page {
+  $bg-gradient: linear-gradient(
+    180deg,
+    #000000 0%,
+    rgba(0, 0, 0, 0.55) 10.468%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  background-image: $bg-gradient,
+    url(../images/desktop/double-lux-slider-desktop-1x.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  @include retina {
+    background-image: $bg-gradient,
+      url(../images/desktop/double-lux-slider-desktop-2x.jpg);
+  }
+  @include tablet {
+    background-image: $bg-gradient,
+      url(../images/desktop/double-lux-slider-desktop-1x.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    @include retina {
+      background-image: $bg-gradient,
+        url(../images/desktop/double-lux-slider-desktop-2x.jpg);
+    }
+  }
+  @include desktop {
+    background-image: $bg-gradient,
+      url(../images/desktop/double-lux-slider-desktop-1x.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    @include retina {
+      background-image: $bg-gradient,
+        url(../images/desktop/double-lux-slider-desktop-2x.jpg);
+    }
+  }
+}
+
+.hero-slider__second-page {
+  $bg-gradient: linear-gradient(
+    180deg,
+    #000000 0%,
+    rgba(0, 0, 0, 0.55) 10.468%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  background-image: $bg-gradient,
+    url(../images/desktop/double-lux-slider-desktop2-1x.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  @include retina {
+    background-image: $bg-gradient,
+      url(../images/desktop/double-lux-slider-desktop2-2x.jpg);
+  }
+  @include tablet {
+    background-image: $bg-gradient,
+      url(../images/desktop/double-lux-slider-desktop2-1x.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    @include retina {
+      background-image: $bg-gradient,
+        url(../images/desktop/double-lux-slider-desktop2-2x.jpg);
+    }
+  }
+  @include desktop {
+    background-image: $bg-gradient,
+      url(../images/desktop/double-lux-slider-desktop2-1x.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    @include retina {
+      background-image: $bg-gradient,
+        url(../images/desktop/double-lux-slider-desktop2-2x.jpg);
+    }
+  }
+}
+
+.hero-slider__third-page {
+  $bg-gradient: linear-gradient(
+    180deg,
+    #000000 0%,
+    rgba(0, 0, 0, 0.55) 10.468%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  background-image: $bg-gradient,
+    url(../images/desktop/double-lux-slider-desktop3-1x.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  @include retina {
+    background-image: $bg-gradient,
+      url(../images/desktop/double-lux-slider-desktop3-2x.jpg);
+  }
+  @include tablet {
+    background-image: $bg-gradient,
+      url(../images/desktop/double-lux-slider-desktop3-1x.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    @include retina {
+      background-image: $bg-gradient,
+        url(../images/desktop/double-lux-slider-desktop3-2x.jpg);
+    }
+  }
+  @include desktop {
+    background-image: $bg-gradient,
+      url(../images/desktop/double-lux-slider-desktop3-1x.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    @include retina {
+      background-image: $bg-gradient,
+        url(../images/desktop/double-lux-slider-desktop3-2x.jpg);
+    }
+  }
+}
+
+// END CLASSES TO ADD RESPONSIVE
 
 .hero-slider__icon {
   position: absolute;
