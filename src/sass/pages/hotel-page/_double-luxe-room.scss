@@ -14,7 +14,7 @@
 
 .about-room__list {
     @include tablet {
-    position: relative;
+        position: relative;
     }
 }
 
@@ -50,7 +50,7 @@
     @include tablet {
         margin-bottom: 4px;
         font-size: 32px;
-            line-height: 37px;
+        line-height: 37px;
     }
 }
 
@@ -67,7 +67,7 @@
     @include tablet {
         margin-bottom: 62px;
         font-size: 64px;
-            line-height: 69px;
+        line-height: 69px;
     }
 
     @include desktop {
@@ -86,7 +86,7 @@
 
     @include tablet {
         font-size: 30px;
-            line-height: 34px;
+        line-height: 34px;
         margin-bottom: 16px;
     }
 
@@ -105,7 +105,7 @@
 
     @include tablet {
         font-size: 16px;
-            line-height: 20px;
+        line-height: 20px;
         width: 439px;
     }
 
@@ -127,9 +127,10 @@
 
 
 .double-section-slider__wrapper {
-position: relative;
+    position: relative;
+
     @include tablet {
-        
+
         bottom: 70px;
     }
 
@@ -155,7 +156,7 @@ position: relative;
 }
 
 .double-section-slider__thumb {
-margin-right: 16px;
+    margin-right: 16px;
     max-width: 194px;
 
     @include tablet {
@@ -180,16 +181,17 @@ margin-right: 16px;
     flex-direction: column;
     gap: 16px;
     align-items: center;
+
     @include tablet {
         position: absolute;
         right: 0;
         bottom: 105px;
         margin-top: 0;
-        }
-    
-        @include desktop {
-            position: absolute;
-            right: 0;
-            bottom: 140px;
-        }
+    }
+
+    @include desktop {
+        position: absolute;
+        right: 0;
+        bottom: 140px;
+    }
 }
