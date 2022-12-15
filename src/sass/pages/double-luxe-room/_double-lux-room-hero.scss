@@ -377,7 +377,8 @@
   background-image: $bg-gradient,
     url(../images/mobile/double-lux-slider-mobile3-1x.jpg);
   background-repeat: no-repeat;
-  background-position: center;
+  // background-position: center;
+  background-position: 10%;
   background-size: cover;
 
   @include retina {
@@ -507,7 +508,8 @@
   background-image: $bg-gradient,
     url(../images/desktop/double-lux-slider-desktop3-1x.jpg);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 10%;
+  // background-position: center;
   background-size: cover;
 
   @include retina {
