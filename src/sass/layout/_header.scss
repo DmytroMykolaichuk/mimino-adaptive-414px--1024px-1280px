@@ -14,14 +14,7 @@
 .header__container {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
-//   @include mobile {
-//     padding-top: 21px;
-//   }
-
-  @include tablet {
-    align-items: center;
-  }
+  align-items: center;
 }
 
 
