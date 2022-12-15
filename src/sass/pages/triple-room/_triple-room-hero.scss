@@ -25,6 +25,7 @@
     @include desktop {
       height: 147px;
     }
+
   }
   
   .container__triple {
@@ -221,4 +222,114 @@
       padding-right: 0;
     }
   }
+
+  .triple-slider {
+    z-index: -1;
+  }
+
+  .slider-thumb-triple1 {
+    background-image: url(../images/mobile/double-lux-slider-mobile-1x.jpg);
+
+      background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+        @include retina {
+          background-image: url(../images/mobile/double-lux-slider-mobile-2x.jpg);
+      }
+    
+      @include tablet {
+        background-image: url(../images/tablet/double-lux-slider-tablet-1x.jpg);
+      }
+    
+      @include retina {
+        background-image:url(../images/tablet/double-lux-slider-tablet-2x.jpg);
+    } 
+    
+    @include desktop {
+      background-image:url(../images/desktop/double-lux-slider-desktop-1x.jpg);
+    
+      @include retina {
+        background-image:url(../images/desktop/double-lux-slider-desktop-2x.jpg);
+    }
+    }
+      }
+
+    .slider-thumb-triple2 {
+      background-image: url(../images/mobile/double-lux-slider-mobile2-1x.jpg);
+
+      background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+        @include retina {
+          background-image: url(../images/mobile/double-lux-slider-mobile2-2x.jpg);
+      }
+    
+      @include tablet {
+        background-image: url(../images/tablet/double-lux-slider-tablet2-1x.jpg);
+      }
+    
+      @include retina {
+        background-image:url(../images/tablet/double-lux-slider-tablet2-2x.jpg);
+    } 
+    
+    @include desktop {
+      background-image:url(../images/desktop/double-lux-slider-desktop2-1x.jpg);
+    
+      @include retina {
+        background-image:url(../images/desktop/double-lux-slider-desktop2-2x.jpg);
+    }
+    }
+    }  
+
+    .slider-thumb-triple3 {
+      background-image: url(../images/mobile/double-lux-slider-mobile3-1x.jpg);
+
+      background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+        @include retina {
+          background-image: url(../images/mobile/double-lux-slider-mobile3-2x.jpg);
+      }
+    
+      @include tablet {
+        background-image: url(../images/tablet/double-lux-slider-tablet3-1x.jpg);
+      }
+    
+      @include retina {
+        background-image:url(../images/tablet/double-lux-slider-tablet3-2x.jpg);
+    } 
+    
+    @include desktop {
+      background-image:url(../images/desktop/double-lux-slider-desktop3-1x.jpg);
+    
+      @include retina {
+        background-image:url(../images/desktop/double-lux-slider-desktop3-2x.jpg);
+    }
+    }
+    }  
+    
+
+      
+.triple-room-slider.slick-slider { 
+  position: absolute; 
+  min-width: 320px; 
+} 
+ 
+.triple-slider-thumb.slick-slide { 
+  min-height: 750px; 
+  min-width: 414px;
   
+  @include tablet {
+    min-height: 721px; 
+    min-width: 1024px;
+  }
+
+  @include desktop {
+    min-height: 720px; 
+    min-width: 1280px;
+  }
+
+}
