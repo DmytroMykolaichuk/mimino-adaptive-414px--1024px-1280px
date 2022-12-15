@@ -1,157 +1,133 @@
 .about-restaurant {
-  padding-top: 15px;
-  padding-bottom: 323px;
+  padding-top: 16px;
+  padding-bottom: 72px;
 
-  @include media(1024px) {
+  background-color: var(--primary-background-color);
+
+  @media screen and (min-width: 1024px) {
     padding-top: 120px;
     padding-bottom: 262px;
   }
 
-  @include desktop {
+  @media screen and (min-width: 1280px) {
     padding-bottom: 225px;
   }
 }
 
-// first block
-
-.restaurant__block {
+.about-restaurant__first-wrapper {
   display: flex;
-  gap: 26px;
+  flex-direction: column;
+  gap: 28px;
 
-  @media screen and (max-width: 1023px) {
-    flex-direction: column;
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 142px;
+    flex-direction: row;
+    gap: 26px;
   }
 
-  @include tablet {
-    margin-bottom: 120px;
-  }
-
-  @include desktop {
-    margin-bottom: 162px;
+  @media screen and (min-width: 1280px) {
     gap: 37px;
+    margin-bottom: 162px;
   }
 }
 
 .about-restaurant__text-wrapper {
-  width: 258px;
+  width: 242px;
 
   @media screen and (max-width: 1023px) {
     align-self: flex-start;
   }
 
-  @include tablet {
-    width: 439px;
+  @media screen and (min-width: 1024px) {
+    width: 420px;
   }
 
-  @include desktop {
+  @media screen and (min-width: 1280px) {
     width: 518px;
   }
 }
 
-.restaurant__text {
-  margin-bottom: 12px;
-
+.about-restaurant__pre-title {
   font-family: 'Times New Roman';
-  font-size: 20px;
-  line-height: 1.15;
   font-weight: 400;
-
+  font-size: 20px;
+  line-height: calc(23 / 20);
   color: var(--slogan-color);
 
-  @include tablet {
+  @media screen and (min-width: 1024px) {
     font-size: 32px;
-
-    margin-bottom: 4px;
+    line-height: calc(37 / 32);
   }
 }
 
-.restaurant__subtitle {
+.about-restaurant__title {
+  margin-top: 12px;
   margin-bottom: 12px;
+  margin-right: -0.3em;
 
-  font-family: 'Film P3';
-  font-weight: 700;
+  font-family: 'Film P3', serif;
   font-size: 40px;
-  line-height: 1.07;
+  line-height: calc(43 / 40);
   letter-spacing: 0.3em;
-  text-transform: uppercase;
-
   color: var(--mimino-section-color);
 
-  @include tablet {
-    margin-bottom: 24px;
-
+  @media screen and (min-width: 1024px) {
     font-size: 64px;
+    line-height: calc(69 / 64);
+    margin-top: 4px;
+    margin-bottom: 24px;
   }
 
-  @include desktop {
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 24px;
+
     color: #828282;
   }
 }
 
-.restaurant__subtext {
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1.25;
-  letter-spacing: 0.02em;
-
-  color: var(--home-restaurant-text-color);
-
-  @include tablet {
+.about-restaurant__description {
+  @media screen and (min-width: 1024px) {
     font-size: 16px;
-  }
-
-  &--brown {
-    color: var(--home-restaurant-accent-text-color);
-
-    @media screen and (max-width: 1023px) {
-      max-width: 163px;
-
-      padding-top: 70px;
-    }
-
-    @include tablet {
-      max-width: 312px;
-
-      padding-top: 190px;
-    }
+    line-height: calc(20 / 16);
   }
 }
 
-.restaurant__picture {
+.about-restaurant__image-thumb {
   width: 244px;
-
   margin-left: auto;
 
-  @media screen and (max-width: 1023px) {
-    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
-  }
-
-  @include tablet {
+  @media screen and (min-width: 1024px) {
     width: 400px;
-
-    margin-left: 0;
+    margin-left: unset;
 
     position: relative;
 
-    & .about-restaurant__photo {
+    & .about-restaurant__image {
       position: absolute;
-      top: -144px;
+      top: -153px;
     }
   }
 
-  @include desktop {
+  @media screen and (min-width: 1280px) {
     width: 460px;
   }
 }
 
-.about-restaurant__photo {
-  box-shadow: 2px 2px 70px 2px rgba(0, 0, 0, 0.25);
+.about-restaurant__image {
+  display: block;
+
+  background: #dadada;
+  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
   border-radius: 2px;
+
+  &--noshadow {
+    @media screen and (min-width: 1280px) {
+      box-shadow: none;
+    }
+  }
 }
 
-// second block
-
-.restaurant__second-block {
+.about-restaurant__second-wrapper {
   display: flex;
   gap: 20px;
 
@@ -160,63 +136,60 @@
     margin-bottom: 32px;
   }
 
-  @include tablet {
+  @media screen and (min-width: 1024px) {
     gap: 48px;
     justify-content: flex-start;
   }
+}
 
-  @include desktop {
-    gap: 32px;
+.about-restaurant__text {
+  color: var(--modal-text-color);
+
+  @media screen and (min-width: 414px) {
+    padding-top: 70px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    padding-top: 190px;
+    width: 312px;
+
+    font-size: 16px;
+    line-height: calc(20 / 16);
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-top: 180px;
   }
 }
 
-.restaurant__second-picture {
-  width: 200px;
-
-  border-radius: 2px;
-
+.about-restaurant__second-wrapper .about-restaurant__image {
   @media screen and (max-width: 1023px) {
-    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
-  }
-
-  @include media(1024px) {
-    width: 350px;
-
-    box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
-  }
-
-  @include desktop {
-    width: 460px;
-
-    box-shadow: none;
+    min-width: 200px;
   }
 }
 
-// slider
-
-.about-kitchen-restaurant-wrapper {
+// slayder
+.about-kitchen-restaurant__third-wrapper {
   position: relative;
 }
-.section-about-kitchen-restaurant__wrapper {
-  position: absolute;
 
-  @media screen and (max-width: 1023px) {
-    top: 0;
-    right: -7%;
+.about-kitchen-restaurant-slider__wrapper {
+  max-width: 330px;
+  margin-left: 74px;
+  @media screen and (min-width: 1024px) {
+    position: absolute;
+    top: -28px;
+    right: 111px;
   }
 
-  @include tablet {
-    right: 2%;
-    top: -23px;
-  }
-
-  @include desktop {
-    top: -140px;
+  @media screen and (min-width: 1280px) {
+    top: -137px;
+    right: 205px;
   }
 }
 
 .about-kitchen-restaurant-slider__thumb {
-  margin-right: 20px;
+  margin-right: 25px;
   max-width: 245px;
 
   @include tablet {
@@ -241,3 +214,247 @@
     width: 530px;
   }
 }
+
+// .about-restaurant {
+//   padding-top: 15px;
+//   padding-bottom: 323px;
+
+//   @include media(1024px) {
+//     padding-top: 120px;
+//     padding-bottom: 262px;
+//   }
+
+//   @include desktop {
+//     padding-bottom: 225px;
+//   }
+// }
+
+// // first block
+
+// .restaurant__block {
+//   display: flex;
+//   gap: 26px;
+
+//   @media screen and (max-width: 1023px) {
+//     flex-direction: column;
+//   }
+
+//   @include tablet {
+//     margin-bottom: 120px;
+//   }
+
+//   @include desktop {
+//     margin-bottom: 162px;
+//     gap: 37px;
+//   }
+// }
+
+// .about-restaurant__text-wrapper {
+//   width: 258px;
+
+//   @media screen and (max-width: 1023px) {
+//     align-self: flex-start;
+//   }
+
+//   @include tablet {
+//     width: 439px;
+//   }
+
+//   @include desktop {
+//     width: 518px;
+//   }
+// }
+
+// .restaurant__text {
+//   margin-bottom: 12px;
+
+//   font-family: 'Times New Roman';
+//   font-size: 20px;
+//   line-height: 1.15;
+//   font-weight: 400;
+
+//   color: var(--slogan-color);
+
+//   @include tablet {
+//     font-size: 32px;
+
+//     margin-bottom: 4px;
+//   }
+// }
+
+// .restaurant__subtitle {
+//   margin-bottom: 12px;
+
+//   font-family: 'Film P3';
+//   font-weight: 700;
+//   font-size: 40px;
+//   line-height: 1.07;
+//   letter-spacing: 0.3em;
+//   text-transform: uppercase;
+
+//   color: var(--mimino-section-color);
+
+//   @include tablet {
+//     margin-bottom: 24px;
+
+//     font-size: 64px;
+//   }
+
+//   @include desktop {
+//     color: #828282;
+//   }
+// }
+
+// .restaurant__subtext {
+//   font-weight: 600;
+//   font-size: 12px;
+//   line-height: 1.25;
+//   letter-spacing: 0.02em;
+
+//   color: var(--home-restaurant-text-color);
+
+//   @include tablet {
+//     font-size: 16px;
+//   }
+
+//   &--brown {
+//     color: var(--home-restaurant-accent-text-color);
+
+//     @media screen and (max-width: 1023px) {
+//       max-width: 163px;
+
+//       padding-top: 70px;
+//     }
+
+//     @include tablet {
+//       max-width: 312px;
+
+//       padding-top: 190px;
+//     }
+//   }
+// }
+
+// .restaurant__picture {
+//   width: 244px;
+
+//   margin-left: auto;
+
+//   @media screen and (max-width: 1023px) {
+//     box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+//   }
+
+//   @include tablet {
+//     width: 400px;
+
+//     margin-left: 0;
+
+//     position: relative;
+
+//     & .about-restaurant__photo {
+//       position: absolute;
+//       top: -144px;
+//     }
+//   }
+
+//   @include desktop {
+//     width: 460px;
+//   }
+// }
+
+// .about-restaurant__photo {
+//   box-shadow: 2px 2px 70px 2px rgba(0, 0, 0, 0.25);
+//   border-radius: 2px;
+// }
+
+// // second block
+
+// .restaurant__second-block {
+//   display: flex;
+//   gap: 20px;
+
+//   @media screen and (max-width: 1023px) {
+//     margin-top: 32px;
+//     margin-bottom: 32px;
+//   }
+
+//   @include tablet {
+//     gap: 48px;
+//     justify-content: flex-start;
+//   }
+
+//   @include desktop {
+//     gap: 32px;
+//   }
+// }
+
+// .restaurant__second-picture {
+//   width: 200px;
+
+//   border-radius: 2px;
+
+//   @media screen and (max-width: 1023px) {
+//     box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+//   }
+
+//   @include media(1024px) {
+//     width: 350px;
+
+//     box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+//   }
+
+//   @include desktop {
+//     width: 460px;
+
+//     box-shadow: none;
+//   }
+// }
+
+// // slider
+
+// .about-kitchen-restaurant-wrapper {
+//   position: relative;
+// }
+// .section-about-kitchen-restaurant__wrapper {
+//   position: absolute;
+
+//   @media screen and (max-width: 1023px) {
+//     top: 0;
+//     right: -7%;
+//   }
+
+//   @include tablet {
+//     right: 2%;
+//     top: -23px;
+//   }
+
+//   @include desktop {
+//     top: -140px;
+//   }
+// }
+
+// .about-kitchen-restaurant-slider__thumb {
+//   margin-right: 20px;
+//   max-width: 245px;
+
+//   @include tablet {
+//     margin-right: 40px;
+//     max-width: 194px;
+//   }
+
+//   @include desktop {
+//     max-width: 245px;
+//   }
+// }
+
+// .two-time {
+//   max-width: 330px;
+
+//   @include tablet {
+//     max-width: unset;
+//     width: 428px;
+//   }
+
+//   @include desktop {
+//     width: 530px;
+//   }
+// }

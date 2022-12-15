@@ -1,0 +1,198 @@
+.double-room {
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    @include tablet {
+        padding-top: 64px;
+        padding-bottom: 40px;
+    }
+
+    @include desktop {
+        padding-top: 72px;
+    }
+}
+
+.about-room__list {
+    @include tablet {
+        position: relative;
+    }
+}
+
+.about-room__item {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-bottom: 32px;
+
+    @include tablet {
+        flex-direction: row;
+        gap: 26px;
+        margin-bottom: unset;
+
+    }
+
+    @include desktop {
+        flex-direction: row;
+        gap: 149px;
+        margin-bottom: 32px;
+    }
+}
+
+
+.about-room__title {
+    font-family: 'Times New Roman';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.15;
+    color: #B4B4B4;
+    margin-bottom: 8px;
+
+    @include tablet {
+        margin-bottom: 4px;
+        font-size: 32px;
+        line-height: 37px;
+    }
+}
+
+
+.about-room__pre-title {
+    font-family: 'Film P3';
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.07;
+    letter-spacing: 0.3em;
+    color: #494848;
+    margin-bottom: 32px;
+
+    @include tablet {
+        margin-bottom: 62px;
+        font-size: 64px;
+        line-height: 69px;
+    }
+
+    @include desktop {
+        margin-bottom: 72px;
+    }
+}
+
+.about-room__second-title {
+    font-family: 'Times New Roman';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.16;
+    letter-spacing: 0.05em;
+    color: #000000;
+    margin-bottom: 12px;
+
+    @include tablet {
+        font-size: 30px;
+        line-height: 34px;
+        margin-bottom: 16px;
+    }
+
+    @include desktop {
+        margin-bottom: 24px;
+    }
+    text-transform: uppercase;
+}
+
+.about-room__second-rpe-title {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color: #5F5F5F;
+    width: 258px;
+
+    @include tablet {
+        font-size: 16px;
+        line-height: 20px;
+        width: 439px;
+    }
+
+    @include desktop {
+        font-weight: 700;
+        width: 400px;
+    }
+}
+
+.about-room__image {
+    margin-left: auto;
+
+    @include tablet {
+        margin-left: 0;
+        position: relative;
+        top: -96px;
+    }
+}
+
+
+.double-section-slider__wrapper {
+    position: relative;
+
+    @include tablet {
+
+        bottom: 70px;
+    }
+
+    @include desktop {
+        bottom: 70px;
+        right: 0px;
+    }
+
+}
+
+
+.two-time {
+    max-width: 287px;
+
+    @include tablet {
+        max-width: unset;
+        width: 428px;
+    }
+
+    @include desktop {
+        width: 548px;
+    }
+}
+
+.double-section-slider__thumb {
+    margin-right: 16px;
+    max-width: 194px;
+
+    @include tablet {
+        margin-right: 40px;
+    }
+
+    @include desktop {
+        max-width: 254px;
+    }
+
+}
+
+
+.about-room__link {
+    text-align: center;
+    padding: 14px 65px;
+}
+
+.about-room__btn {
+    display: flex;
+    margin-top: 72px;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+
+    @include tablet {
+        position: absolute;
+        right: 0;
+        bottom: 105px;
+        margin-top: 0;
+    }
+
+    @include desktop {
+        position: absolute;
+        right: 0;
+        bottom: 140px;
+    }
+}

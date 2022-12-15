@@ -47,7 +47,7 @@
 }
 
 .about-hotel__pre-title {
-  font-family: "Film P3", serif;
+  font-family: 'Times New Roman';
   font-weight: 400;
   font-size: 20px;
   line-height: calc(23 / 20);
@@ -63,9 +63,9 @@
 .about-hotel__title {
   margin-top: 6px;
   margin-bottom: 16px;
-  margin-right: -.3em;
+  margin-right: -0.3em;
 
-  font-family: "Film P3", serif;
+  font-family: 'Film P3', serif;
   font-size: 40px;
   line-height: calc(43 / 40);
   letter-spacing: 0.3em;
@@ -81,6 +81,8 @@
 
   @media screen and (min-width: 1280px) {
     margin-bottom: 24px;
+
+    color: #828282;
   }
 }
 
@@ -111,7 +113,7 @@
 }
 
 .about-hotel__image {
-  background: #DADADA;
+  background: #dadada;
   box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
   border-radius: 2px;
 }
@@ -141,7 +143,7 @@
   @media screen and (min-width: 1024px) {
     padding-top: 190px;
     width: 312px;
-    
+
     font-size: 16px;
     line-height: calc(20 / 16);
   }
@@ -162,7 +164,7 @@
   position: relative;
 }
 
-.about-hotel-slider__wrapper{
+.about-hotel-slider__wrapper {
   @media screen and (min-width: 1024px) {
     position: absolute;
     top: -28px;
@@ -173,29 +175,29 @@
   }
 }
 
-.about-hotel-slider__thumb{
+.about-hotel-slider__thumb {
   margin-right: 20px;
   max-width: 245px;
-  
+
   @include tablet {
     margin-right: 40px;
     max-width: 194px;
   }
 
-  @include desktop{
+  @include desktop {
     max-width: 245px;
   }
 }
 
-.two-time{
+.two-time {
   max-width: 330px;
-    // height: 270px;
-  
+  // height: 270px;
+
   @include tablet {
     max-width: unset;
     width: 428px;
   }
-  
+
   @include desktop {
     width: 530px;
   }
