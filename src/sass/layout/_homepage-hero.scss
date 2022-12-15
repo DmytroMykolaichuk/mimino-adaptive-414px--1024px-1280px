@@ -148,6 +148,7 @@
     line-height: calc(37 / 32);
     letter-spacing: 0.05em;
     color: var(--hero-text-color);
+    text-transform: uppercase;
 
     @include tablet {
         font-size: 36px;

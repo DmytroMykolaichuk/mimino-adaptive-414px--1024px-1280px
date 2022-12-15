@@ -148,7 +148,6 @@
     line-height: calc(37 / 32);
     letter-spacing: 0.05em;
     color: var(--hero-text-color);
-
     @include tablet {
         font-size: 36px;
         line-height: calc(41 / 36);
@@ -160,7 +159,7 @@
         line-height: calc(41 / 36);
         letter-spacing: 0.05em;
     }
-    
+    text-transform: uppercase;
 }
 
 .hero__adress {
