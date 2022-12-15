@@ -28,12 +28,14 @@
     @include tablet {
         flex-direction: row;
         gap: 26px;
+        margin-bottom: unset;
 
     }
 
     @include desktop {
         flex-direction: row;
         gap: 149px;
+        margin-bottom: 32px;
     }
 }
 
@@ -183,11 +185,12 @@ margin-right: 16px;
         position: absolute;
         right: 0;
         bottom: 105px;
+        margin-top: 0;
         }
     
         @include desktop {
             position: absolute;
             right: 0;
-            bottom: 140px
+            bottom: 140px;
         }
 }
