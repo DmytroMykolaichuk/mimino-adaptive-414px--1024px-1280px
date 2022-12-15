@@ -1,0 +1,230 @@
+.hero-slider__wrapper {
+  height: 740px;
+  width: 414px;
+  position: relative;
+  top: -15px;
+
+  @include tablet {
+    top: -20px;
+    width: 1024px;
+    height: 721px;
+  }
+  @include desktop {
+    width: 1280px;
+    height: 720px;
+  }
+  margin-left: auto;
+  margin-right: auto;
+
+  &--responsive {
+    width: 100vw;
+    @include tablet {
+      width: 100vw;
+    }
+    @include tablet {
+      width: 100vw;
+    }
+  }
+}
+
+.hero-slider-settings {
+  .slick-arrow {
+    width: 40px;
+    height: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+
+    &::before {
+      color: transparent;
+    }
+  }
+
+  .slick-prev {
+    left: 15px;
+    @include tablet {
+      left: 47px;
+    }
+    @include desktop {
+      left: 85px;
+    }
+  }
+  .slick-next {
+    right: 15px;
+    @include tablet {
+      right: 47px;
+    }
+    @include desktop {
+      right: 85px;
+    }
+  }
+}
+
+.hero-slider__page {
+  height: 740px;
+  @include tablet {
+    height: 721px;
+  }
+  @include tablet {
+    height: 720px;
+  }
+  background-color: var(--secondary-background-color);
+}
+
+.hero-slider__first-page {
+  $bg-gradient: linear-gradient(
+    180deg,
+    #000000 0%,
+    rgba(0, 0, 0, 0.55) 10.468%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  background-image: $bg-gradient,
+    url(../images/mobile/double-lux-slider-mobile-1x.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  @include retina {
+    background-image: $bg-gradient,
+      url(../images/mobile/double-lux-slider-mobile-2x.jpg);
+  }
+  @include tablet {
+    background-image: $bg-gradient,
+      url(../images/tablet/double-lux-slider-tablet-1x.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    @include retina {
+      background-image: $bg-gradient,
+        url(../images/tablet/double-lux-slider-tablet-2x.jpg);
+    }
+  }
+  @include desktop {
+    background-image: $bg-gradient,
+      url(../images/desktop/double-lux-slider-desktop-1x.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    @include retina {
+      background-image: $bg-gradient,
+        url(../images/desktop/double-lux-slider-desktop-2x.jpg);
+    }
+  }
+}
+
+.hero-slider__second-page {
+  $bg-gradient: linear-gradient(
+    180deg,
+    #000000 0%,
+    rgba(0, 0, 0, 0.55) 10.468%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  background-image: $bg-gradient,
+    url(../images/mobile/double-lux-slider-mobile2-1x.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  @include retina {
+    background-image: $bg-gradient,
+      url(../images/mobile/double-lux-slider-mobile2-2x.jpg);
+  }
+  @include tablet {
+    background-image: $bg-gradient,
+      url(../images/tablet/double-lux-slider-tablet2-1x.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    @include retina {
+      background-image: $bg-gradient,
+        url(../images/tablet/double-lux-slider-tablet2-2x.jpg);
+    }
+  }
+  @include desktop {
+    background-image: $bg-gradient,
+      url(../images/desktop/double-lux-slider-desktop2-1x.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    @include retina {
+      background-image: $bg-gradient,
+        url(../images/desktop/double-lux-slider-desktop2-2x.jpg);
+    }
+  }
+}
+
+.hero-slider__third-page {
+  $bg-gradient: linear-gradient(
+    180deg,
+    #000000 0%,
+    rgba(0, 0, 0, 0.55) 10.468%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  background-image: $bg-gradient,
+    url(../images/mobile/double-lux-slider-mobile3-1x.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  @include retina {
+    background-image: $bg-gradient,
+      url(../images/mobile/double-lux-slider-mobile3-2x.jpg);
+  }
+  @include tablet {
+    background-image: $bg-gradient,
+      url(../images/tablet/double-lux-slider-tablet3-1x.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    @include retina {
+      background-image: $bg-gradient,
+        url(../images/tablet/double-lux-slider-tablet3-2x.jpg);
+    }
+  }
+  @include desktop {
+    background-image: $bg-gradient,
+      url(../images/desktop/double-lux-slider-desktop3-1x.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    @include retina {
+      background-image: $bg-gradient,
+        url(../images/desktop/double-lux-slider-desktop3-2x.jpg);
+    }
+  }
+}
+
+// CLASSES TO ADD RESPONSIVE
+
+.hero-slider__icon {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  z-index: 1;
+  top: 50%;
+  transform: translateY(-50%);
+  &--prev {
+    left: 15px;
+  }
+  &--next {
+    right: 15px;
+  }
+  border: solid 1.25px;
+  border-color: transparent;
+  fill: var(--accent-color);
+  background-color: rgba(0, 0, 0, 0.65);
+
+  @include tablet {
+    &--prev {
+      left: 47px;
+    }
+    &--next {
+      right: 47px;
+    }
+  }
+  @include desktop {
+    &--prev {
+      left: 85px;
+    }
+    &--next {
+      right: 85px;
+    }
+  }
+}
