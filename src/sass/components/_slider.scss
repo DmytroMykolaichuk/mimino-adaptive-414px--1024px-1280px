@@ -252,17 +252,33 @@
 }
 .double-room-slider__icon--previous {
   left: 15px;
+  // зміни до слайдеру
   @include tablet {
-    left: unset;
-    right: 64px;
+    // left: unset;
+    // right: 64px;
+    right: unset;
+    left: 332px;
   }
+  // зміни до слайдеру
+    @include desktop {
+      right: unset;
+      left: 450px;
+    }
 }
 .double-room-slider__icon--next {
   left: 79px;
+  // зміни до слайдеру
   @include tablet {
-    left: unset;
-    right: 0;
+    // left: unset;
+    // right: 0;
+    right: unset;
+    left: 398px;
   }
+    // зміни до слайдеру
+    @include desktop {
+      right: unset;
+      left: 518px;
+    }
 }
 
 // ------------------------------Трьохкімнатний номер----------------------------------------
