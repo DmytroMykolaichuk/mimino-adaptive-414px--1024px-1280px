@@ -3,7 +3,7 @@
     url(/src/images/desktop/home-desktop-hotel-1x.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 1280px;
+  background-size: 100vw;
   margin: auto;
   width: 100%;
 
@@ -136,11 +136,11 @@
     margin-right: 0px;
   }
 
-  @include tablet{
+  @include tablet {
     width: 549px;
   }
 
-  @include desktop{
+  @include desktop {
     width: 595px;
     margin-left: auto;
   }
@@ -239,21 +239,6 @@
   position: absolute;
 }
 
-// КІНЕЦЬ СЛАЙДЕРУ
-// .section-slider--details-hotel {
-//   .slick-prev {
-//     right: 64px;
-//   }
-
-//   .slick-next {
-//     right: 0;
-//   }
-// }
-
-// .details-hotel-slider__icon--previous {
-//   right: 64px;
-// }
-
-// .details-hotel-slider__icon--next {
-//   right: 0;
-// }
+.details-restaurant-slider__image {
+  border-radius: 2px;
+}
