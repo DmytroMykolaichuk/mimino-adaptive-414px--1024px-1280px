@@ -17,21 +17,21 @@
 //     </div>
 //   </div>
 
-  // <svg
-  //   class="section-slider__icon section-slider__icon--WHITE DETAILS-RESTAURANT-slider__icon--previous"
-  //   width="32"
-  //   height="32"
-  // >
-  //   <use href="./images/icons.svg#icon-left"></use>
-  // </svg>
+// <svg
+//   class="section-slider__icon section-slider__icon--WHITE DETAILS-RESTAURANT-slider__icon--previous"
+//   width="32"
+//   height="32"
+// >
+//   <use href="./images/icons.svg#icon-left"></use>
+// </svg>
 
-  // <svg
-  //   class="section-slider__icon section-slider__icon--white DETAILS-RESTAURANT-slider__icon--next"
-  //   width="32"
-  //   height="32"
-  // >
-  //   <use href="./images/icons.svg#icon-right"></use>
-  // </svg>
+// <svg
+//   class="section-slider__icon section-slider__icon--white DETAILS-RESTAURANT-slider__icon--next"
+//   width="32"
+//   height="32"
+// >
+//   <use href="./images/icons.svg#icon-right"></use>
+// </svg>
 // </div>
 //
 //--------------------------------------------------------------------
@@ -208,28 +208,52 @@
 // -------------------Cекція "About our restaurant" і "About our kitchen"-------------------
 .section-slider--about-kitchen-restaurant {
   .slick-prev {
-    right: 15px;
+    right: 37px;
+    bottom: -52px;
     @include tablet {
-      right: 64px;
+      right: 69px;
+      bottom: -65px;
+    }
+    @include desktop {
+      right: 94px;
+      bottom: -69px;
     }
   }
   .slick-next {
-    right: 79px;
+    right: -27px;
+    bottom: -52px;
     @include tablet {
-      right: 0;
+      right: 3px;
+      bottom: -65px;
+    }
+    @include desktop {
+      right: 25px;
+      bottom: -69px;
     }
   }
 }
 .about-kitchen-restaurant-slider__icon--previous {
-  right: 15px;
+  right: 61px;
   @include tablet {
-    right: 64px;
+    right: unset;
+    left: 327px;
+  }
+
+  @include desktop {
+    right: unset;
+    left: 422px;
   }
 }
 .about-kitchen-restaurant-slider__icon--next {
-  right: 79px;
+  right: -3px;
   @include tablet {
-    right: 0;
+    right: unset;
+    left: 393px;
+  }
+
+  @include desktop {
+    right: unset;
+    left: 490px;
   }
 }
 
@@ -260,10 +284,10 @@
     left: 332px;
   }
   // зміни до слайдеру
-    @include desktop {
-      right: unset;
-      left: 450px;
-    }
+  @include desktop {
+    right: unset;
+    left: 450px;
+  }
 }
 .double-room-slider__icon--next {
   left: 79px;
@@ -274,11 +298,11 @@
     right: unset;
     left: 398px;
   }
-    // зміни до слайдеру
-    @include desktop {
-      right: unset;
-      left: 518px;
-    }
+  // зміни до слайдеру
+  @include desktop {
+    right: unset;
+    left: 518px;
+  }
 }
 
 // ------------------------------Трьохкімнатний номер----------------------------------------
