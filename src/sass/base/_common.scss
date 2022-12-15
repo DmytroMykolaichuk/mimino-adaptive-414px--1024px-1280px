@@ -17,7 +17,9 @@
   --transition-bg: background-color 250ms linear;
   --transition-fill: fill 250ms linear;
 }
-
+html{
+  scroll-behavior: smooth;
+}
 body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
