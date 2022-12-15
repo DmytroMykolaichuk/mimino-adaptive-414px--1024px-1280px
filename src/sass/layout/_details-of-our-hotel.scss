@@ -1,12 +1,16 @@
 .section_details-of-our-hotel {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(/src/images/desktop/home-desktop-hotel-1x.jpg);
+    url(../images/desktop/home-desktop-hotel-1920-1x.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 100vw;
+  background-size: cover;
   margin: auto;
-  width: 100%;
-  max-width: 1920px;
+  width: 100vw;
+
+  @include retina {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+      url(../images/desktop/home-desktop-hotel-1920-2x.jpg);
+  }
 
   @media screen and (min-width: 1280px) {
     padding-top: 48px;
@@ -16,17 +20,22 @@
   @media screen and (max-width: 1279px) {
     padding-top: 48px;
     padding-bottom: 96px;
-    background-size: 1024px;
+    // background-size: 1024px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-      url(/src/images/tablet/home-tablet-room-1-1x.jpg.jpg);
+      url(../images/tablet/home-tablet-room-1-1x.jpg.jpg);
   }
 
   @media screen and (max-width: 1023px) {
     padding-top: 24px;
     padding-bottom: 40px;
-    background-size: 414px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-      url(/src/images/mobile/home-mobile-room-1x.jpg);
+    // background-size: 414px;
+    // background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    //   url(/src/images/mobile/home-mobile-room-1x.jpg);
+    background-position: 40%;
+  }
+
+  @media screen and (min-width: 1920px) {
+    background-size: 1920px;
   }
 }
 
@@ -54,9 +63,9 @@
   font-family: 'Film P3';
   font-weight: 700;
   font-style: normal;
-  src: local('Film P3'), local('Film-P3'),
-    url('/src/fonts/FilmP3Bold.woff2') format('woff2'),
-    url('/src/fonts/FilmP3Bold.woff') format('woff');
+  // src: local('Film P3'), local('Film-P3'),
+  //   url('/src/fonts/FilmP3Bold.woff2') format('woff2'),
+  //   url('/src/fonts/FilmP3Bold.woff') format('woff');
   font-display: swap;
   font-size: 64px;
   line-height: 69px;
@@ -85,10 +94,10 @@
 .mimino-general-title {
   font-family: Montserrat;
   font-weight: 700;
-  font-style: normal;
-  src: local('Montserrat'),
-    url('/src/fonts/Montserrat-Bold.woff2') format('woff2'),
-    url('/src/fonts/Montserrat-Bold.woff') format('woff');
+  // font-style: normal;
+  // src: local('Montserrat'),
+  //   url('/src/fonts/Montserrat-Bold.woff2') format('woff2'),
+  //   url('/src/fonts/Montserrat-Bold.woff') format('woff');
   font-display: swap;
   font-size: 24px;
   line-height: 1.2;
@@ -203,7 +212,9 @@
 }
 
 .details-hotel-slider__wrapper {
-  margin-right: 0px;
+  max-width: calc(100vw - 25px);
+  margin-left: -16px;
+  margin-right: 25px;
 }
 
 .details-hotel-slider__thumb {
@@ -218,7 +229,9 @@
   }
 }
 
-.details-restaurant-slider {
+.details-hotel-slider {
+  // position: absolute;
+
   max-width: 374px;
   height: 270px;
 
@@ -230,16 +243,4 @@
   @include desktop {
     width: 874px;
   }
-}
-
-.section-slider__wrapper {
-  position: relative;
-}
-
-.section-slider__wrapper--absolute {
-  position: absolute;
-}
-
-.details-restaurant-slider__image {
-  border-radius: 2px;
 }

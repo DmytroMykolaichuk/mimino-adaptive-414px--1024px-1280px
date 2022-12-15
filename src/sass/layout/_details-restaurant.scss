@@ -10,22 +10,22 @@
 
   $bg-gradient: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65));
   background-image: $bg-gradient,
-    url(../images/mobile/home-mobile-restaurant-1x.jpg);
+    url(../images/tablet/home-tablet-restaurant-1x.jpg);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 20%;
   background-size: cover;
 
   @include mobile {
-    background-size: 414px auto;
+    // background-size: 414px auto;
   }
 
   @include retina {
     background-image: $bg-gradient,
-      url(../images/mobile/home-mobile-restaurant-2x.jpg);
+      url(../images/tablet/home-tablet-restaurant-2x.jpg);
   }
 
   @include tablet {
-    background-size: 1024px auto;
+    // background-size: 1024px auto;
     background-image: $bg-gradient,
       url(../images/tablet/home-tablet-restaurant-1x.jpg);
     @include retina {
@@ -35,7 +35,7 @@
   }
 
   @media screen and (min-width: 1280px) and (max-width: 1920px) {
-    background-size: 100vw auto;
+    // background-size: 100vw auto;
     background-image: $bg-gradient,
       url(../images/desktop/home-desktop-restoran-1920-1x.jpg);
     @include retina {
@@ -120,7 +120,8 @@
 // ПОЧАТОК СЛАЙДЕРУ
 
 .details-restaurant-slider__wrapper {
-  margin-left: 25px;
+  right: -15px;
+  margin-left: 10px;
   @include tablet {
     margin-left: unset;
   }
@@ -146,6 +147,10 @@
   @include desktop {
     width: 875px;
   }
+}
+
+.details-restaurant-slider__image {
+  border-radius: 2px;
 }
 
 // КІНЕЦЬ СЛАЙДЕРУ
