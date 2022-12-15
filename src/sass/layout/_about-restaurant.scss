@@ -63,9 +63,9 @@
 .about-restaurant__title {
   margin-top: 12px;
   margin-bottom: 12px;
-  margin-right: -.3em;
+  margin-right: -0.3em;
 
-  font-family: "Film P3", serif;
+  font-family: 'Film P3', serif;
   font-size: 40px;
   line-height: calc(43 / 40);
   letter-spacing: 0.3em;
@@ -80,6 +80,8 @@
 
   @media screen and (min-width: 1280px) {
     margin-bottom: 24px;
+
+    color: #828282;
   }
 }
 
@@ -102,7 +104,7 @@
 
     & .about-restaurant__image {
       position: absolute;
-      top: -144px;
+      top: -153px;
     }
   }
 
@@ -112,9 +114,17 @@
 }
 
 .about-restaurant__image {
-  background: #DADADA;
+  display: block;
+
+  background: #dadada;
   box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
   border-radius: 2px;
+
+  &--noshadow {
+    @media screen and (min-width: 1280px) {
+      box-shadow: none;
+    }
+  }
 }
 
 .about-restaurant__second-wrapper {
@@ -148,7 +158,7 @@
   }
 
   @media screen and (min-width: 1280px) {
-    padding-top: 170px;
+    padding-top: 180px;
   }
 }
 
@@ -165,7 +175,7 @@
 
 .about-kitchen-restaurant-slider__wrapper {
   max-width: 330px;
-  margin-left: auto;
+  margin-left: 74px;
   @media screen and (min-width: 1024px) {
     position: absolute;
     top: -28px;
@@ -173,7 +183,8 @@
   }
 
   @media screen and (min-width: 1280px) {
-    top: -170px;
+    top: -137px;
+    right: 205px;
   }
 }
 
@@ -193,7 +204,6 @@
 
 .two-time {
   max-width: 330px;
-  // height: 270px;
 
   @include tablet {
     max-width: unset;
@@ -204,9 +214,6 @@
     width: 530px;
   }
 }
-
-
-
 
 // .about-restaurant {
 //   padding-top: 15px;
