@@ -92,6 +92,10 @@
         #fff 65%,
         rgba(0, 0, 0, 0.25));
 
+    @media screen and(max-width:413px) {
+        font-size: 90px;
+    }    
+
     @include tablet {
         font-size: 128px;
         line-height: calc(138 / 128);
