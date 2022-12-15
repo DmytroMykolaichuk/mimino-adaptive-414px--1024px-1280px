@@ -1,207 +1,207 @@
 .about-kitchen {
-    padding-top: 16px;
-    padding-bottom: 72px;
+  padding-top: 16px;
+  padding-bottom: 72px;
 
-    background-color: var(--primary-background-color);
+  background-color: var(--primary-background-color);
 
-    @media screen and (min-width: 1024px) {
-        padding-top: 120px;
-        padding-bottom: 262px;
-    }
+  @media screen and (min-width: 1024px) {
+    padding-top: 120px;
+    padding-bottom: 262px;
+  }
 
-    @media screen and (min-width: 1280px) {
-        padding-bottom: 225px;
-    }
+  @media screen and (min-width: 1280px) {
+    padding-bottom: 225px;
+  }
 }
 
 .about-kitchen__first-wrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
 
-    @media screen and (min-width: 1024px) {
-        margin-bottom: 142px;
-        flex-direction: row;
-        gap: 26px;
-    }
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 142px;
+    flex-direction: row;
+    gap: 26px;
+  }
 
-    @media screen and (min-width: 1280px) {
-        gap: 37px;
-        margin-bottom: 162px;
-    }
+  @media screen and (min-width: 1280px) {
+    gap: 37px;
+    margin-bottom: 162px;
+  }
 }
 
 .about-kitchen__text-wrapper {
-    width: 242px;
+  width: 242px;
 
-    @media screen and (max-width: 1023px) {
-        align-self: flex-start;
-    }
+  @media screen and (max-width: 1023px) {
+    align-self: flex-start;
+  }
 
-    @media screen and (min-width: 1024px) {
-        width: 420px;
-    }
+  @media screen and (min-width: 1024px) {
+    width: 420px;
+  }
 
-    @media screen and (min-width: 1280px) {
-        width: 518px;
-    }
+  @media screen and (min-width: 1280px) {
+    width: 518px;
+  }
 }
 
 .about-kitchen__pre-title {
-    font-family: 'Times New Roman';
-    font-weight: 400;
-    font-size: 20px;
-    line-height: calc(23 / 20);
-    color: var(--slogan-color);
+  font-family: 'Times New Roman';
+  font-weight: 400;
+  font-size: 20px;
+  line-height: calc(23 / 20);
+  color: var(--slogan-color);
 
-    @media screen and (min-width: 1024px) {
-        font-size: 32px;
-        line-height: calc(37 / 32);
-    }
+  @media screen and (min-width: 1024px) {
+    font-size: 32px;
+    line-height: calc(37 / 32);
+  }
 }
 
 .about-kitchen__title {
-    margin-top: 12px;
-    margin-bottom: 12px;
-    margin-right: -.3em;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  margin-right: -0.3em;
 
-    font-family: "Film P3", serif;
-    font-size: 40px;
-    line-height: calc(43 / 40);
-    letter-spacing: 0.3em;
-    color: var(--mimino-section-color);
+  font-family: 'Film P3', serif;
+  font-size: 40px;
+  line-height: calc(43 / 40);
+  letter-spacing: 0.3em;
+  color: var(--mimino-section-color);
 
-    @media screen and (min-width: 1024px) {
-        font-size: 64px;
-        line-height: calc(69 / 64);
-        margin-top: 4px;
-        margin-bottom: 24px;
-    }
+  @media screen and (min-width: 1024px) {
+    font-size: 64px;
+    line-height: calc(69 / 64);
+    margin-top: 4px;
+    margin-bottom: 24px;
+  }
 
-    @media screen and (min-width: 1280px) {
-        margin-bottom: 24px;
-    }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 24px;
+  }
 }
 
 .about-kitchen__description {
-    @media screen and (min-width: 1024px) {
-        font-size: 16px;
-        line-height: calc(20 / 16);
-    }
+  @media screen and (min-width: 1024px) {
+    font-size: 16px;
+    line-height: calc(20 / 16);
+  }
 }
 
 .about-kitchen__image-thumb {
-    width: 244px;
-    margin-left: auto;
+  width: 244px;
+  margin-left: auto;
 
-    @media screen and (min-width: 1024px) {
-        width: 400px;
-        margin-left: unset;
+  @media screen and (min-width: 1024px) {
+    width: 400px;
+    margin-left: unset;
 
-        position: relative;
+    position: relative;
 
-        & .about-kitchen__image {
-            position: absolute;
-            top: -144px;
-        }
+    & .about-kitchen__image {
+      position: absolute;
+      top: -144px;
     }
+  }
 
-    @media screen and (min-width: 1280px) {
-        width: 460px;
-    }
+  @media screen and (min-width: 1280px) {
+    width: 460px;
+  }
 }
 
 .about-kitchen__image {
-    background: #DADADA;
-    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
-    border-radius: 2px;
+  background: #dadada;
+  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
 }
 
 .about-kitchen__second-wrapper {
-    display: flex;
-    gap: 20px;
+  display: flex;
+  gap: 20px;
 
-    @media screen and (max-width: 1023px) {
-        margin-top: 32px;
-        margin-bottom: 32px;
-    }
+  @media screen and (max-width: 1023px) {
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
 
-    @media screen and (min-width: 1024px) {
-        gap: 48px;
-        justify-content: flex-start;
-    }
+  @media screen and (min-width: 1024px) {
+    gap: 48px;
+    justify-content: flex-start;
+  }
 }
 
 .about-kitchen__text {
-    color: var(--modal-text-color);
+  color: var(--modal-text-color);
 
-    @media screen and (min-width: 414px) {
-        padding-top: 70px;
-    }
+  @media screen and (min-width: 414px) {
+    padding-top: 70px;
+  }
 
-    @media screen and (min-width: 1024px) {
-        padding-top: 190px;
-        width: 312px;
+  @media screen and (min-width: 1024px) {
+    padding-top: 190px;
+    width: 312px;
 
-        font-size: 16px;
-        line-height: calc(20 / 16);
-    }
+    font-size: 16px;
+    line-height: calc(20 / 16);
+  }
 
-    @media screen and (min-width: 1280px) {
-        padding-top: 170px;
-    }
+  @media screen and (min-width: 1280px) {
+    padding-top: 170px;
+  }
 }
 
 .about-kitchen__second-wrapper .about-kitchen__image {
-    @media screen and (max-width: 1023px) {
-        min-width: 200px;
-    }
+  @media screen and (max-width: 1023px) {
+    min-width: 200px;
+  }
 }
 
 // slayder
 .about-kitchen-restaurant__third-wrapper {
-    position: relative;
+  position: relative;
 }
 
 .about-kitchen-restaurant-slider__wrapper {
-    max-width: 330px;
-    margin-left: auto;
+  max-width: 330px;
+  margin-left: 74px;
+  @media screen and (min-width: 1024px) {
+    position: absolute;
+    top: -28px;
+    right: 111px;
+  }
 
-    @media screen and (min-width: 1024px) {
-        position: absolute;
-        top: -28px;
-        right: 111px;
-    }
-
-    @media screen and (min-width: 1280px) {
-        top: -170px;
-    }
+  @media screen and (min-width: 1280px) {
+    top: -137px;
+    right: 205px;
+  }
 }
 
 .about-kitchen-restaurant-slider__thumb {
-    margin-right: 25px;
+  margin-right: 25px;
+  max-width: 245px;
+
+  @include tablet {
+    margin-right: 40px;
+    max-width: 194px;
+  }
+
+  @include desktop {
     max-width: 245px;
-
-    @include tablet {
-        margin-right: 40px;
-        max-width: 194px;
-    }
-
-    @include desktop {
-        max-width: 245px;
-    }
+  }
 }
 
 .two-time {
-    max-width: 330px;
-    // height: 270px;
+  max-width: 330px;
+  // height: 270px;
 
-    @include tablet {
-        max-width: unset;
-        width: 428px;
-    }
+  @include tablet {
+    max-width: unset;
+    width: 428px;
+  }
 
-    @include desktop {
-        width: 530px;
-    }
+  @include desktop {
+    width: 530px;
+  }
 }
