@@ -114,7 +114,9 @@
   }
 }
 .section-slider__icon--white {
-  fill: #ffffff;
+  color: #ffffff;
+  fill: currentColor;
+  transition: var(--transition-color);
   bottom: -48px;
 
   @include tablet {
@@ -135,7 +137,9 @@
   }
 }
 .section-slider__icon--black {
-  fill: #000000;
+  color: #000000;
+  fill: currentColor;
+  transition: var(--transition-color);
   bottom: -52px;
   @include tablet {
     bottom: -64px;
@@ -263,14 +267,14 @@
     left: 15px;
     @include tablet {
       left: unset;
-      right: 0;
+      right: 64;
     }
   }
   .slick-next {
     left: 79px;
     @include tablet {
       left: unset;
-      right: 64px;
+      right: 0px;
     }
   }
 }

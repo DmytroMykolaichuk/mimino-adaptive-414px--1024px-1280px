@@ -57,9 +57,10 @@ $('.triple-room-slider').slick({
 $('.hero-slider').slick({
   dots: false,
   infinite: true,
-  // speed: 300,
+  speed: 1500,
+  ease: true,
   slidesToShow: 1,
   slidesToScroll: 1,
   variableWidth: false,
-  // autoplay: true,
+  autoplay: true,
 });

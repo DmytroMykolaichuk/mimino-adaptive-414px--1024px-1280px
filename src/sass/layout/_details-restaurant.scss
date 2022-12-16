@@ -182,3 +182,23 @@
     gap: 32px;
   }
 }
+
+// div:has(> button:hover) + h3 {
+//   color: brown;
+// }
+
+.section-slider:has(> .slick-prev:hover) + .section-slider__icon--previous {
+  color: var(--accent-color);
+}
+
+.section-slider:has(> .slick-prev:focus) + .section-slider__icon--previous {
+  color: var(--accent-color);
+}
+
+.section-slider:has(> .slick-next:hover) + svg + .section-slider__icon--next {
+  color: var(--accent-color);
+}
+
+.section-slider:has(> .slick-next:focus) + svg + .section-slider__icon--next {
+  color: var(--accent-color);
+}
