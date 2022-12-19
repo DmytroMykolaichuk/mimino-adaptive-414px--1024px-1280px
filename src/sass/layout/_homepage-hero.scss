@@ -314,3 +314,27 @@ color: var(--accent-color);
     fill: var(--accent-color); 
     display: flex; 
   }
+
+.anim-btn{
+    animation-name: anim-btn;
+    animation-duration: 3000ms;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+    &:hover{
+        animation-play-state:paused;
+    }
+  }
+
+.anim-btn-2{
+    animation-name: anim-btn;
+    animation-duration: 3000ms;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    
+    &:hover {
+        animation-play-state: paused;
+    }
+}
