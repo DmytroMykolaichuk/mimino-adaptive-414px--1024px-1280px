@@ -1,0 +1,2 @@
+!function(){var e,t;(e=document.querySelector(".about-kitchen .slick-prev"))===document.activeElement.querySelector(".about-kitchen .slick-prev")&&e.addEventListener("mouseout",(function(){e.blur()})),(t=document.querySelector(".about-kitchen .slick-next"))===document.activeElement.querySelector(".about-kitchen .slick-next")&&t.addEventListener("mouseout",(function(){t.blur()}))}();
+//# sourceMappingURL=restaurant.27796845.js.map
