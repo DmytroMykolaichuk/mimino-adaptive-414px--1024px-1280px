@@ -117,44 +117,6 @@
   }
 }
 
-// ПОЧАТОК СЛАЙДЕРУ
-
-.details-restaurant-slider__wrapper {
-  right: -15px;
-  margin-left: 10px;
-  @include tablet {
-    margin-left: unset;
-  }
-}
-
-.details-restaurant-slider__thumb {
-  margin-right: 20px;
-  @include tablet {
-    margin-right: 34px;
-  }
-  @include desktop {
-    margin-right: 86px;
-  }
-}
-
-.details-restaurant-slider {
-  max-width: 374px;
-  height: 270px;
-  @include tablet {
-    max-width: unset;
-    width: 662px;
-  }
-  @include desktop {
-    width: 875px;
-  }
-}
-
-.details-restaurant-slider__image {
-  border-radius: 2px;
-}
-
-// КІНЕЦЬ СЛАЙДЕРУ
-
 .details-restaurant-button-wrapper {
   width: 236px;
   margin: 80 auto 0;
@@ -181,24 +143,4 @@
   @include desktop {
     gap: 32px;
   }
-}
-
-// div:has(> button:hover) + h3 {
-//   color: brown;
-// }
-
-.section-slider:has(> .slick-prev:hover) + .section-slider__icon--previous {
-  color: var(--accent-color);
-}
-
-.section-slider:has(> .slick-prev:focus) + .section-slider__icon--previous {
-  color: var(--accent-color);
-}
-
-.section-slider:has(> .slick-next:hover) + svg + .section-slider__icon--next {
-  color: var(--accent-color);
-}
-
-.section-slider:has(> .slick-next:focus) + svg + .section-slider__icon--next {
-  color: var(--accent-color);
 }

@@ -211,41 +211,7 @@
   color: #f3c653;
 }
 
-.details-hotel-slider__wrapper {
-  max-width: calc(100vw - 25px);
-  margin-left: -16px;
-  margin-right: 25px;
-}
-
-.details-hotel-slider__thumb {
-  margin-right: 20px;
-
-  @include tablet {
-    margin-right: 34px;
-  }
-
-  @include desktop {
-    margin-right: 86px;
-  }
-}
-
-.details-hotel-slider {
-  // position: absolute;
-
-  max-width: 374px;
-  height: 270px;
-
-  @include tablet {
-    max-width: unset;
-    width: 662px;
-  }
-
-  @include desktop {
-    width: 874px;
-  }
-}
-
-.link-btn{
+.link-btn {
   display: flex;
   justify-content: center;
   align-items: center;

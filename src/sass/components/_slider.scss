@@ -1,10 +1,11 @@
+//-----------------------------INSTRUCTION-----------------------------
 // --------------------------------------------------------------------
 // HTML дерево слайдеру. Все, що виділено КАПСОМ треба замінити на своє
 // --------------------------------------------------------------------
 //
 // <div class="section-slider__wrapper DETAILS-RESTAURANT-slider__wrapper">
 //   <div
-//     class="section-slider section-slider--WHITE-arrow section-slider--DETAILS-RESTAURANT DETAILS-RESTAURANT-slider"
+//     class="section-slider section-slider--has-white-arrows section-slider--DETAILS-RESTAURANT DETAILS-RESTAURANT-slider"
 //   >
 //     <div class="DETAILS-RESTAURANT-slider__thumb">
 //       <picture> </picture>
@@ -18,7 +19,7 @@
 //   </div>
 
 // <svg
-//   class="section-slider__icon section-slider__icon--WHITE DETAILS-RESTAURANT-slider__icon--previous"
+//   class="section-slider__icon section-slider__icon--WHITE DETAILS-RESTAURANT-slider__icon--prev"
 //   width="32"
 //   height="32"
 // >
@@ -87,10 +88,31 @@
     width: 32px;
     height: 32px;
     z-index: 2;
+    // background-color: rgba(0, 128, 128, 0.53);
+    background-color: transparent;
     &::before {
       color: transparent;
     }
   }
+  &:has(> .slick-prev:hover) + .section-slider__icon--prev {
+    color: var(--accent-color);
+  }
+
+  &:has(> .slick-prev:focus) + .section-slider__icon--prev {
+    color: var(--accent-color);
+  }
+
+  &:has(> .slick-next:hover) + svg + .section-slider__icon--next {
+    color: var(--accent-color);
+  }
+
+  &:has(> .slick-next:focus) + svg + .section-slider__icon--next {
+    color: var(--accent-color);
+  }
+}
+
+.section-slider__image {
+  border-radius: 2px;
 }
 
 .section-slider__icon {
@@ -104,12 +126,12 @@
 // Якщо секція темна, а стрілки білі
 //
 
-.section-slider--white-arrow {
+.section-slider--has-white-arrows {
   .slick-arrow {
-    bottom: -52px;
+    bottom: -48px;
 
     @include tablet {
-      bottom: -64px;
+      bottom: -56px;
     }
   }
 }
@@ -125,14 +147,17 @@
 }
 
 //
-// Якщо секція світла, а стрілки чорні або cірі
+// Якщо секція світла, а стрілки чорні
 //
 
-.section-slider--black-arrow {
+.section-slider--has-black-arrows {
   .slick-arrow {
-    bottom: -48px;
+    bottom: -52px;
     @include tablet {
-      bottom: -56px;
+      bottom: -64px;
+    }
+    @include desktop {
+      bottom: -72px;
     }
   }
 }
@@ -149,24 +174,34 @@
   }
 }
 
-// ---------------------------Cекція "Details of our restaurant"---------------------------
-.section-slider--details-restaurant {
-  .slick-prev {
-    left: 0;
+// +-------------------------------Cекція "About our hotel"--------------------------------
+.about-hotel-slider__wrapper {
+  max-width: calc(100vw - 84px);
+  margin-left: -15px;
+  margin-right: 69px;
+
+  @include tablet {
+    margin-left: unset;
+    margin-right: 489px;
+    top: -28px;
   }
-  .slick-next {
-    left: 64px;
+
+  @include desktop {
+    margin-left: unset;
+    margin-right: 580px;
+    top: -163px;
   }
-}
-.details-restaurant-slider__icon--previous {
-  left: 0;
-}
-.details-restaurant-slider__icon--next {
-  left: 64px;
 }
 
-// --------------------------------Cекція "About our hotel"--------------------------------
-.section-slider--about-hotel {
+.about-hotel-slider {
+  @include tablet {
+    max-width: unset;
+    width: 428px;
+  }
+
+  @include desktop {
+    width: 530px;
+  }
   .slick-prev {
     left: 15px;
     @include tablet {
@@ -180,7 +215,21 @@
     }
   }
 }
-.about-hotel-slider__icon--previous {
+.about-hotel-slider__thumb {
+  margin-right: 20px;
+  height: 425px;
+
+  @include tablet {
+    margin-right: 40px;
+    height: 194px;
+  }
+
+  @include desktop {
+    height: 245px;
+    width: 245px;
+  }
+}
+.about-hotel-slider__icon--prev {
   left: 15px;
   @include tablet {
     left: 0;
@@ -193,8 +242,33 @@
   }
 }
 
-// ------------------------------Cекція "Details of our hotel"------------------------------
-.section-slider--details-hotel {
+// end of folding
+
+// +-----------------------------Cекція "Details of our hotel"------------------------------
+.details-hotel-slider__wrapper {
+  max-width: calc(100vw - 25px);
+  margin-left: -15px;
+  margin-right: 25px;
+  @include tablet {
+    margin-left: unset;
+    margin-right: unset;
+    top: 3;
+  }
+}
+
+.details-hotel-slider {
+  max-width: 374px;
+  height: 270px;
+
+  @include tablet {
+    max-width: unset;
+    width: 662px;
+  }
+
+  @include desktop {
+    width: 874px;
+  }
+
   .slick-prev {
     right: 64px;
   }
@@ -202,67 +276,187 @@
     right: 0;
   }
 }
-.details-hotel-slider__icon--previous {
+
+.details-hotel-slider__thumb {
+  margin-right: 20px;
+
+  @include tablet {
+    margin-right: 34px;
+  }
+
+  @include desktop {
+    margin-right: 86px;
+  }
+}
+
+.details-hotel-slider__icon--prev {
   right: 64px;
 }
 .details-hotel-slider__icon--next {
   right: 0;
 }
 
-// -------------------Cекція "About our restaurant" і "About our kitchen"-------------------
-.section-slider--about-kitchen-restaurant {
+// end of folding
+
+// +--------------------------Cекція "Details of our restaurant"---------------------------
+.details-restaurant-slider__wrapper {
+  max-width: calc(100vw - 25px);
+  margin-right: -15px;
+  margin-left: 25px;
+  @include tablet {
+    margin-left: unset;
+    margin-right: unset;
+    max-width: unset;
+  }
+}
+
+.details-restaurant-slider {
+  max-width: 374px;
+  height: 270px;
+  @include tablet {
+    max-width: unset;
+    width: 665px;
+  }
+  @include desktop {
+    width: 875px;
+  }
+
   .slick-prev {
-    right: 37px;
-    bottom: -52px;
-    @include tablet {
-      right: 69px;
-      bottom: -65px;
-    }
-    @include desktop {
-      right: 94px;
-      bottom: -69px;
-    }
+    left: 0;
   }
   .slick-next {
-    right: -27px;
-    bottom: -52px;
-    @include tablet {
-      right: 3px;
-      bottom: -65px;
-    }
-    @include desktop {
-      right: 25px;
-      bottom: -69px;
-    }
+    left: 64px;
   }
 }
-.about-kitchen-restaurant-slider__icon--previous {
-  right: 61px;
+
+.details-restaurant-slider__thumb {
+  margin-right: 20px;
   @include tablet {
-    right: unset;
-    left: 327px;
+    margin-right: 34px;
+  }
+  @include desktop {
+    margin-right: 86px;
+  }
+}
+
+.details-restaurant-slider__icon--prev {
+  left: 0;
+}
+.details-restaurant-slider__icon--next {
+  left: 64px;
+}
+// end of folding
+
+// ++-----------------Cекція "About our restaurant" і "About our kitchen"-------------------
+.about-restaurant-slider__wrapper {
+  max-width: calc(100vw - 84px);
+  margin-right: -15px;
+  margin-left: 69px;
+
+  @include tablet {
+    margin-right: unset;
+    margin-left: 489px;
+    top: -28px;
   }
 
   @include desktop {
-    right: unset;
-    left: 422px;
+    margin-right: unset;
+    margin-left: 562px;
+    top: -147px;
   }
+}
+
+.about-kitchen-slider__wrapper {
+  max-width: calc(100vw - 84px);
+  margin-right: -15px;
+  margin-left: 69px;
+
+  @include tablet {
+    margin-right: unset;
+    margin-left: 489px;
+    top: -28px;
+  }
+
+  @include desktop {
+    margin-right: unset;
+    margin-left: 562px;
+    top: -142px;
+    left: 18px;
+  }
+}
+
+.about-kitchen-restaurant-slider {
+  .slick-prev {
+    left: unset;
+    right: 81px;
+  }
+  .slick-next {
+    left: unset;
+    right: 17px;
+  }
+}
+.about-restaurant-slider__thumb {
+  margin-right: 25px;
+  width: 245px;
+  height: 245px;
+
+  @include tablet {
+    margin-right: 40px;
+    width: 194px;
+    height: 194px;
+  }
+
+  @include desktop {
+    width: 254px;
+    height: 254px;
+  }
+}
+.about-kitchen-slider__thumb {
+  margin-right: 25px;
+  width: 245px;
+  height: 245px;
+
+  @include tablet {
+    margin-right: 40px;
+    width: 194px;
+    height: 194px;
+  }
+
+  @include desktop {
+    width: 245px;
+    height: 245px;
+  }
+}
+.about-kitchen-restaurant-slider__icon--prev {
+  right: 81px;
 }
 .about-kitchen-restaurant-slider__icon--next {
-  right: -3px;
-  @include tablet {
-    right: unset;
-    left: 393px;
-  }
+  right: 17px;
+}
 
-  @include desktop {
-    right: unset;
-    left: 490px;
+// end of folding
+
+// -----------------------Двокімнатний номер і двокімнатний люкс----------------------------
+.double-room-section__slider-wrapper {
+  max-width: calc(100vw - 130px);
+  margin-left: -15px;
+  margin-right: 115px;
+  @include tablet {
+    margin: unset;
   }
 }
 
-// -----------------------Двокімнатний номер і двокімнатний люкс----------------------------
-.section-slider--double-room {
+.double-room-slider {
+  max-width: 287px;
+
+  @include tablet {
+    max-width: unset;
+    width: 428px;
+  }
+
+  @include desktop {
+    width: 548px;
+  }
   .slick-prev {
     left: 15px;
     @include tablet {
@@ -278,7 +472,21 @@
     }
   }
 }
-.double-room-slider__icon--previous {
+
+.double-room-slider__thumb {
+  margin-right: 16px;
+  max-width: 194px;
+
+  @include tablet {
+    margin-right: 40px;
+  }
+
+  @include desktop {
+    max-width: 254px;
+  }
+}
+
+.double-room-slider__icon--prev {
   left: 15px;
   // зміни до слайдеру
   @include tablet {
@@ -309,20 +517,40 @@
   }
 }
 
+// end of folding
+
 // ------------------------------Трьохкімнатний номер----------------------------------------
-.section-slider--tripple-room {
+.triple-section-slider__wrapper {
+  max-width: calc(100vw - 130px);
+  margin-right: -15px;
+  margin-left: 115px;
+  @include tablet {
+    margin: unset;
+  }
+}
+.tripple-room-slider {
+  max-width: 287px;
+
+  @include tablet {
+    max-width: unset;
+    width: 428px;
+  }
+
+  @include desktop {
+    width: 548px;
+  }
   .slick-next {
     right: 15px;
     @include tablet {
       right: unset;
-      left: 0;
+      left: 64px;
     }
   }
   .slick-prev {
     right: 79px;
     @include tablet {
       right: unset;
-      left: 64px;
+      left: 0;
     }
   }
 }
@@ -333,10 +561,12 @@
     left: 64px;
   }
 }
-.tripple-room-slider__icon--previous {
+.tripple-room-slider__icon--prev {
   right: 79px;
   @include tablet {
     right: unset;
     left: 0;
   }
 }
+
+// end of folding

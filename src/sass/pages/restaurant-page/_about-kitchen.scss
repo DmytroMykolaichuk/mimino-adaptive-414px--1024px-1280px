@@ -6,11 +6,12 @@
 
   @media screen and (min-width: 1024px) {
     padding-top: 120px;
-    padding-bottom: 262px;
+    padding-bottom: 68px;
   }
 
   @media screen and (min-width: 1280px) {
-    padding-bottom: 225px;
+    padding-bottom: 0;
+    margin-bottom: -37px;
   }
 }
 
@@ -155,53 +156,5 @@
 .about-kitchen__second-wrapper .about-kitchen__image {
   @media screen and (max-width: 1023px) {
     min-width: 200px;
-  }
-}
-
-// slayder
-.about-kitchen-restaurant__third-wrapper {
-  position: relative;
-}
-
-.about-kitchen-restaurant-slider__wrapper {
-  max-width: 330px;
-  margin-left: 74px;
-  @media screen and (min-width: 1024px) {
-    position: absolute;
-    top: -28px;
-    right: 111px;
-  }
-
-  @media screen and (min-width: 1280px) {
-    top: -137px;
-    right: 205px;
-  }
-}
-
-.about-kitchen-restaurant-slider__thumb {
-  margin-right: 25px;
-  max-width: 245px;
-
-  @include tablet {
-    margin-right: 40px;
-    max-width: 194px;
-  }
-
-  @include desktop {
-    max-width: 245px;
-  }
-}
-
-.two-time {
-  max-width: 330px;
-  // height: 270px;
-
-  @include tablet {
-    max-width: unset;
-    width: 428px;
-  }
-
-  @include desktop {
-    width: 530px;
   }
 }
