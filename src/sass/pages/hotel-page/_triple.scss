@@ -6,43 +6,35 @@
 
   @include tablet {
     padding-top: 66px;
-    padding-bottom: 145px;
+    padding-bottom: 66px;
   }
 
   @include desktop {
     padding-top: 72px;
-    padding-bottom: 182px;
+    padding-bottom: 43px;
   }
 }
 
-.triple-section__container{
+.triple-section__container {
   // outline: 2px solid red;
   position: relative;
 }
 
-.triple-section__text-wrap{
+.triple-section__text-wrap {
   margin-bottom: 32px;
 
   @include tablet {
-      margin-bottom: 210px;
-    }
-  
+    margin-bottom: 210px;
+    margin-right: 17px;
+  }
+
   @include desktop {
-      margin-bottom: 260px;
-  }
-}
-
-.triple-section__text-wrap{
-  @include tablet {
-      margin-right: 17px;
-  }
-
-  @include desktop{
+    margin-bottom: 260px;
     margin-right: 57px;
   }
 }
 
-.triple-section-title-wrap{
+.triple-section-title-wrap {
   display: inline-block;
   text-align: start;
   margin-left: auto;
@@ -52,69 +44,71 @@
   // }
 }
 
-.triple-section__slogan{
-    font-family: 'Times New Roman';
-    font-weight: 400;
-    font-size: 20px;
-    line-height: calc(23 / 20);
-    color: var(--slogan-color);
-    margin-bottom: 8px;
+.triple-section__slogan {
+  font-family: 'Times New Roman';
+  font-weight: 400;
+  font-size: 20px;
+  line-height: calc(23 / 20);
+  color: var(--slogan-color);
+  margin-bottom: 8px;
+  letter-spacing: 0;
 
-    @include tablet{
-      font-size: 32px;
-      line-height: calc(37 / 32);
-      margin-bottom: 4px;
-    }
+  @include tablet {
+    font-size: 32px;
+    line-height: calc(37 / 32);
+    margin-bottom: 4px;
+  }
 
-    // @include desktop {
-    //   margin-right: 57px;
-    // }
+  // @include desktop {
+  //   margin-right: 57px;
+  // }
 }
 
-.triple-section__mimiho-title{
+.triple-section__mimiho-title {
   font-family: 'Film P3';
   font-weight: 700;
   font-size: 40px;
   line-height: calc(43 / 40);
   letter-spacing: 0.3em;
   color: var(--mimino-section-color);
+  margin-right: -0.3em;
   margin-bottom: 32px;
 
-  @include tablet{
+  @include tablet {
     font-size: 64px;
     line-height: calc(69 / 64);
     margin-bottom: 62px;
   }
 
-    @include desktop{
-      // margin-right: 57px;
-      margin-bottom: 72px;
-    }
+  @include desktop {
+    // margin-right: 57px;
+    margin-bottom: 72px;
+  }
 }
 
-.triple-section__title{
-    font-family: 'Times New Roman';
-    font-size: 24px;
-    line-height: calc(28 /24);
-    letter-spacing: 0.05em;
-    color: #000000;
-    margin-bottom: 12px;
+.triple-section__title {
+  font-family: 'Times New Roman';
+  font-size: 24px;
+  line-height: calc(28 / 24);
+  letter-spacing: 0.05em;
+  color: #000000;
+  margin-bottom: 12px;
 
-  @include tablet{
+  @include tablet {
     font-size: 30px;
     line-height: calc(34 / 30);
     margin-bottom: 16px;
   }
 
-    @include desktop{
-      font-size: 36px;
-      line-height: calc(41 / 36);
-      margin-bottom: 24px;
-    }
-    text-transform: uppercase;
+  @include desktop {
+    font-size: 36px;
+    line-height: calc(41 / 36);
+    margin-bottom: 24px;
+  }
+  text-transform: uppercase;
 }
 
-.triple-section__text{
+.triple-section__text {
   font-family: 'Montserrat';
   font-weight: 600;
   font-size: 12px;
@@ -124,7 +118,7 @@
   text-align: start;
   max-width: 242px;
 
-  @include tablet{
+  @include tablet {
     max-width: 400px;
     font-size: 16px;
     line-height: calc(20 / 16);
@@ -133,7 +127,7 @@
 
 .triple-section__image-thumb {
   width: 244px;
-  margin-bottom: 298px; 
+  margin-bottom: 32px;
 
   @include tablet {
     margin-bottom: 0;
@@ -144,28 +138,11 @@
     left: 112px;
   }
 
-    @include desktop{
+  @include desktop {
     width: 460px;
     top: -104px;
     left: 180px;
-
   }
-}
-
-.triple-section-slider__wrapper{
-  position: absolute;
-  right: 0;
-  bottom: 184px;
-
-  @include tablet{
-    right: 47px;
-    bottom: -41px;
-  }
-
-    @include desktop{
-      bottom: -70px;
-      right: 85px;
-    }
 }
 
 .triple-section-slider__thumb {
@@ -179,43 +156,45 @@
   @include desktop {
     max-width: 254px;
   }
-
-
 }
 
-.two-time {
-  max-width: 287px;
-
-  @include tablet {
-    max-width: unset;
-    width: 428px;
-  }
-
-  @include desktop {
-    width: 548px;
-  }
-}
-
-.triple-section-btn{
+.triple-section-btn {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
   gap: 16px;
   max-width: 236px;
 
-  @include tablet{
-    margin-left: 0;
+  @include tablet {
+    margin: unset;
   }
 }
 
-.triple-section__link{
+.triple-section__link {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.about-room__link{
+.about-room__link {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.triple-room__bottom-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+  @include tablet {
+    flex-direction: row-reverse;
+    gap: unset;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    top: -38px;
+  }
+  @include desktop {
+    top: -69px;
+  }
 }

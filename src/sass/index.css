@@ -336,11 +336,11 @@ body {
   position: absolute;
 }
 
-.section-slider--white-arrow .slick-arrow {
+.section-slider--has-white-arrows .slick-arrow {
   bottom: -52px;
 }
 @media screen and (min-width: 1024px) {
-  .section-slider--white-arrow .slick-arrow {
+  .section-slider--has-white-arrows .slick-arrow {
     bottom: -64px;
   }
 }
@@ -355,11 +355,11 @@ body {
   }
 }
 
-.section-slider--black-arrow .slick-arrow {
+.section-slider--has-black-arrows .slick-arrow {
   bottom: -48px;
 }
 @media screen and (min-width: 1024px) {
-  .section-slider--black-arrow .slick-arrow {
+  .section-slider--has-black-arrows .slick-arrow {
     bottom: -56px;
   }
 }
@@ -386,7 +386,7 @@ body {
   left: 64px;
 }
 
-.details-restaurant-slider__icon--previous {
+.details-restaurant-slider__icon--prev {
   left: 0;
 }
 
@@ -411,11 +411,11 @@ body {
   }
 }
 
-.about-hotel-slider__icon--previous {
+.about-hotel-slider__icon--prev {
   left: 15px;
 }
 @media screen and (min-width: 1024px) {
-  .about-hotel-slider__icon--previous {
+  .about-hotel-slider__icon--prev {
     left: 0;
   }
 }
@@ -436,7 +436,7 @@ body {
   right: 0;
 }
 
-.details-hotel-slider__icon--previous {
+.details-hotel-slider__icon--prev {
   right: 64px;
 }
 
@@ -461,11 +461,11 @@ body {
   }
 }
 
-.about-kitchen-restaurant-slider__icon--previous {
+.about-kitchen-restaurant-slider__icon--prev {
   right: 15px;
 }
 @media screen and (min-width: 1024px) {
-  .about-kitchen-restaurant-slider__icon--previous {
+  .about-kitchen-restaurant-slider__icon--prev {
     right: 64px;
   }
 }
@@ -498,11 +498,11 @@ body {
   }
 }
 
-.double-room-slider__icon--previous {
+.double-room-slider__icon--prev {
   left: 15px;
 }
 @media screen and (min-width: 1024px) {
-  .double-room-slider__icon--previous {
+  .double-room-slider__icon--prev {
     left: unset;
     right: 64px;
   }
@@ -537,11 +537,11 @@ body {
   }
 }
 
-.tripple-room-slider__icon--previous {
+.tripple-room-slider__icon--prev {
   right: 15px;
 }
 @media screen and (min-width: 1024px) {
-  .tripple-room-slider__icon--previous {
+  .tripple-room-slider__icon--prev {
     right: unset;
     left: 64px;
   }
