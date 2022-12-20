@@ -260,15 +260,13 @@
 }
 
 .hero-btn__list {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     @include tablet {
-        display: flex;
+        flex-direction: unset;
         justify-content: flex-end;
-    }
-
-    @include desktop {
-        display: flex;
     }
 }
 
